@@ -1,0 +1,12 @@
+---
+---
+
+.test-class {
+    display: block;
+}
+
+@import 'defaults';
+@import 'mixins/mixins';
+@import 'header';
+@import 'footer';
+@import 'body';
