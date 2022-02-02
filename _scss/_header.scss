@@ -4,11 +4,53 @@
     text-align: center;
     background-color: $navy;
 	// border-radius: 0 0 50% 50%;
-    
-    &__inner {
+
+	&__inner {
         @include container();
-        background-color: #ddd;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+    
+    &__nav {
+		flex: 1 1 auto;
     }
+
+	&__nav-item {
+		font-size: 20px;
+		color: $green;
+		padding: 0 0.5rem;
+	}
+
+	&__left,
+	&__right {
+		flex: 0 0 200px;
+	}
+
+	&__theme-toggle {
+		display: block;
+		background-color: $green;
+		height: 2rem;
+		width: 5rem;
+	}
+
+	&__icon-list {
+		margin: 0;
+		padding: 0;
+		height: 2rem;
+		list-style: none;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	&__icon {
+		margin: 0 0.5rem;
+		height: 2rem;
+		width: 2rem;
+		background-color: $green;
+		line-height: 2rem;
+	}
 
 	// &:after {
 	// 	display: block;
