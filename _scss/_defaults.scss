@@ -12,4 +12,9 @@ html {
 
 body {
 	background-color: $blue;
+	overflow-x: hidden;
+}
+
+a {
+	color: $green;
 }
