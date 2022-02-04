@@ -55,9 +55,11 @@
 	** Hero Section
 	**/
 	&--hero {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		z-index: 2;
 		justify-content: center;
 		background-color: $gray;
 		height: calc(85vh - 8rem);

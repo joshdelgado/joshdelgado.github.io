@@ -6,6 +6,7 @@
     background-color: $navy;
 	position: absolute;
 	top: 0;
+	z-index: 99;
 	// border-radius: 0 0 50% 50%;
 
 	&__inner {

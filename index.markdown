@@ -13,6 +13,17 @@ jsarr:
 		<h1 class="section__title">Something something this is an intro</h1>
 		<p class="section__text">Here is a short witty description of who I am and what I am about. It probably needs to be a bit longer than I'd normally do</p>
 	</div>
+	<div class="animation">
+		<div class="animation__star"></div>
+		<div class="animation__mountain"></div>
+		<div class="animation__mountain-small"></div>
+		<div class="animation__mountain-small-2"></div>
+		<div class="animation__mountain-small-3"></div>
+		<div class="animation__mountain-med"></div>
+		<div class="animation__mountain-med-2"></div>
+		<div class="animation__mountain-large"></div>
+		<div class="animation__mountain-back"></div>
+	</div>
 </section>
 
 <section class="section section--about">
