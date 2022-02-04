@@ -40,9 +40,12 @@
 			max-width: calc(#{$mountain-max} / 2);
 			min-width: calc(#{$mountain-min} / 2);
 			background-color: $white;
-			transform: rotate(45deg) translate(-75%, 0%);
+			transform: rotate(40deg) translate(-75%, 0%);
 		}
-		
+	}
+
+	&:nth-child(even):after {
+		transform: rotate(50deg) translate(-75%, 0%);
 	}
 }
 
@@ -74,6 +77,64 @@
 	}
 }
 
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    25% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+	// 0% {
+    //     background-position: 0% 0%;
+    // }
+    // 100% {
+    //     background-position: 100% 100%;
+    // }
+}
+
+@keyframes gradient-v {
+	0% {
+        background-position: 0% 0%;
+	}
+	50% {
+        background-position: 0% 100%;
+	}
+	100% {
+        background-position: 0% 0%;
+	}
+}
+@keyframes gradient-h {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+        background-position: 100% 0%;
+	}
+	100% {
+        background-position: 0% 0%;
+	}
+}
+@keyframes gradient-d {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+        background-position: 100% 100%;
+	}
+	100% {
+        background-position: 0% 0%;
+	}
+}
+
 .animation {
 	position: absolute;
 	left: 0;
@@ -82,6 +143,33 @@
 	width: 100%;
 	background-color: rgba($color: $navy, $alpha: 0.85);
 	overflow: hidden;
+	background: linear-gradient(0deg, rgba(255,0,0,0) 10%, rgba(255,0,0,1) 100%);
+	background-size: 400% 400%;
+	animation: gradient-v 5s ease infinite;
+
+	&__gradient {
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		height: 100%;
+		width: 100%;
+		background: linear-gradient(240deg, rgba(0,255,0,0) 10%, rgba(0,255,0,1) 100%);
+		background-size: 400% 400%;
+		animation: gradient-h 5s ease infinite;
+	}
+	
+	&:after {
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		height: 100%;
+		width: 100%;
+		background: linear-gradient(240deg, rgba(0,0,255,0) 10%, rgba(0,0,255,1) 100%);
+		background-size: 400% 400%;
+		animation: gradient-d 5s ease infinite;
+	}
 
 	&__star {
 		position: absolute;
