@@ -23,6 +23,7 @@ jsarr:
 		<div class="animation__mountain-med-2"></div>
 		<div class="animation__mountain-large"></div>
 		<div class="animation__mountain-back"></div>
+		<div class="animation__gradient"></div>
 	</div>
 </section>
 
