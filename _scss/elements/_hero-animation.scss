@@ -1,139 +1,10 @@
-@mixin mountain($height: 10vw, $width: 10vw, $snow: false, $size: 'small') {
-	$mountain-min: 100px;
-	$mountain-max: 300px;
-	@if $size == 'small' {
-		$mountain-min: 100px;
-		$mountain-max: 300px;
-	} @else if $size == 'medium' {
-		$mountain-min: 200px;
-		$mountain-max: 600px;
-	} @else if $size == 'large' {
-		$mountain-min: 300px;
-		$mountain-max: 750px;
-	}
-
-	
-	position: absolute;
-	height: $height;
-	width: $width;
-	max-height: $mountain-max;
-	min-height: $mountain-min;
-	max-width: $mountain-max;
-	min-width: $mountain-min;
-	background-color: $blue;
-	transform-origin: bottom left;
-	transform: rotate(45deg);
-	overflow: hidden;
-	z-index: 3;
-	box-shadow: -1px -1px 2px rgba($color: $navy, $alpha: 0.5);
-
-	@if $snow {
-		&:after {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: calc(#{$width} / 2);
-			height: calc(#{$height} / 2);
-			max-height: calc(#{$mountain-max} / 2);
-			min-height: calc(#{$mountain-min} / 2);
-			max-width: calc(#{$mountain-max} / 2);
-			min-width: calc(#{$mountain-min} / 2);
-			background-color: $white;
-			transform: rotate(40deg) translate(-75%, 0%);
-		}
-	}
-
-	&:nth-child(even):after {
-		transform: rotate(50deg) translate(-75%, 0%);
-	}
-}
-
-@keyframes shooting-star{
-	0% {
-		left: -5%;
-		top: 20%;
-		height: 15px;
-		width: 15px;
-		opacity: 1;}
-	50% {
-		left: -5%;
-		top: 20%;
-		height: 15px;
-		width: 15px;
-		opacity: 1;
-	}
-	90% {
-		height: 2px;
-		width: 2px;
-		opacity: 0.8;
-	}
-	100% {
-		left: 105%;
-		top: 80%;
-		height: 0;
-		width: 0;
-		opacity: 0.1;
-	}
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 0%;
-    }
-    25% {
-        background-position: 0% 100%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    75% {
-        background-position: 100% 0%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
-	// 0% {
-    //     background-position: 0% 0%;
-    // }
-    // 100% {
-    //     background-position: 100% 100%;
-    // }
-}
-
-@keyframes gradient-v {
-	0% {
-        background-position: 0% 0%;
-	}
-	50% {
-        background-position: 0% 100%;
-	}
-	100% {
-        background-position: 0% 0%;
-	}
-}
-@keyframes gradient-h {
-	0% {
-		background-position: 0% 0%;
-	}
-	50% {
-        background-position: 100% 0%;
-	}
-	100% {
-        background-position: 0% 0%;
-	}
-}
-@keyframes gradient-d {
-	0% {
-		background-position: 0% 0%;
-	}
-	50% {
-        background-position: 100% 100%;
-	}
-	100% {
-        background-position: 0% 0%;
-	}
-}
+$duration: 20s;
+$color1: #446DF6;
+$color2: #08827B;
+$color3: #00635D; // unused at the moment
+$color4: #08A4BD;
+$color5: #01172F;
+$fontColor: white;
 
 .animation {
 	position: absolute;
@@ -143,32 +14,31 @@
 	width: 100%;
 	background-color: rgba($color: $navy, $alpha: 0.85);
 	overflow: hidden;
-	background: linear-gradient(0deg, rgba(255,0,0,0) 10%, rgba(255,0,0,1) 100%);
-	background-size: 400% 400%;
-	animation: gradient-v 5s ease infinite;
+	background-color: $color1;
 
 	&__gradient {
-		position: absolute;
-		left: 0;
-		top: 0;
-		z-index: 1;
-		height: 100%;
+		display: block;
 		width: 100%;
-		background: linear-gradient(240deg, rgba(0,255,0,0) 10%, rgba(0,255,0,1) 100%);
-		background-size: 400% 400%;
-		animation: gradient-h 5s ease infinite;
-	}
-	
-	&:after {
-		position: absolute;
-		left: 0;
-		top: 0;
-		z-index: 1;
 		height: 100%;
-		width: 100%;
-		background: linear-gradient(240deg, rgba(0,0,255,0) 10%, rgba(0,0,255,1) 100%);
-		background-size: 400% 400%;
-		animation: gradient-d 5s ease infinite;
+		position: absolute;
+		top: 0;
+		left: 0;
+		
+		&--to-right {
+			@include ease-in-out-sine-gradient($color2, to right);
+			background-size: 400%;
+			background-position: center;
+			animation: backgroundMoveX ($duration/2) ease-in-out infinite;
+		}
+		
+		&--to-bottom {
+			@include ease-in-out-sine-gradient($color5, to bottom);
+			animation: backgroundMoveY $duration ease infinite;
+		}
+		
+		&--to-top-left {
+			@include ease-in-out-sine-gradient($color4, to top left);
+		}
 	}
 
 	&__star {
