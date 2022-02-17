@@ -64,12 +64,48 @@ jsarr:
 		<h1 class="section__title">Check out my work</h1>
 		<p class="section__subtitle">I've like, done a lot of work. Call me an Orc Peon because I <a href="https://www.youtube.com/watch?v=eO6OaVnbqaY">work work</a>.</p>
 		<div class="section__works">
-			<div class="section__work"></div>
-			<div class="section__work"></div>
-			<div class="section__work"></div>
-			<div class="section__work"></div>
-			<div class="section__work"></div>
-			<div class="section__work"></div>
+			<div class="work-card">
+				<div class="work-card__text">
+					<h2 class="work-card__title">Abe.ai</h2>
+					<a  class="work-card__link fa fa-caret-right" href="#">
+					</a>
+				</div>
+			</div>
+			<div class="work-card">
+				<div class="work-card__text">
+					<h2 class="work-card__title">Signature Learning</h2>
+					<a  class="work-card__link fa fa-caret-right" href="#">
+					</a>
+				</div>
+			</div>
+			<div class="work-card">
+				<div class="work-card__text">
+					<h2 class="work-card__title">Florida Beach Weddings</h2>
+					<a  class="work-card__link fa fa-caret-right" href="#">
+					</a>
+				</div>
+			</div>
+			<div class="work-card">
+				<div class="work-card__text">
+					<h2 class="work-card__title">OAM</h2>
+					<a  class="work-card__link fa fa-caret-right" href="#">
+					</a>
+				</div>
+			</div>
+			<div class="work-card">
+				<div class="work-card__text">
+					<h2 class="work-card__title">Rap Scraps</h2>
+					<a  class="work-card__link fa fa-caret-right" href="#">
+					</a>
+				</div>
+			</div>
+			<div class="work-card">
+				<div class="work-card__text">
+					<h2 class="work-card__title">Vapor Wave</h2>
+					<a  class="work-card__link fa fa-caret-right" href="#">
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

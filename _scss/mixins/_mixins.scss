@@ -3,6 +3,10 @@
 	padding: 1rem calc(50% - 490px);
 }
 
+@mixin box-shadow() {
+	box-shadow: 1px 2px 2px #00000050;
+}
+
 @mixin ease-in-out-sine-gradient($startColor, $direction, $satOverwrite: null, $lightOverwrite: null){
 	$hue: hue($startColor);
 	$saturation: saturation($startColor);

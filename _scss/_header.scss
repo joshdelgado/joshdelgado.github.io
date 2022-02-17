@@ -41,6 +41,7 @@
 		border: 2px solid $green;
 		border-radius: 2rem;
 		cursor: pointer;
+		@include box-shadow();
 		transition: all 350ms ease;
 
 		&:after {
@@ -60,10 +61,22 @@
 			background-color: $green;
 
 			&:after {
-				transform: translate(34px, -50%);
+				transform: translate(32px, -50%);
 				background-color: $navy;
+				height: 22px;
+				width: 22px;
 			}
 		}
+	}
+
+	&__theme-toggle-moon {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 4px;
+		transform: translateY(-50%);
+		font-size: 21px;
+		color: $navy;
 	}
 
 	// &:after {
