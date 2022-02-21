@@ -1,7 +1,10 @@
 .footer {
+	position: absolute;
+	bottom: 0;
     display: block;
     background-color: $navy;
 	padding-bottom: 1rem;
+	transition: all 350ms ease;
     
     &__inner {
         @include container();
@@ -39,5 +42,6 @@
 		border-top: solid 100px $blue;
 		border-left: solid 50vw $navy;
 		border-right: solid 50vw $navy;
+		transition: all 350ms ease;
 	}
 }

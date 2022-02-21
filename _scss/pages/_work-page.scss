@@ -1,0 +1,64 @@
+.work-page {
+	&__hero {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 66px;
+		min-height: 320px;
+		background-color: $gray;
+		border-bottom: 2px solid $navy;
+	}
+
+	&__title {
+		position: relative;
+		top: -8px;
+		z-index: 2;
+		font-size: 48px;
+		color: $white;
+		text-shadow: 1px 1px 1px $navy;
+	}
+
+	&__tool-list {
+		position: absolute;
+		bottom: 0;
+		margin: 0;
+		padding: 0 0 0.5rem;
+		list-style: none;
+	}
+
+	&__tool-list-item {
+		margin: 0 0.75rem;
+		display: inline-block;
+		text-align: center;
+		font-size: 14px;
+	}
+
+	&__content {
+		background-color: $blue;
+		color: $white;
+		@include container(small);
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+
+		p {
+			font-size: 18px;
+			margin-bottom: 1rem;
+
+			&:last-child {
+				margin-bottom: 0;
+
+				img {
+					padding-bottom: 0;
+				}
+			}
+		}
+
+		img {
+			display: block;
+			max-width: 520px;
+			margin: 0 auto;
+			padding: 1rem 0;
+		}
+	}
+}

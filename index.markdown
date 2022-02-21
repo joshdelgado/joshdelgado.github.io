@@ -51,12 +51,12 @@ jsarr:
 	</div>
 </section>
 
-<section class="section section--skills">
+<!-- <section class="section section--skills">
 	<div class="section__inner">
 		<h1 class="section__title">Girls like guys with Skills</h1>
 		<p class="section__subtitle">A Jack of all trades but a master of none, is oftentimes better than a master of one.</p>
 	</div>
-</section>
+</section> -->
 
 
 <section class="section section--work">
@@ -64,12 +64,11 @@ jsarr:
 		<h1 class="section__title">Check out my work</h1>
 		<p class="section__subtitle">I've like, done a lot of work. Call me an Orc Peon because I <a href="https://www.youtube.com/watch?v=eO6OaVnbqaY">work work</a>.</p>
 		<div class="section__works">
-			<div class="work-card">
-				<div class="work-card__text">
+			<div class="work-card work-card--abe-ai">
+				<a class="work-card__text" href="/work/abe-ai">
 					<h2 class="work-card__title">Abe.ai</h2>
-					<a  class="work-card__link fa fa-caret-right" href="#">
-					</a>
-				</div>
+					<span class="work-card__link fa fa-caret-right"></span>
+				</a>
 			</div>
 			<div class="work-card">
 				<div class="work-card__text">
@@ -94,7 +93,7 @@ jsarr:
 			</div>
 			<div class="work-card">
 				<div class="work-card__text">
-					<h2 class="work-card__title">Rap Scraps</h2>
+					<h2 class="work-card__title">Seven Letters</h2>
 					<a  class="work-card__link fa fa-caret-right" href="#">
 					</a>
 				</div>
@@ -107,5 +106,44 @@ jsarr:
 				</div>
 			</div>
 		</div>
+	</div>
+</section>
+
+<section class="section section--blog">
+	<div class="section__inner">
+		<h1 class="section__title">Read My Thoughts</h1>
+		<p class="section__subtitle">If you're psychic feel free to skip this section. If you'd like to see how I think please explore below.</p>
+		<div class="section__works">
+			<div class="work-card">
+				<div class="work-card__text">
+					<h2 class="work-card__title">Abe.ai</h2>
+					<a  class="work-card__link fa fa-caret-right" href="#">
+					</a>
+				</div>
+			</div>
+			<div class="work-card">
+				<div class="work-card__text">
+					<h2 class="work-card__title">Signature Learning</h2>
+					<a  class="work-card__link fa fa-caret-right" href="#">
+					</a>
+				</div>
+			</div>
+			<div class="work-card">
+				<div class="work-card__text">
+					<h2 class="work-card__title">Florida Beach Weddings</h2>
+					<a  class="work-card__link fa fa-caret-right" href="#">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="section section--contact">
+	<div class="section__inner">
+		<h1 class="section__title">Get In Touch</h1>
+		<p class="section__subtitle">I may or may not be looking for new oppourtunities. There's only one way to find out!</p>
+		<a class="button" href="mailto:contact@joshdelgado.me">Say What's Up</a>
 	</div>
 </section>

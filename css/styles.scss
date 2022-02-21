@@ -8,8 +8,6 @@
 @import 'defaults';
 @import 'mixins/mixins';
 @import 'animations/animations';
-@import 'header';
-@import 'footer';
-@import 'body';
-@import 'sections';
+@import 'layouts/layouts';
+@import 'pages/pages';
 @import 'elements/elements';

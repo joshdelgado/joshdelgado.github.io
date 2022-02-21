@@ -18,7 +18,21 @@
 
 <body class="body">
 	{% include header.html %}
-	{% include body.html %}
+	<main class="body work-page">
+		<div class="body__inner">
+			<div class="work-page__hero">
+				<h1 class="work-page__title">{{ page.title }}</h1>
+				<ul class="work-page__tool-list">
+					{% for tool in page.tools %}
+					<li class="work-page__tool-list-item">{{ tool }}</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="work-page__content">
+				{{ content }}
+			</div>
+		</div>
+	</main>
 	{% include footer.html %}
 </body>
 

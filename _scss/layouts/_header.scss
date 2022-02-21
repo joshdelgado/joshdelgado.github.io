@@ -3,9 +3,11 @@
 	width: 100%;
     text-align: center;
     background-color: $navy;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	z-index: 99;
+	border-bottom: 2px solid $blue;
+	@include box-shadow();
 	// border-radius: 0 0 50% 50%;
 
 	&__inner {
@@ -20,9 +22,34 @@
     }
 
 	&__nav-item {
+		position: relative;
+		display: inline-block;
 		font-size: 20px;
 		color: $green;
 		padding: 0 0.5rem;
+		transition: all 200ms ease;
+
+		&:after {
+			position: absolute;
+			top: -4px;
+			left: 0;
+			display: inline-block;
+			content: '';
+			height: 3px;
+			width: 100%;
+			border-radius: 4px;
+			background-color: $green;
+			opacity: 0;
+			transition: all 200ms ease;
+		}
+
+		&:hover {
+			transform: translateY(2px);
+
+			&:after {
+				opacity: 1;
+			}
+		}
 	}
 
 	&__left,

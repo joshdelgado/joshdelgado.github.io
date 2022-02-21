@@ -4,15 +4,52 @@ $green: #4EA701;
 $gray: #90918C;
 $white: #FFFFFF;
 
+* {
+	transition: all 350ms ease;
+}
+
 html {
 	font-size: 16px;
 	color: $navy;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-body {
+.body {
+	position: relative;
+	min-height: 100vh;
 	background-color: $blue;
 	overflow-x: hidden;
+	transition: all 350ms ease;
+
+	&__light-mode {
+		background-color: $navy;
+
+		.section {
+			&__title,
+			&__subtitle,
+			&__text {
+				color: $blue;
+			}
+		}
+
+		.header {
+			background-color: $blue;
+		}
+
+		.footer {
+			background-color: $blue;
+
+			&__text {
+				color: $navy;
+			}
+
+			&:before {
+				border-top: solid 100px $navy;
+				border-left: solid 50vw $blue;
+				border-right: solid 50vw $blue;
+			}
+		}
+	}
 }
 
 a {

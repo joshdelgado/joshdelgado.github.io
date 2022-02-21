@@ -1,6 +1,10 @@
-@mixin container() {
+@mixin container($size: '') {
     display: block;
-	padding: 1rem calc(50% - 490px);
+	@if ($size == 'small'){
+		padding: 1rem calc(50% - 320px);
+	} @else {
+		padding: 1rem calc(50% - 490px);
+	}
 }
 
 @mixin box-shadow() {

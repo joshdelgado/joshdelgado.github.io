@@ -20,6 +20,10 @@
 		padding-bottom: 2.5rem;
 	}
 
+	&__subtitle {
+		font-size: 20px;
+	}
+
 	&__text {
 		font-size: 20px;
 	}
@@ -126,7 +130,6 @@
 			}
 
 			&__subtitle {
-				font-size: 20px;
 				padding: 0 0 6rem 0;
 			}
 
@@ -147,12 +150,52 @@
 			}
 
 			&__subtitle {
-				font-size: 20px;
 				padding: 0 0 6rem 0;
 			}
 
 			&__inner {
 				padding-bottom: 8rem;
+			}
+		}
+	}
+
+		
+
+	/**
+	** Blog Section
+	**/
+	&--blog {
+		.section {
+			&__title {
+				padding: 6rem 0 1rem;
+			}
+
+			&__subtitle {
+				padding: 0 0 6rem 0;
+			}
+
+			&__inner {
+				padding-bottom: 8rem;
+				border-bottom: 0;
+			}
+		}
+	}
+
+	
+	/**
+	** Contact Section
+	**/
+	&--contact {
+		padding-bottom: 4rem;
+
+		.section {
+			&__subtitle {
+				font-size: 20px;
+				padding: 0 0 6rem 0;
+				margin: 0 auto;
+				max-width: 480px;
+			}
+			&__inner {
 				border-bottom: 0;
 			}
 		}

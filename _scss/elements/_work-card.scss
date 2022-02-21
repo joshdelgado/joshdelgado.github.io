@@ -1,7 +1,8 @@
   .work-card {
+	  display:inline-block;
 	position: relative;
 	background-color: white;
-	background-image: url(http://www.fillmurray.com/g/300/300);
+	background-image: url(https://picsum.photos/300);
 	background-size: cover;
 	flex: 1 0 19rem;
 	height: 19.5rem;
@@ -9,7 +10,6 @@
 	margin: 0.5rem;
 	border-radius: 4px;
 	@include box-shadow();
-	border: 1px solid black;
 	cursor: pointer;
 	overflow: hidden;
 	
@@ -69,5 +69,24 @@
 		  transform: translateX(0);
 		}
 	  }
+	}
+
+	&--abe-ai {
+		background-image: url(https://picsum.photos/300);
+	}
+	&--signature-learning {
+		background-image: url(http://www.fillmurray.com/g/300/300);
+	}
+	&--florida-beach-weddings {
+		background-image: url(http://www.fillmurray.com/g/300/300);
+	}
+	&--oam {
+		background-image: url(http://www.fillmurray.com/g/300/300);
+	}
+	&--seven-letters {
+		background-image: url(http://www.fillmurray.com/g/300/300);
+	}
+	&--vapor-wave {
+		background-image: url(http://www.fillmurray.com/g/300/300);
 	}
   }
