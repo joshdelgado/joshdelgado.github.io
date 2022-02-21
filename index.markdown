@@ -2,7 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-title: My First Page
+title: Josh Delgado
 layout: default
 jsarr:
 - js/main.js
@@ -42,6 +42,8 @@ jsarr:
 					<li class="section__list-item">Typescript</li>
 					<li class="section__list-item">Jekyll</li>
 					<li class="section__list-item">CSS3</li>
+					<li class="section__list-item">Wordpress</li>
+					<li class="section__list-item">Developer Mentorship</li>
 				</ul>
 			</div>
 			<div class="section__column">
@@ -64,47 +66,14 @@ jsarr:
 		<h1 class="section__title">Check out my work</h1>
 		<p class="section__subtitle">I've like, done a lot of work. Call me an Orc Peon because I <a href="https://www.youtube.com/watch?v=eO6OaVnbqaY">work work</a>.</p>
 		<div class="section__works">
-			<div class="work-card work-card--abe-ai">
-				<a class="work-card__text" href="/work/abe-ai">
-					<h2 class="work-card__title">Abe.ai</h2>
+			{% for work in site.work limit: 6 %}
+			<div class="work-card">
+				<a class="work-card__text" href="{{ work.url | prepend: site.baseurl }}">
+					<h2 class="work-card__title">{{ work.title }}</h2>
 					<span class="work-card__link fa fa-caret-right"></span>
 				</a>
 			</div>
-			<div class="work-card">
-				<div class="work-card__text">
-					<h2 class="work-card__title">Signature Learning</h2>
-					<a  class="work-card__link fa fa-caret-right" href="#">
-					</a>
-				</div>
-			</div>
-			<div class="work-card">
-				<div class="work-card__text">
-					<h2 class="work-card__title">Florida Beach Weddings</h2>
-					<a  class="work-card__link fa fa-caret-right" href="#">
-					</a>
-				</div>
-			</div>
-			<div class="work-card">
-				<div class="work-card__text">
-					<h2 class="work-card__title">OAM</h2>
-					<a  class="work-card__link fa fa-caret-right" href="#">
-					</a>
-				</div>
-			</div>
-			<div class="work-card">
-				<div class="work-card__text">
-					<h2 class="work-card__title">Seven Letters</h2>
-					<a  class="work-card__link fa fa-caret-right" href="#">
-					</a>
-				</div>
-			</div>
-			<div class="work-card">
-				<div class="work-card__text">
-					<h2 class="work-card__title">Vapor Wave</h2>
-					<a  class="work-card__link fa fa-caret-right" href="#">
-					</a>
-				</div>
-			</div>
+			{% endfor %}
 		</div>
 	</div>
 </section>
@@ -114,27 +83,14 @@ jsarr:
 		<h1 class="section__title">Read My Thoughts</h1>
 		<p class="section__subtitle">If you're psychic feel free to skip this section. If you'd like to see how I think please explore below.</p>
 		<div class="section__works">
+			{% for post in site.posts limit: 3 %}
 			<div class="work-card">
-				<div class="work-card__text">
-					<h2 class="work-card__title">Abe.ai</h2>
-					<a  class="work-card__link fa fa-caret-right" href="#">
-					</a>
-				</div>
+				<a class="work-card__text" href="{{ post.url | prepend: site.baseurl }}">
+					<h2 class="work-card__title">{{ post.title }}</h2>
+					<span  class="work-card__link fa fa-caret-right"></span>
+				</a>
 			</div>
-			<div class="work-card">
-				<div class="work-card__text">
-					<h2 class="work-card__title">Signature Learning</h2>
-					<a  class="work-card__link fa fa-caret-right" href="#">
-					</a>
-				</div>
-			</div>
-			<div class="work-card">
-				<div class="work-card__text">
-					<h2 class="work-card__title">Florida Beach Weddings</h2>
-					<a  class="work-card__link fa fa-caret-right" href="#">
-					</a>
-				</div>
-			</div>
+			{% endfor %}
 		</div>
 	</div>
 </section>
