@@ -1,9 +1,10 @@
   .work-card {
-	  display:inline-block;
+	display:inline-block;
 	position: relative;
 	background-color: white;
 	background-image: url(https://picsum.photos/300);
 	background-size: cover;
+	background-position: center;
 	flex: 1 0 19rem;
 	height: 19.5rem;
 	width: 19.5rem;

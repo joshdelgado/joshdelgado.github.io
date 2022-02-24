@@ -37,7 +37,7 @@
 	&__content {
 		background-color: $blue;
 		color: $white;
-		@include container(small);
+		@include container(large);
 		padding-top: 4rem;
 		padding-bottom: 4rem;
 

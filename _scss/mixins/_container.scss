@@ -1,0 +1,10 @@
+@mixin container($size: '') {
+    display: block;
+	@if ($size == 'small'){
+		padding: 1rem calc(50% - 320px);
+	} @else if ($size == 'large'){
+		padding: 1rem calc(50% - 640px);
+	} @else {
+		padding: 1rem calc(50% - 490px);
+	}
+}
