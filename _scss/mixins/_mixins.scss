@@ -2,3 +2,16 @@
 @import 'box-shadow';
 @import 'ease-gradient';
 @import 'mountain';
+
+@mixin flex-row() {	
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	margin: 0 -0.5rem;
+}
+
+@mixin flex-column($column-size: 12) {
+	margin: 0.5rem;
+	width: calc((($column-size / 12) * 100%) - 1rem);
+	flex: 1 1 calc((($column-size / 12) * 100%) - 1rem);
+}

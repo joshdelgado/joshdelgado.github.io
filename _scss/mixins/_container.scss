@@ -1,9 +1,14 @@
 @mixin container($size: '') {
     display: block;
+
 	@if ($size == 'small'){
 		padding: 1rem calc(50% - 320px);
 	} @else if ($size == 'large'){
 		padding: 1rem calc(50% - 640px);
+	} @else if ($size == 'full'){
+		max-width: 1680px;
+		padding: 0 1rem;
+		margin: 0 auto;
 	} @else {
 		padding: 1rem calc(50% - 490px);
 	}
