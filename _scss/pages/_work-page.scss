@@ -157,12 +157,20 @@
 	&__img {
 		display: block;
 		position: relative;
-		left: -5rem;
+		max-height: 600px;
+		overflow: hidden;
+		border-radius: 8px;
+		// left: -5rem;
 
 		img {
 			display: inherit;
 			border-radius: 8px;
 		}
+
+		&--1 {}
+		&--2 {}
+		&--3 {}
+		&--4 {}
 
 		&--fixed {
 			// position: absolute;

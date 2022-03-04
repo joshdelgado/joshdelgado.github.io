@@ -4,6 +4,8 @@ $green: #4EA701;
 $gray: #90918C;
 $white: #FFFFFF;
 
+@import 'vendors/sass-code-highlight/monokai.scss';
+
 * {
 	transition: all 350ms ease;
 }
@@ -54,4 +56,12 @@ html {
 
 a {
 	color: $green;
+}
+
+pre {
+	padding: 1rem;
+}
+
+.highlight {
+	border-radius: 8px;
 }

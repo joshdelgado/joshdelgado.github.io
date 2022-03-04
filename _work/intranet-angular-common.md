@@ -14,7 +14,9 @@ jsarr:
 <section class="project-section">
 	<div class="project-section__inner">
 		<div class="flex-row flex-row--container flex-row--align-center">
-			<span class="flex-row__column flex-row__column--6" markdown="1">![Florida Beach Weddings - Shopify - 2022](/assets/img/oam-init-step.png)</span>
+			<div class="flex-row__column flex-row__column--6">
+				<span class="project-section__img" markdown="1">![Buttons](/assets/img/angular-common/Colors.svg)</span>
+			</div>
 			<!-- <div class="flex-row__column flex-row__column--7">
 				<video width="100%" autoplay muted loop playsinline>
 					<source src="/assets/video/oam/oam-guided-flow-from-dash-loop.webm" type="video/webm">
@@ -83,14 +85,39 @@ jsarr:
 	<div class="project-section__inner">
 		<h2 class="project-section__title">The Process</h2>
 		<div class="flex-row flex-row--container">
-			<div class="flex-row__column">
-				<p>Defined essential components, styles,  and services</p>
-				<p>Went through all the applications gathering colors to create a list. Consolidated the blues down to a consistent color palette. Added those colors to the library so developers no longer needed to define colors other than in edge cases.</p>
+			<div class="flex-row__column flex-row__column--6">
+				<p>Defined essential components, styles, and services</p>
+			</div>
+			<div class="flex-row__column flex-row__column--6">
+				<span class="project-section__img project-section__img--1" markdown="1">![Buttons](/assets/img/angular-common/Fields-Controls.svg)</span>
+			</div>
+			<div class="flex-row__column flex-row__column--6">
+				<p>Went through all the applications gathering colors to create a list. Consolidated the blues down to a consistent color palette. Added those colors to the library so developers no longer needed to define colors other than in edge cases. - colors and old colors</p>
+			</div>
+			<div class="flex-row__column flex-row__column--6">
+				<span class="project-section__img project-section__img--2" markdown="1">![Buttons](/assets/img/angular-common/Colors.svg)</span>
+			</div>
+			<div class="flex-row__column flex-row__column--6">
 				<p>Identified common layouts elements (header, footer, search templates) and patterns (buttons, cards, navigation elements) across apps and abstracted them into the library.</p>
-				<p>Abstracted services</p>
+			</div>
+			<div class="flex-row__column flex-row__column--6">
+				<span class="project-section__img project-section__img--3" markdown="1">![Buttons](/assets/img/angular-common/Navigations.svg)</span>
+			</div>
+			<div class="flex-row__column flex-row__column--6">
+				<p markdown="1">Implemented [Block Element Modifier](http://getbem.com/) naming conventions - get a screenshot of code</p>
+			</div>
+			<div class="flex-row__column flex-row__column--6">
+				{% include code.html %}
+			</div>
+			<div class="flex-row__column flex-row__column--6">
 				<p markdown="1">Used [Compodoc](https://compodoc.app/) to generate documentation for components and services</p>
-				<p>Upgraded applications from AngularJS to Angular 7 and later to Angular 11</p>
-				<p markdown="1">Implemented [Block Element Modifier](http://getbem.com/) naming conventions</p>
+			</div>
+			<div class="flex-row__column flex-row__column--6">
+				<span class="project-section__img project-section__img--4" markdown="1">![Buttons](/assets/img/compodoc.png)</span>
+			</div>
+			<div class="flex-row__column">
+				<p>Abstracted services</p>
+				<p>Upgraded applications from AngularJS to Angular 7 and later to Angular 11 -  no idea</p>
 			</div>
 		</div>
 	</div>
@@ -109,3 +136,11 @@ jsarr:
 		</div>
 	</div>
 </section>
+
+
+<span markdown="1">
+![Buttons](/assets/img/angular-common/Typography.svg)
+![Buttons](/assets/img/angular-common/Icons.svg)
+![Buttons](/assets/img/angular-common/Navigations.svg)
+![Buttons](/assets/img/angular-common/Menu.svg)
+</span>
