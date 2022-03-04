@@ -1,8 +1,7 @@
 <section class="section section--blog">
 	<div class="section__inner">
 		<h1 class="section__title">Read My Thoughts</h1>
-		<p class="section__subtitle">If you're psychic feel free to skip this section. If you'd like to see how I think
-			please explore below.</p>
+		<p class="section__subtitle">Feel free to skip this section if you're psychic</p>
 		<div class="section__works">
 			{% for post in site.posts limit: 3 %}
 			<div class="work-card">
@@ -13,5 +12,6 @@
 			</div>
 			{% endfor %}
 		</div>
+		<a href="{{'/blog' | prepend: site.baseurl}}" class="section__see-all">See all</a>
 	</div>
 </section>

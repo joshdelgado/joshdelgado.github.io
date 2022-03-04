@@ -1,4 +1,7 @@
-  .work-card {
+$gradient-timing: 600ms;
+$text-timing: 500ms;
+
+.work-card {
 	display:inline-block;
 	position: relative;
 	background-color: white;
@@ -15,79 +18,55 @@
 	overflow: hidden;
 	
 	&__image {
-	  display: inline-block;
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  height: 100%;
-	  width: 100%;
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
 	}
 	
 	&__text {
-	  display: flex;
-	  justify-content: space-between;
-	  align-items: flex-end;
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  height: 100%;
-	  width: 100%;
-	  padding: 0.75rem;
-	  transform: translateY(100%);
-	  @include ease-in-out-sine-gradient(#00000020, to top);
-	  transition: all 700ms ease;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		padding: 0.75rem;
+		transform: translateY(100%);
+		@include ease-in-out-sine-gradient(#00000020, to top);
+		transition: all $gradient-timing ease;
 	}
 	
 	&__title {
-	  font-size: 24px;
-	  line-height: 24px;
-	  color: white;
-	  transform: translateX(-200%);
-	  transition: all 700ms ease;
-	  transition-delay: 100ms;
+		font-size: 24px;
+		line-height: 24px;
+		color: white;
+		opacity: 0;
+		transition: all $text-timing ease;
 	}
 	
 	&__link {
-	  text-decoration: none;
-	  font-size: 20px;
-	  color: white;
-	  transform: translateX(2rem);
-	  transition: all 400ms ease;
-	  transition-delay: 100ms;
+		text-decoration: none;
+		font-size: 20px;
+		color: white;
+		opacity: 0;
+		transition: all $text-timing ease;
 	}
 	
 	&:hover {    
-	  .work-card {
-		&__text {
-		  transform: translateY(0);
+		.work-card {
+			&__text {
+				transform: translateY(0);
+			}
+			&__title,
+			&__link {
+				transition-delay: $gradient-timing;
+				opacity: 1;
+			}
 		}
-		&__title {
-		  transition-delay: 900ms;
-		  transform: translateX(0);
-		}
-		&__link {
-		  transition-delay: 1800ms;
-		  transform: translateX(0);
-		}
-	  }
 	}
-
-	&--abe-ai {
-		background-image: url(https://picsum.photos/300);
-	}
-	&--signature-learning {
-		background-image: url(http://www.fillmurray.com/g/300/300);
-	}
-	&--florida-beach-weddings {
-		background-image: url(http://www.fillmurray.com/g/300/300);
-	}
-	&--oam {
-		background-image: url(http://www.fillmurray.com/g/300/300);
-	}
-	&--seven-letters {
-		background-image: url(http://www.fillmurray.com/g/300/300);
-	}
-	&--vapor-wave {
-		background-image: url(http://www.fillmurray.com/g/300/300);
-	}
-  }
+}

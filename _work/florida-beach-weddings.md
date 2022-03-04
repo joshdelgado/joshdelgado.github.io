@@ -2,7 +2,6 @@
 title: Florida Beach Weddings
 cardImage: /assets/img/florida-beach-weddings/florida-beach-weddings.png
 layout: work
-display: true
 tools:
 - HTML
 - CSS
@@ -83,9 +82,7 @@ jsarr:
 						<div class="iphone__screen"></div>
 					</div>
 				</div>
-				<ul>
-					<li>Shopify custom theme</li>
-				</ul>
+				<p markdown="1">The client decided to stick with Wordpress for fear of losing SEO ranking. Rebecca Terry finished the project on Wordpress but feel free to check out the [Shopify theme](https://github.com/joshdelgado/florida-beach-wedding)</p>
 			</div>
 		</div>
 	</div>

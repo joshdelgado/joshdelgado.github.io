@@ -1,15 +1,15 @@
 &--about {
 	.section {
 		&__inner {
-			padding-bottom: 8rem;
+			padding: 4rem 0 12rem;
 		}
 
 		&__title {
-			padding: 6rem 0;
+			padding-bottom: 6rem;
 		}
 
 		&__text {
-			text-align: left;
+			text-align: justify;
 			margin-bottom: 1rem;
 		}
 
@@ -17,15 +17,14 @@
 			display: flex;
 			justify-content: space-between;
 			flex-wrap: wrap;
-
-			> li {
-				width: 50%;
-				text-align: left;
-			}
+			padding-top: 1rem;
 		}
 
 		&__list-item {
 			width: 50%;
+			padding: 0.25rem 0;
+			text-align: left;
+			color: $white;
 		}
 	}
 }

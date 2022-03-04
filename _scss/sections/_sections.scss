@@ -3,7 +3,6 @@
 	padding-bottom: 0;
 
 	&__inner {
-		border-bottom: 2px solid $navy;
 		text-align: center;
 		padding: 1rem 0 2rem;
 	}
@@ -16,16 +15,25 @@
 
 	&__title {
 		font-size: 48px;
+		font-weight: 700;
+		color: $white;
+		padding: 6rem 0 0.5rem;
 		margin: 0;
-		padding-bottom: 2.5rem;
+		@include text-shadow();
 	}
 
 	&__subtitle {
 		font-size: 20px;
+		color: $white;
+		@include text-shadow();
+		margin: 0 auto;
+		max-width: 480px;
+		padding-bottom: 6rem;
 	}
 
 	&__text {
 		font-size: 20px;
+		color: $white;
 	}
 
 	&__row {
@@ -52,6 +60,18 @@
 		flex: 1 1 320px;
 		height: 320px;
 		padding: 0.5rem;
+	}
+
+	&:nth-child(even){
+		background-color: $blue;
+	}
+
+	&:nth-child(odd){
+		background-color: lighten($blue, 3%);
+	}
+
+	&:last-child {
+		background-color: $blue;
 	}
 	
 	@import 'section-about';

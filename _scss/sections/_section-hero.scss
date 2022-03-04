@@ -2,25 +2,73 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	z-index: 2;
 	justify-content: center;
 	background-color: $gray;
-	height: 85vh;
-	border-bottom: 4px solid $green;
+	height: 95vh;
 
 	.section {
-		&__title,
-		&__text {
-			color: white;
-		}
-
 		&__inner {
 			position: relative;
 			z-index: 8;
+			text-align: left;
 			border-bottom: none;
-			text-align: center;
 			padding: 1rem 0 2rem;
 		}
+		
+		&__img {
+			margin-bottom: 2rem;
+			@include box-shadow();
+		}
+
+		&__pre-title {
+			display: inline-block;
+			font-size: 16px;
+			font-weight: 300;
+			color: $white;
+			padding: 0 0 1rem;
+			@include text-shadow();
+		}
+		
+		&__title {
+			font-size: 64px;
+			line-height: 1;
+			letter-spacing: 1px;
+			font-weight: 900;
+			padding: 0 0 1rem;
+			color: $white;
+			@include text-shadow();
+		}
+
+		&__subtitle {
+			font-size: 64px;
+			line-height: 1;
+			font-weight: 700;
+			padding: 0 0 1.25rem;
+			max-width: 100%;
+			color: darken($white, 25%);
+			@include text-shadow();
+		}
+
+		&__text {
+			font-size: 20px;
+			line-height: 1.25;
+			padding: 0;
+			color: $white;
+			max-width: 480px;
+			text-shadow: 1px 1px 1px $navy;
+		}
+	}
+	
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 200px;
+		z-index: 10;
+		@include ease-in-out-sine-gradient(lighten($blue, 3%), to top);
 	}
 }
