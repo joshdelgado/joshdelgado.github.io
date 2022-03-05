@@ -1,6 +1,6 @@
 ---
 title: Seven Letters
-layout: work
+layout: project
 tools:
 - Wordpress
 - CSS

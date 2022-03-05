@@ -1,7 +1,7 @@
 $gradient-timing: 600ms;
 $text-timing: 500ms;
 
-.work-card {
+.project-card {
 	display:inline-block;
 	position: relative;
 	background-color: white;
@@ -61,7 +61,7 @@ $text-timing: 500ms;
 	}
 
 	&--internal-angular-library {
-		.work-card__image {
+		.project-card__image {
 			top: 10%;
 			left: 50%;
 			background-repeat: no-repeat;
@@ -73,7 +73,7 @@ $text-timing: 500ms;
 	}
 
 	&--oam {
-		.work-card__image {
+		.project-card__image {
 			top: 10%;
 			left: 50%;
 			background-repeat: no-repeat;
@@ -87,7 +87,7 @@ $text-timing: 500ms;
 	}
 	
 	&:hover {    
-		.work-card {
+		.project-card {
 			&__text {
 				transform: translateY(0);
 			}

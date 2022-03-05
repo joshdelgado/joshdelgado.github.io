@@ -32,7 +32,7 @@ github_username:  jekyll
 # Build settings
 theme: minima
 collections:
-  work:
+  project:
     output: true
     permalink: /:collection/:title
 plugins:

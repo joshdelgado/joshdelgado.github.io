@@ -1,7 +1,7 @@
 ---
 title: Florida Beach Weddings
 cardImage: /assets/img/florida-beach-weddings/florida-beach-weddings.png
-layout: work
+layout: project
 tools:
 - HTML
 - CSS

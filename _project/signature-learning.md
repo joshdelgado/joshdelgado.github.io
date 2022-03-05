@@ -1,8 +1,8 @@
 ---
-title: Abe.ai
-layout: work
+title: Signature Learning
+layout: project
 tools:
-- HTML
+- Wordpress
 - CSS
 - JS
 jsarr:
@@ -13,4 +13,4 @@ Here I write a bunch of stuff about how this was built and a bit on the tools I 
 
 - probably not
 
-![Abe.ai Screenshot 2017](/assets/img/abe-ai.jpg)
+![Signature Learning Screenshot 2017](/assets/img/siglearn-home.jpg)

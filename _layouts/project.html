@@ -3,22 +3,22 @@
 <body class="body">
 	{% include header.html %}
 	<main class="main">
-		<div class="main__inner work-page work-page--alt">
-			<div class="work-page__hero">
-				<h1 class="work-page__title">
+		<div class="main__inner project project--alt">
+			<div class="project__hero">
+				<h1 class="project__title">
 					<span>{{ page.title }}</span>
 				</h1>
-				<ul class="work-page__tool-list">
+				<ul class="project__tool-list">
 					{% for tool in page.tools %}
-					<li class="work-page__tool-list-item">{{ tool }}</li>
+					<li class="project__tool-list-item">{{ tool }}</li>
 					{% endfor %}
 				</ul>
 			</div>
-			<div class="work-page__content">
+			<div class="project__content">
 				{{ content }}
 			</div>
 		</div>
-		<div class="work-page__gif">
+		<div class="project__gif">
 			<img src="/assets/gif/blob.gif" />
 		</div>
 		{% include section-contact.html %}

@@ -1,6 +1,6 @@
 ---
 title: This Website
-layout: work
+layout: project
 tools:
 - HTML
 - CSS

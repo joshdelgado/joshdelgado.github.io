@@ -2,7 +2,7 @@
 title: OAM
 alias: oam
 cardImage: /assets/img/oam-init-step.png
-layout: work
+layout: project
 display: true
 tools:
 - Figma 
