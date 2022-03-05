@@ -29,12 +29,12 @@ $box-shadow-hover: 0px 10px 12px 0 #00000025;
     z-index: 3;
     width: $desktop-width;
     height: $desktop-height;
-    // background-color: $screen-color-desktop;
 	background-image: url(http://www.fillmurray.com/800/450);
 	background-size: cover;
     border: 12px solid $black;
     border-radius: 8px;
     box-shadow: $box-shadow;
+	overflow: hidden;
   }
   
   &__stand {
@@ -68,7 +68,6 @@ $box-shadow-hover: 0px 10px 12px 0 #00000025;
     height: 100%;
     width: 100%;
     border-radius: 2px;
-    // background-color: $screen-color-tablet;
 	background-image: url(http://www.fillmurray.com/276/340);
 	background-size: cover;
   }
@@ -102,7 +101,6 @@ $box-shadow-hover: 0px 10px 12px 0 #00000025;
     height: 100%;
     width: 100%;
     border-radius: calc(#{$phone-border-radius} * 0.6667);
-    // background-color: $screen-color-iphone;
 	background-image: url(http://www.fillmurray.com/134/291);
 	background-size: cover;
   }

@@ -1,6 +1,7 @@
 ---
 title: Internal Angular Library
-# cardImage: /assets/img/oam-init-step.png
+alias: internal-angular-library
+cardImage: /assets/img/angular-common/colors.svg
 layout: work
 display: true
 tools:
@@ -15,7 +16,7 @@ jsarr:
 	<div class="project-section__inner">
 		<div class="flex-row flex-row--container flex-row--align-center">
 			<div class="flex-row__column flex-row__column--6">
-				<span class="project-section__img" markdown="1">![Buttons](/assets/img/angular-common/Colors.svg)</span>
+				<span class="project-section__img" markdown="1">![Buttons](/assets/img/angular-common/typography.svg)</span>
 			</div>
 			<!-- <div class="flex-row__column flex-row__column--7">
 				<video width="100%" autoplay muted loop playsinline>
@@ -89,19 +90,19 @@ jsarr:
 				<p>Defined essential components, styles, and services</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<span class="project-section__img project-section__img--1" markdown="1">![Buttons](/assets/img/angular-common/Fields-Controls.svg)</span>
+				<span class="project-section__img project-section__img--1" markdown="1">![Buttons](/assets/img/angular-common/fields-controls.svg)</span>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<p>Went through all the applications gathering colors to create a list. Consolidated the blues down to a consistent color palette. Added those colors to the library so developers no longer needed to define colors other than in edge cases. - colors and old colors</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<span class="project-section__img project-section__img--2" markdown="1">![Buttons](/assets/img/angular-common/Colors.svg)</span>
+				<span class="project-section__img project-section__img--2" markdown="1">![Buttons](/assets/img/angular-common/colors.svg)</span>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<p>Identified common layouts elements (header, footer, search templates) and patterns (buttons, cards, navigation elements) across apps and abstracted them into the library.</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<span class="project-section__img project-section__img--3" markdown="1">![Buttons](/assets/img/angular-common/Navigations.svg)</span>
+				<span class="project-section__img project-section__img--3" markdown="1">![Buttons](/assets/img/angular-common/menu.svg)</span>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<p markdown="1">Implemented [Block Element Modifier](http://getbem.com/) naming conventions - get a screenshot of code</p>
@@ -113,7 +114,7 @@ jsarr:
 				<p markdown="1">Used [Compodoc](https://compodoc.app/) to generate documentation for components and services</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<span class="project-section__img project-section__img--4" markdown="1">![Buttons](/assets/img/compodoc.png)</span>
+				<span class="project-section__img project-section__img--4" markdown="1">![Buttons](/assets/img/angular-common/compodoc.png)</span>
 			</div>
 			<div class="flex-row__column">
 				<p>Abstracted services</p>
@@ -139,8 +140,9 @@ jsarr:
 
 
 <span markdown="1">
-![Buttons](/assets/img/angular-common/Typography.svg)
-![Buttons](/assets/img/angular-common/Icons.svg)
-![Buttons](/assets/img/angular-common/Navigations.svg)
-![Buttons](/assets/img/angular-common/Menu.svg)
+![Buttons](/assets/img/angular-common/colors.svg)
+![Buttons](/assets/img/angular-common/typography.svg)
+![Buttons](/assets/img/angular-common/icons.svg)
+![Buttons](/assets/img/angular-common/navigations.svg)
+![Buttons](/assets/img/angular-common/menu.svg)
 </span>

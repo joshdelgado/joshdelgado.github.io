@@ -1,5 +1,6 @@
 ---
 title: OAM
+alias: oam
 cardImage: /assets/img/oam-init-step.png
 layout: work
 display: true
@@ -17,13 +18,6 @@ jsarr:
 	<div class="project-section__inner">
 		<div class="flex-row flex-row--container">
 			<span class="flex-row__column flex-row__column--6" markdown="1">![Florida Beach Weddings - Shopify - 2022](/assets/img/oam-init-step.png)</span>
-			<!-- <div class="flex-row__column flex-row__column--7">
-				<video width="100%" autoplay muted loop playsinline>
-					<source src="/assets/video/oam/oam-guided-flow-from-dash-loop.webm" type="video/webm">
-					<source src="/assets/video/oam/oam-guided-flow-from-dash-loop.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-			</div> -->
 			<div class="flex-row__column flex-row__column--5 project-section__intro">
 				<div>
 					<p class="project-section__summary">An Angular 11 application living inside a legacy Java application to guide users through common functions of the Owner Account Management portal.</p>
@@ -74,7 +68,13 @@ jsarr:
 			<div class="flex-row__column">
 				<div class="project-section__mockups">
 					<div class="desktop">
-						<div class="desktop__screen"></div>
+						<div class="desktop__screen">
+							<video width="100%" autoplay muted loop playsinline>
+								<source src="/assets/video/oam/oam-guided-flow-from-dash-loop.webm" type="video/webm">
+								<source src="/assets/video/oam/oam-guided-flow-from-dash-loop.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
 						<div class="desktop__stand"></div>
 						<div class="desktop__base"></div>
 					</div>

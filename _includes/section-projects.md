@@ -7,8 +7,10 @@
 			{% assign workToDisplay = site.work | where: "display", "true" %}
 			<!-- {% for work in site.work limit: 6 %} display 6 {% endfor %}-->
 			{% for work in workToDisplay %}
-			<div class="work-card" {% if work.cardImage %} style="background-image: url({{ work.cardImage }})" {% endif
-				%}>
+			<div class="work-card work-card--{{work.alias}}"> 
+				{% if work.cardImage %}
+					<div class="work-card__image" style="background-image: url({{ work.cardImage }})"></div>
+				{% endif %}
 				<a class="work-card__text" href="{{ work.url | prepend: site.baseurl }}">
 					<h2 class="work-card__title">{{ work.title }}</h2>
 					<span class="work-card__link fa fa-caret-right"></span>
