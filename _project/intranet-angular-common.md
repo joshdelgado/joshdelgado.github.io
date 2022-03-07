@@ -97,12 +97,12 @@ jsarr:
 				</span>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<p>Went through all the applications gathering colors to create a list. Consolidated the blues down to a consistent color palette. Added those colors to the library so developers no longer needed to define colors other than in edge cases. - colors and old colors</p>
-			</div>
-			<div class="flex-row__column flex-row__column--6">
 				<span class="project-section__img project-section__img--2">
 					<span markdown="1">![Buttons](/assets/img/angular-common/colors.svg)</span>
 				</span>
+			</div>
+			<div class="flex-row__column flex-row__column--6">
+				<p>Went through all the applications gathering colors to create a list. Consolidated the blues down to a consistent color palette. Added those colors to the library so developers no longer needed to define colors other than in edge cases. - colors and old colors</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<p>Identified common layouts elements (header, footer, search templates) and patterns (buttons, cards, navigation elements) across apps and abstracted them into the library.</p>
@@ -113,10 +113,10 @@ jsarr:
 				</span>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<p markdown="1">Implemented [Block Element Modifier](http://getbem.com/) naming conventions - get a screenshot of code</p>
+				{% include code.html %}
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				{% include code.html %}
+				<p markdown="1">Implemented [Block Element Modifier](http://getbem.com/) naming conventions - get a screenshot of code</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<p markdown="1">Used [Compodoc](https://compodoc.app/) to generate documentation for components and services</p>
@@ -147,11 +147,11 @@ jsarr:
 	</div>
 </section>
 
-
+<!-- 
 <span markdown="1">
 ![Buttons](/assets/img/angular-common/colors.svg)
 ![Buttons](/assets/img/angular-common/typography.svg)
 ![Buttons](/assets/img/angular-common/icons.svg)
 ![Buttons](/assets/img/angular-common/navigations.svg)
 ![Buttons](/assets/img/angular-common/menu.svg)
-</span>
+</span> -->
