@@ -16,7 +16,9 @@ jsarr:
 	<div class="project-section__inner">
 		<div class="flex-row flex-row--container flex-row--align-center">
 			<div class="flex-row__column flex-row__column--6">
-				<span class="project-section__img" markdown="1">![Buttons](/assets/img/angular-common/typography.svg)</span>
+				<span class="project-section__img">
+					<span markdown="1">![Buttons](/assets/img/angular-common/typography.svg)</span>
+				</span>
 			</div>
 			<!-- <div class="flex-row__column flex-row__column--7">
 				<video width="100%" autoplay muted loop playsinline>
@@ -90,19 +92,25 @@ jsarr:
 				<p>Defined essential components, styles, and services</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<span class="project-section__img project-section__img--1" markdown="1">![Buttons](/assets/img/angular-common/fields-controls.svg)</span>
+				<span class="project-section__img project-section__img--1">
+					<span markdown="1">![Buttons](/assets/img/angular-common/fields-controls.svg)</span>
+				</span>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<p>Went through all the applications gathering colors to create a list. Consolidated the blues down to a consistent color palette. Added those colors to the library so developers no longer needed to define colors other than in edge cases. - colors and old colors</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<span class="project-section__img project-section__img--2" markdown="1">![Buttons](/assets/img/angular-common/colors.svg)</span>
+				<span class="project-section__img project-section__img--2">
+					<span markdown="1">![Buttons](/assets/img/angular-common/colors.svg)</span>
+				</span>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<p>Identified common layouts elements (header, footer, search templates) and patterns (buttons, cards, navigation elements) across apps and abstracted them into the library.</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<span class="project-section__img project-section__img--3" markdown="1">![Buttons](/assets/img/angular-common/menu.svg)</span>
+				<span class="project-section__img project-section__img--3">
+					<span markdown="1">![Buttons](/assets/img/angular-common/menu.svg)</span>
+				</span>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<p markdown="1">Implemented [Block Element Modifier](http://getbem.com/) naming conventions - get a screenshot of code</p>
@@ -114,7 +122,8 @@ jsarr:
 				<p markdown="1">Used [Compodoc](https://compodoc.app/) to generate documentation for components and services</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<span class="project-section__img project-section__img--4" markdown="1">![Buttons](/assets/img/angular-common/compodoc.png)</span>
+				<span class="project-section__img project-section__img--no-scroll" markdown="1">![Buttons](/assets/img/angular-common/compodoc.png)
+				</span>
 			</div>
 			<div class="flex-row__column">
 				<p>Abstracted services</p>

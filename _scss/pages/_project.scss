@@ -76,7 +76,7 @@
 	}
 
 	&--alt {
-		.work-page {
+		.project {
 			&__title {
 				position: relative;
 				display: flex;
@@ -92,6 +92,8 @@
 		}
 	}
 }
+
+$box-shadow-img: 0 0 16px 0 #00000030;
 
 .project-section {
 	position: relative;
@@ -157,20 +159,58 @@
 	&__img {
 		display: block;
 		position: relative;
-		max-height: 600px;
-		overflow: hidden;
+		z-index: 1;
+		height: 600px;
+		margin: 8px;
 		border-radius: 8px;
-		// left: -5rem;
+		overflow: visible;
+
+		span {
+			position: absolute;
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			right: 0;
+			overflow: auto;
+			border-radius: 8px;
+			box-shadow: $box-shadow-img;
+		}
 
 		img {
 			display: inherit;
 			border-radius: 8px;
+			cursor: url(/assets/img/cursor/cursor-scroll-v.png), pointer;
 		}
 
-		&--1 {}
-		&--2 {}
-		&--3 {}
-		&--4 {}
+		&:after {
+			content: '';
+			position: absolute;
+			top: -8px;
+			left: -8px;
+			z-index: -1;
+			height: calc(100% + 16px);
+			width: calc(100% + 16px);
+			border-radius: 8px;
+			background-color: $gray;
+			background-image: linear-gradient(to bottom, #0fffc1 0%, #7e0fff 100%);
+			box-shadow: $box-shadow-img;
+		}
+
+		::-webkit-scrollbar {
+			width: 0;
+			background: transparent;
+		}
+
+		&--no-scroll {
+			z-index: 1;
+			@include box-shadow();
+			height: auto;
+
+			img {
+				box-shadow: $box-shadow-img;
+				cursor: auto;
+			}
+		}
 
 		&--fixed {
 			// position: absolute;
@@ -215,5 +255,33 @@
 	
 	&:nth-child(5){
 		background-color: #00000010;
+	}
+}
+
+.highlighter-rouge {
+	display: block;
+	position: relative;
+	z-index: 1;
+	margin: 8px;
+	border-radius: 8px;
+
+	pre {
+		margin: 0;
+		box-shadow: $box-shadow-img;
+		pointer-events: none;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: -8px;
+		left: -8px;
+		z-index: -1;
+		height: calc(100% + 16px);
+		width: calc(100% + 16px);
+		border-radius: 8px;
+		background-color: $gray;
+		background-image: linear-gradient(to bottom, #0fffc1 0%, #7e0fff 100%);
+		box-shadow: $box-shadow-img;
 	}
 }
