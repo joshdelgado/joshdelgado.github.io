@@ -2,12 +2,12 @@
 	<div class="section__inner">
 		<h1 class="section__title">Read My Thoughts</h1>
 		<p class="section__subtitle">Feel free to skip this section if you're psychic</p>
-		<div class="section__works">
+		<div class="section__projects">
 			{% for post in site.posts limit: 3 %}
-			<div class="work-card">
-				<a class="work-card__text" href="{{ post.url | prepend: site.baseurl }}">
-					<h2 class="work-card__title">{{ post.title }}</h2>
-					<span class="work-card__link fa fa-caret-right"></span>
+			<div class="project-card">
+				<a class="project-card__text" href="{{ post.url | prepend: site.baseurl }}">
+					<h2 class="project-card__title">{{ post.title }}</h2>
+					<span class="project-card__link fa fa-caret-right"></span>
 				</a>
 			</div>
 			{% endfor %}

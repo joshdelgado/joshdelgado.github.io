@@ -14,34 +14,8 @@ jsarr:
 
 <section class="project-section project-section--intro">
 	<div class="project-section__inner">
-		<!-- <div class="flex-row flex-row--container">
-			<div class="flex-row__column flex-row__column--6">
-				<span class="project-section__img">
-					<span markdown="1">![Buttons](/assets/img/angular-common/typography.svg)</span>
-				</span>
-			</div>
-			<div class="flex-row__column flex-row__column--6 project-section__intro">
-				<div class="project-section__intro-text">
-					<p class="project-section__summary">An Angular library for all projects made for Westgate.</p>
-				</div>
-				<ul class="flex-row__column project-section__team">
-					<li class="project-section__team-member">
-						<strong>Designer</strong>
-						<span>Jose De La Vega</span>
-					</li>
-					<li class="project-section__team-member">
-						<strong>Developers</strong>
-						<span>Josh Delgado, Terry Davies</span>
-					</li>
-					<li class="project-section__team-member">
-						<strong>Client</strong>
-						<span>Westgate Resorts</span>
-					</li>
-				</ul>
-			</div>
-		</div> -->
 		<div class="project-section__intro-text">
-			<p class="project-section__summary">An Angular library for all projects made for Westgate.</p>
+			<p class="project-section__summary">A common-code library for all Angular projects made for Westgate. We  upgraded from AngularJS to Angular 7 and later upgraded to Angular 11.</p>
 		</div>
 		<ul class="flex-row__column project-section__team project-section__team--inline">
 			<li class="project-section__team-member">
@@ -80,6 +54,7 @@ jsarr:
 		<h2 class="project-section__title">The Project</h2>
 		<div class="flex-row flex-row--container">
 			<div class="flex-row__column">
+			<p>Unfortunately, the code repository is private by corporate and all repositories before 2020 are lost. But below are some screenshots and Figma images to illustrate what was done.</p>
 				<div class="project-section__mockups">
 					<div class="desktop">
 						<div class="desktop__screen"></div>

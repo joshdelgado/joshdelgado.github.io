@@ -4,6 +4,30 @@ $green: #4EA701;
 $gray: #90918C;
 $white: #FFFFFF;
 
+$color1: #2A484E;
+$color2: #377375;
+$color3: #A8D8CD;
+$color4: #DDEFE3;
+$color5: #CE4A50;
+
+$color1: #040c18;
+$color2: #19394b;
+$color3: #1e132c;
+$color4: #4b7d97;
+$color5: #a1afbd;
+
+$color1: #2A484E;
+$color2: #377375;
+$color3: #A8D8CD;
+$color4: #DDEFE3;
+$color5: #CE4A50;
+
+$theme-background: darken($color1, 15%);
+$theme-background2: $color1;
+$theme-text: $color4;
+$theme-accent: $color3;
+$theme-heading: $color4;
+
 @import 'vendors/sass-code-highlight/monokai.scss';
 
 * {
@@ -19,12 +43,12 @@ html {
 .body {
 	position: relative;
 	min-height: 100vh;
-	background-color: $blue;
+	background-color: $theme-background2;
 	overflow-x: hidden;
 	transition: all 350ms ease;
 
 	&__light-mode {
-		background-color: $navy;
+		background-color: $theme-background;
 
 		.section {
 			&__title,
@@ -35,33 +59,33 @@ html {
 		}
 
 		.header {
-			background-color: $blue;
+			background-color: $theme-background2;
 		}
 
 		.footer {
-			background-color: $blue;
+			background-color: $theme-background2;
 
 			&__text {
-				color: $navy;
+				color: $theme-background;
 			}
 
 			&:before {
-				border-top: solid 100px $navy;
-				border-left: solid 50vw $blue;
-				border-right: solid 50vw $blue;
+				border-top: solid 100px $theme-background;
+				border-left: solid 50vw $theme-background2;
+				border-right: solid 50vw $theme-background2;
 			}
 		}
 	}
 }
 
 a {
-	color: $green;
+	color: $theme-accent;
+}
+
+p {
+	line-height: 1.35;
 }
 
 pre {
 	padding: 1rem;
-}
-
-.highlight {
-	border-radius: 8px;
 }

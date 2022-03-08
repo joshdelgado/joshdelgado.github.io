@@ -7,7 +7,6 @@
 		margin-top: 66px;
 		min-height: 320px;
 		background-color: #111;
-		border-bottom: 2px solid $navy;
 	}
 
 	&__title {
@@ -16,8 +15,8 @@
 		font-size: 48px;
 		font-weight: 700;
 		letter-spacing: 1px;
-		color: $white;
-		text-shadow: 1px 1px 1px $navy;
+		color: $theme-text;
+		text-shadow: 1px 1px 1px $theme-background;
 	}
 
 	&__tool-list {
@@ -33,14 +32,12 @@
 		display: inline-block;
 		text-align: center;
 		font-size: 14px;
-		color: $white;
+		color: $theme-text;
 	}
 
 	&__content {
-		background-color: $blue;
-		color: $white;
-		// @include container(large);
-		// padding-top: 4rem;
+		background-color: $theme-background2;
+		color: $theme-text;
 		padding-bottom: 4rem;
 
 		p {
@@ -55,13 +52,6 @@
 				}
 			}
 		}
-
-		// img {
-		// 	display: block;
-		// 	max-width: 520px;
-		// 	margin: 0 auto;
-		// 	padding: 1rem 0;
-		// }
 	}
 
 	&__gif {
@@ -97,7 +87,7 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 .project-section {
 	position: relative;
 	// min-height: 80vh;
-	border-bottom: 2px solid $blue;
+	border-bottom: 2px solid $theme-background2;
 
 	&__inner {
 		// @include container(large);
@@ -131,6 +121,9 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 	&__summary {
 		text-align: center;
 		font-size: 36px !important; 
+		line-height: 1.5;
+		max-width: 860px;
+		margin: 0 auto;
 	}
 
 	&__team {
@@ -200,7 +193,6 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 			height: calc(100% + 16px);
 			width: calc(100% + 16px);
 			border-radius: 8px;
-			background-color: $gray;
 			background-image: linear-gradient(to bottom, #0fffc1 0%, #7e0fff 100%);
 			box-shadow: $box-shadow-img;
 		}
@@ -222,12 +214,7 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 		}
 
 		&--fixed {
-			// position: absolute;
-			// left: -5vw;
-			// bottom: -10vh;
-			// top: 50%;
-			// transform: translateY(-50%);
-
+			
 			img {
 				max-height: 65vh;
 			}
@@ -265,6 +252,7 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 .project-section--intro {
 	.project-section {
 		&__inner {
+			@include container(large);
 			padding-bottom: 0;
 		}
 		&__intro-text {
@@ -272,7 +260,6 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 		}
 		&__img {
 			margin: 0 auto;
-			max-width: 1440px;
 			position: relative;
 			bottom: -0.5rem;
 
