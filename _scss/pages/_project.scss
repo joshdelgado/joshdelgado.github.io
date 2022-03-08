@@ -1,5 +1,4 @@
- 
-  .project {
+.project {
 	&__hero {
 		position: relative;
 		display: flex;
@@ -115,17 +114,27 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 		margin: 0;
 	}
 
-	&__summary {
-		font-size: 36px !important; 
-	}
-
 	&__intro {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 	}
 
+	&__intro-text {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	} 
+
+	&__summary {
+		text-align: center;
+		font-size: 36px !important; 
+	}
+
 	&__team {
+
 		&--inline{
 			display: flex;
 			justify-content: center;
@@ -148,7 +157,7 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 		}
 		span {
 			font-weight: 700;
-			font-size: 24px;
+			font-size: 24px; 
 		}
 
 		&:last-child {
@@ -225,11 +234,6 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 		}
 	}
 
-	&__problem {
-		display: flex;
-		justify-content: space-between;
-	}
-
 	&__mockups {
 		display: flex;
 		justify-content: center;
@@ -258,30 +262,45 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 	}
 }
 
-.highlighter-rouge {
-	display: block;
-	position: relative;
-	z-index: 1;
-	margin: 8px;
-	border-radius: 8px;
+.project-section--intro {
+	.project-section {
+		&__inner {
+			padding-bottom: 0;
+		}
+		&__intro-text {
+			padding: 5rem 0;
+		}
+		&__img {
+			margin: 0 auto;
+			max-width: 1440px;
+			position: relative;
+			bottom: -0.5rem;
 
-	pre {
-		margin: 0;
-		box-shadow: $box-shadow-img;
-		pointer-events: none;
-	}
-
-	&:after {
-		content: '';
-		position: absolute;
-		top: -8px;
-		left: -8px;
-		z-index: -1;
-		height: calc(100% + 16px);
-		width: calc(100% + 16px);
-		border-radius: 8px;
-		background-color: $gray;
-		background-image: linear-gradient(to bottom, #0fffc1 0%, #7e0fff 100%);
-		box-shadow: $box-shadow-img;
+			img {
+				width: 100%;
+			}
+		}
 	}
 }
+
+.project-section--problem {}
+.project-section--project {}
+.project-section--process {
+	.project-section {}
+	.flex-row__column {
+		padding: 3rem 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+
+		pre {
+			text-align: left;
+		}
+
+		p {
+			font-size: 32px;
+		}
+	}
+}
+.project-section--conclusion {}

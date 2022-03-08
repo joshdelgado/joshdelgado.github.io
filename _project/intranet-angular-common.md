@@ -12,44 +12,57 @@ jsarr:
 - js/main.js
 ---
 
-<section class="project-section">
+<section class="project-section project-section--intro">
 	<div class="project-section__inner">
-		<div class="flex-row flex-row--container flex-row--align-center">
+		<!-- <div class="flex-row flex-row--container">
 			<div class="flex-row__column flex-row__column--6">
 				<span class="project-section__img">
 					<span markdown="1">![Buttons](/assets/img/angular-common/typography.svg)</span>
 				</span>
 			</div>
-			<!-- <div class="flex-row__column flex-row__column--7">
-				<video width="100%" autoplay muted loop playsinline>
-					<source src="/assets/video/oam/oam-guided-flow-from-dash-loop.webm" type="video/webm">
-					<source src="/assets/video/oam/oam-guided-flow-from-dash-loop.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-			</div> -->
-			<div class="flex-row__column flex-row__column--5 project-section__intro">
-				<div>
+			<div class="flex-row__column flex-row__column--6 project-section__intro">
+				<div class="project-section__intro-text">
 					<p class="project-section__summary">An Angular library for all projects made for Westgate.</p>
 				</div>
+				<ul class="flex-row__column project-section__team">
+					<li class="project-section__team-member">
+						<strong>Designer</strong>
+						<span>Jose De La Vega</span>
+					</li>
+					<li class="project-section__team-member">
+						<strong>Developers</strong>
+						<span>Josh Delgado, Terry Davies</span>
+					</li>
+					<li class="project-section__team-member">
+						<strong>Client</strong>
+						<span>Westgate Resorts</span>
+					</li>
+				</ul>
 			</div>
-			<ul class="flex-row__column project-section__team project-section__team--inline">
-				<li class="project-section__team-member">
-					<strong>Designer</strong>
-					<span>Jose De La Vega</span>
-				</li>
-				<li class="project-section__team-member">
-					<strong>Developers</strong>
-					<span>Josh Delgado, Terry Davies</span>
-				</li>
-				<li class="project-section__team-member">
-					<strong>Client</strong>
-					<span>Westgate Resorts</span>
-				</li>
-			</ul>
+		</div> -->
+		<div class="project-section__intro-text">
+			<p class="project-section__summary">An Angular library for all projects made for Westgate.</p>
 		</div>
+		<ul class="flex-row__column project-section__team project-section__team--inline">
+			<li class="project-section__team-member">
+				<strong>Designer</strong>
+				<span>Jose De La Vega</span>
+			</li>
+			<li class="project-section__team-member">
+				<strong>Developers</strong>
+				<span>Josh Delgado, Terry Davies</span>
+			</li>
+			<li class="project-section__team-member">
+				<strong>Client</strong>
+				<span>Westgate Resorts</span>
+			</li>
+		</ul>
+		<span class="project-section__img">
+			<span markdown="1">![Buttons](/assets/img/angular-common/navigations.svg)</span>
+		</span>
 	</div>
 </section>
-<section class="project-section">
+<section class="project-section project-section--problem">
 	<div class="project-section__inner">
 		<h2 class="project-section__title">The Problem(s)</h2>
 		<div class="flex-row flex-row--container">
@@ -62,7 +75,7 @@ jsarr:
 		</div>
 	</div>
 </section>
-<section class="project-section">
+<section class="project-section project-section--project">
 	<div class="project-section__inner">
 		<h2 class="project-section__title">The Project</h2>
 		<div class="flex-row flex-row--container">
@@ -84,7 +97,7 @@ jsarr:
 		</div>
 	</div>
 </section>
-<section class="project-section">
+<section class="project-section project-section--process">
 	<div class="project-section__inner">
 		<h2 class="project-section__title">The Process</h2>
 		<div class="flex-row flex-row--container">
@@ -92,12 +105,12 @@ jsarr:
 				<p>Defined essential components, styles, and services</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<span class="project-section__img project-section__img--1">
+				<span class="project-section__img">
 					<span markdown="1">![Buttons](/assets/img/angular-common/fields-controls.svg)</span>
 				</span>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<span class="project-section__img project-section__img--2">
+				<span class="project-section__img">
 					<span markdown="1">![Buttons](/assets/img/angular-common/colors.svg)</span>
 				</span>
 			</div>
@@ -108,7 +121,7 @@ jsarr:
 				<p>Identified common layouts elements (header, footer, search templates) and patterns (buttons, cards, navigation elements) across apps and abstracted them into the library.</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<span class="project-section__img project-section__img--3">
+				<span class="project-section__img">
 					<span markdown="1">![Buttons](/assets/img/angular-common/menu.svg)</span>
 				</span>
 			</div>
@@ -132,7 +145,7 @@ jsarr:
 		</div>
 	</div>
 </section>
-<section class="project-section">
+<section class="project-section project-section--conclusion">
 	<div class="project-section__inner">
 		<h2 class="project-section__title">Conclusion</h2>
 		<div class="flex-row flex-row--container">
