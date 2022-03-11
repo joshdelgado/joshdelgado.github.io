@@ -39,13 +39,19 @@ jsarr:
 <section class="project-section project-section--problem">
 	<div class="project-section__inner">
 		<h2 class="project-section__title">The Problem(s)</h2>
-		<div class="flex-row flex-row--container">
-			<div class="flex-row__column">
+		<div class="flex-row flex-row--container flex-row--justify-center">
+			<div class="flex-row__column flex-row__column--8">
+				<p markdown="1">Have you ever played one of those "spot the difference" games from [Highlights Magazine](https://pbs.twimg.com/media/DNZrTQ9UIAYn8eP.jpg)? That's what it was like developing our internal applications before we created this library. Sure, we had a common library, but it was maintained the same way an 6 year old maintains a fish tank: poorly and only when someone in charge noticed the fish were dying.</p> 
+				<p markdown="1">Some components were treated as a StackOverflow examples to be [copypasta](https://en.wikipedia.org/wiki/Copypasta)-ed. Others began as application-specific components but later were copied into a new application instead of abstracted into the library, leaving us with two (or more) snippets to maintain in parallel. And what was most frustrating for our designers, the few blues in our brand had evolved into a mess of (no joke) 37 slight blue variations.</p>
+				<p>All this inconsistency led to increased development times, development of redundant code, and an eerie sense of discord when navigating within our Intranet.</p>
+				<p>Unfortunately, the code repository is private by corporate decree and all legacy repositories before 2020 are lost. I've included select imagery below to help illustrate what was done.</p>
+			</div>
+			<!-- <div class="flex-row__column">
 				<p>There was a very limited library for angular components across 30+ angularJS apps. To copy a pattern for a new angular app, the process was to copy the code from an existing app and place it in the new one.</p>
 				<p>All sites used blue but few sites used the same blues.</p>
 				<p>A lot of dev time was spent creating things that already existed leading to review comments of "this already exists, go here and copy the code"</p>
 				<p>The Goal: To reduce the amount of duplicative code written, create a consistent UI/UX through the entire Intranet, to create basic documentation.</p>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </section>
@@ -54,7 +60,6 @@ jsarr:
 		<h2 class="project-section__title">The Project</h2>
 		<div class="flex-row flex-row--container">
 			<div class="flex-row__column">
-			<p>Unfortunately, the code repository is private by corporate and all repositories before 2020 are lost. But below are some screenshots and Figma images to illustrate what was done.</p>
 				<div class="project-section__mockups">
 					<div class="desktop">
 						<div class="desktop__screen"></div>
@@ -76,8 +81,11 @@ jsarr:
 	<div class="project-section__inner">
 		<h2 class="project-section__title">The Process</h2>
 		<div class="flex-row flex-row--container">
+			<div class="flex-row__column">
+				<p>All applications were written in AngularJS so the library, and all aplications, were upgraded to Angular 7 and later to Angular 11</p>
+			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<p>Defined essential components, styles, and services</p>
+				<p>We defined essential components, styles, and services across apps such as form inputs.</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<span class="project-section__img">
@@ -85,37 +93,41 @@ jsarr:
 				</span>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
+				{% include code2.html %}
+			</div>
+			<div class="flex-row__column flex-row__column--6">
+				<p>Created flexible abstractions of our most-used components</p>
+				<!-- <p>Abstracted commonly used services and components to reduce redundancy.</p> -->
+			</div>
+			<div class="flex-row__column flex-row__column--6">
+				<p>Created a clear style guide and consolidated colors into a reasonable collection of blues, neutrals, and accents. Defined variables for our colors and other brand styles. And lastly, tested our color combinations for ADA compliance.</p>
+			</div>
+			<div class="flex-row__column flex-row__column--6">
 				<span class="project-section__img">
 					<span markdown="1">![Buttons](/assets/img/angular-common/colors.svg)</span>
 				</span>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<p>Went through all the applications gathering colors to create a list. Consolidated the blues down to a consistent color palette. Added those colors to the library so developers no longer needed to define colors other than in edge cases. - colors and old colors</p>
-			</div>
-			<div class="flex-row__column flex-row__column--6">
-				<p>Identified common layouts elements (header, footer, search templates) and patterns (buttons, cards, navigation elements) across apps and abstracted them into the library.</p>
-			</div>
-			<div class="flex-row__column flex-row__column--6">
 				<span class="project-section__img">
-					<span markdown="1">![Buttons](/assets/img/angular-common/menu.svg)</span>
+					<!-- <span markdown="1">![Buttons](/assets/img/angular-common/menu.svg)</span> -->
+					<span markdown="1">![Buttons](/assets/img/angular-common/buttons.svg)</span>
 				</span>
+			</div>
+			<div class="flex-row__column flex-row__column--6">
+				<p>Identified and abstracted frequently used components, elements, and patterns across applications</p>
+			</div>
+			<div class="flex-row__column flex-row__column--6">
+				<p markdown="1">Converted all style declarations to use the [Block Element Modifier](http://getbem.com/) naming convention which greatly increased developer orientation within projects</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				{% include code.html %}
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<p markdown="1">Implemented [Block Element Modifier](http://getbem.com/) naming conventions - get a screenshot of code</p>
-			</div>
-			<div class="flex-row__column flex-row__column--6">
-				<p markdown="1">Used [Compodoc](https://compodoc.app/) to generate documentation for components and services</p>
-			</div>
-			<div class="flex-row__column flex-row__column--6">
 				<span class="project-section__img project-section__img--no-scroll" markdown="1">![Buttons](/assets/img/angular-common/compodoc.png)
 				</span>
 			</div>
-			<div class="flex-row__column">
-				<p>Abstracted services</p>
-				<p>Upgraded applications from AngularJS to Angular 7 and later to Angular 11 -  no idea</p>
+			<div class="flex-row__column flex-row__column--6">
+				<p markdown="1">Used [Compodoc](https://compodoc.app/) to easily generate basic documentation for components and services</p>
 			</div>
 		</div>
 	</div>
@@ -135,10 +147,9 @@ jsarr:
 	</div>
 </section>
 
-<!-- 
-<span markdown="1">
-![Buttons](/assets/img/angular-common/colors.svg)
-![Buttons](/assets/img/angular-common/typography.svg)
+
+<!-- <span markdown="1">
+![Buttons](/assets/img/angular-common/buttons.svg)
 ![Buttons](/assets/img/angular-common/icons.svg)
 ![Buttons](/assets/img/angular-common/navigations.svg)
 ![Buttons](/assets/img/angular-common/menu.svg)

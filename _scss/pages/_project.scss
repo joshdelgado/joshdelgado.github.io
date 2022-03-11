@@ -84,6 +84,11 @@
 
 $box-shadow-img: 0 0 16px 0 #00000030;
 
+@keyframes float {
+	0% { transform: translateY(0px); }
+	100% { transform: translateY(-4px); }
+}
+
 .project-section {
 	position: relative;
 	// min-height: 80vh;
@@ -184,6 +189,21 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 			cursor: url(/assets/img/cursor/cursor-scroll-v.png), pointer;
 		}
 
+		&:before {
+			content: 'v';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 2;
+			color: #000;
+			font-size: 2rem;
+			font-weight: 900;
+			text-align: center;
+			animation: float 500ms ease 10 alternate;
+			transition: opacity 200ms ease;
+		}
+
 		&:after {
 			content: '';
 			position: absolute;
@@ -195,6 +215,11 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 			border-radius: 8px;
 			background-image: linear-gradient(to bottom, #0fffc1 0%, #7e0fff 100%);
 			box-shadow: $box-shadow-img;
+		}
+
+		&:hover:before {
+			opacity: 0;
+			pointer-events: none;
 		}
 
 		::-webkit-scrollbar {
@@ -210,6 +235,10 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 			img {
 				box-shadow: $box-shadow-img;
 				cursor: auto;
+			}
+
+			&:before {
+				display: none;
 			}
 		}
 

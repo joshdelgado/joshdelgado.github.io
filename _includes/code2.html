@@ -1,0 +1,16 @@
+<div class="language-html highlighter-rouge">
+	<div class="highlight">
+		<pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">(click)=</span><span class="s">"closeModal(null, $event)"</span> <span class="na">class=</span><span class="s">"ac-modal"</span> <span class="na">[ngClass]=</span><span class="s">"modalClass ? 'ac-modal--'+modalClass : ''"</span> <span class="na">*ngIf=</span><span class="s">"showModal"</span>
+     <span class="err">[@</span><span class="na">modalAnimation</span><span class="err">]</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ac-modal__inner"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"ac-modal__title"</span> <span class="na">*ngIf=</span><span class="s">"modalTitle"</span><span class="nt">&gt;&lt;/h2&gt;</span>
+        <span class="nt">&lt;ng-container</span> <span class="na">*ngIf=</span><span class="s">"!loading"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;ng-content&gt;&lt;/ng-content&gt;</span>
+        <span class="nt">&lt;/ng-container&gt;</span>
+        <span class="nt">&lt;mat-spinner</span> <span class="na">class=</span><span class="s">"ac-modal__spinner"</span> <span class="na">diameter=</span><span class="s">"48"</span> <span class="na">*ngIf=</span><span class="s">"loading"</span><span class="nt">&gt;&lt;/mat-spinner&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">*ngIf=</span><span class="s">"allowClose &amp;&amp; !hideClose"</span> <span class="na">class=</span><span class="s">"ac-modal__close"</span> <span class="na">(click)=</span><span class="s">"closeModal(null, $event)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+	</div>
+</div>

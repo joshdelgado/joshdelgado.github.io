@@ -5,6 +5,10 @@
 	margin: 8px;
 	border-radius: 8px;
 
+	> .highlight {
+		overflow-x: auto;
+	}
+
 	pre {
 		margin: 0;
 		box-shadow: $box-shadow-img;
