@@ -135,22 +135,11 @@ jsarr:
 <section class="project-section project-section--conclusion">
 	<div class="project-section__inner">
 		<h2 class="project-section__title">Conclusion</h2>
-		<div class="flex-row flex-row--container">
-			<div class="flex-row__column project-section__intro">
-				<p>Created a scalable and organized framework for angular components</p>
-				<p>Reduced the training time and amount of basic questions from developers new to the project</p>
-				<p>Created a consistent UI and UX between applications</p>
-				<p>Decreased the number of review comments for all angular related tickets</p>
-				<p>Implemented a framework for Angular development where there had been none before.</p>
+		<div class="flex-row flex-row--container flex-row--justify-center">
+			<div class="flex-row__column flex-row__column--8 project-section__intro">
+				<p>Since the company continues to develop new applications with unique needs, this is a living library. But in the time it's been a part of our development cycle the number of basic questions and "this already exists" review comments has greatly decreased. Additionally, the barrier-to-entry knowledge needed to create a well-functioning and on-brand application has gone from a few months to a few weeks.</p>
+				<p>Our internal applications have escaped the uncanny valley and feel like a single cohesive brand.</p>
 			</div>
 		</div>
 	</div>
 </section>
-
-
-<!-- <span markdown="1">
-![Buttons](/assets/img/angular-common/buttons.svg)
-![Buttons](/assets/img/angular-common/icons.svg)
-![Buttons](/assets/img/angular-common/navigations.svg)
-![Buttons](/assets/img/angular-common/menu.svg)
-</span> -->

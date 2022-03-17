@@ -5,7 +5,6 @@ cardImage: /assets/img/oam-init-step.png
 layout: project
 display: true
 tools:
-- Figma 
 - Angular
 - SCSS
 - JSP
