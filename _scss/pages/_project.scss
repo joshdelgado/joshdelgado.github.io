@@ -173,7 +173,12 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 		}
 
 		&:last-child {
+			margin-right: 0;
 			padding-bottom: 0;
+		}
+
+		&:first-child {
+			margin-left: 0;
 		}
 	}
 
@@ -192,7 +197,7 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 			bottom: 0px;
 			left: 0px;
 			right: 0;
-			overflow: auto;
+			overflow: hidden;
 			border-radius: 8px;
 			box-shadow: $box-shadow-img;
 		}
@@ -200,22 +205,6 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 		img {
 			display: inherit;
 			border-radius: 8px;
-			cursor: url(/assets/img/cursor/cursor-scroll-v.png), pointer;
-		}
-
-		&:before {
-			content: 'v';
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			z-index: 2;
-			color: #000;
-			font-size: 2rem;
-			font-weight: 900;
-			text-align: center;
-			animation: float 500ms ease 10 alternate;
-			transition: opacity 200ms ease;
 		}
 
 		&:after {
@@ -231,16 +220,6 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 			box-shadow: $box-shadow-img;
 		}
 
-		&:hover:before {
-			opacity: 0;
-			pointer-events: none;
-		}
-
-		::-webkit-scrollbar {
-			width: 0;
-			background: transparent;
-		}
-
 		&--no-scroll {
 			z-index: 1;
 			@include box-shadow();
@@ -249,10 +228,6 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 			img {
 				box-shadow: $box-shadow-img;
 				cursor: auto;
-			}
-
-			&:before {
-				display: none;
 			}
 		}
 

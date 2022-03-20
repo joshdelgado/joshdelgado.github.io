@@ -46,12 +46,6 @@ jsarr:
 				<p>All this inconsistency led to increased development times, development of redundant code, and an eerie sense of discord when navigating within our Intranet.</p>
 				<p>Unfortunately, the code repository is private by corporate decree and all legacy repositories before 2020 are lost. I've included select imagery below to help illustrate what was done.</p>
 			</div>
-			<!-- <div class="flex-row__column">
-				<p>There was a very limited library for angular components across 30+ angularJS apps. To copy a pattern for a new angular app, the process was to copy the code from an existing app and place it in the new one.</p>
-				<p>All sites used blue but few sites used the same blues.</p>
-				<p>A lot of dev time was spent creating things that already existed leading to review comments of "this already exists, go here and copy the code"</p>
-				<p>The Goal: To reduce the amount of duplicative code written, create a consistent UI/UX through the entire Intranet, to create basic documentation.</p>
-			</div> -->
 		</div>
 	</div>
 </section>
@@ -109,7 +103,6 @@ jsarr:
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<span class="project-section__img">
-					<!-- <span markdown="1">![Buttons](/assets/img/angular-common/menu.svg)</span> -->
 					<span markdown="1">![Buttons](/assets/img/angular-common/buttons.svg)</span>
 				</span>
 			</div>
