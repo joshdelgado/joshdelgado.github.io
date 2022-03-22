@@ -1,0 +1,91 @@
+<div class="multi-code">
+	<div class="multi-code__options">
+		<span class="js-tab-option" data-id="1">HTML</span>
+		<span class="js-tab-option" data-id="2">Init Step</span>
+		<span class="js-tab-option" data-id="3">Base Step</span>
+	</div>
+	<div class="multi-code__body">
+		<div class="multi-code__pane multi-code__pane--selected" data-pane="1">
+			<div class="language-html highlighter-rouge">
+				<div class="highlight">
+					<pre class="highlight"><code><span class="nt">&lt;app-guided-flow-heading</span> <span class="na">[heading]=</span><span class="s">"'guidedFlow.step.init.title' | messageBundle"</span>
+		<span class="na">[welcome]=</span><span class="s">"'guidedFlow.header.welcome' | messageBundle: userName"</span><span class="nt">&gt;&lt;/app-guided-flow-heading&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"init-step"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;app-guided-flow-card</span> <span class="na">class=</span><span class="s">"init-step__card-socket"</span>
+		<span class="na">[card]=</span><span class="s">"card"</span>
+		<span class="na">[highlightCard]=</span><span class="s">"first"</span>
+		<span class="na">*ngFor=</span><span class="s">"let card of response.cards; let first=first;"</span><span class="nt">&gt;&lt;/app-guided-flow-card&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;app-guided-flow-footer</span> <span class="na">[additionalOptions]=</span><span class="s">"response.additionalOptions"</span><span class="nt">&gt;&lt;/app-guided-flow-footer&gt;</span>
+	<span class="nt">&lt;app-flow-actions</span> <span class="na">[isFirstStep]=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/app-flow-actions&gt;</span>
+	</code></pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="multi-code__pane" data-pane="2">
+			<div class="language-typescript highlighter-rouge">
+				<div class="highlight">
+					<pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">Component</span><span class="p">,</span> <span class="nx">OnInit</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@angular/core</span><span class="dl">'</span><span class="p">;</span>
+		<span class="k">import</span> <span class="p">{</span><span class="nx">ActivatedRoute</span><span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@angular/router</span><span class="dl">"</span><span class="p">;</span>
+		<span class="k">import</span> <span class="p">{</span><span class="nx">BaseStep</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../../../../common/components/steps/base-step/base-step</span><span class="dl">'</span><span class="p">;</span>
+		<span class="k">import</span> <span class="p">{</span><span class="nx">GuidedFlowStoreService</span><span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">../../../../common/services/guided-flow-store.service</span><span class="dl">"</span><span class="p">;</span>
+		
+		<span class="p">@</span><span class="nd">Component</span><span class="p">({</span>
+			<span class="na">selector</span><span class="p">:</span> <span class="dl">'</span><span class="s1">app-init-step</span><span class="dl">'</span><span class="p">,</span>
+			<span class="na">templateUrl</span><span class="p">:</span> <span class="dl">'</span><span class="s1">./init-step.component.html</span><span class="dl">'</span><span class="p">,</span>
+			<span class="na">styleUrls</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">./init-step.component.scss</span><span class="dl">'</span><span class="p">],</span>
+		<span class="p">})</span>
+		<span class="k">export</span> <span class="kd">class</span> <span class="nx">InitStepComponent</span> <span class="kd">extends</span> <span class="nx">BaseStep</span> <span class="k">implements</span> <span class="nx">OnInit</span> <span class="p">{</span>
+		
+			<span class="nl">userName</span><span class="p">:</span> <span class="kr">string</span><span class="p">;</span>
+		
+			<span class="kd">constructor</span><span class="p">(</span><span class="k">protected</span> <span class="nx">activatedRoute</span><span class="p">:</span> <span class="nx">ActivatedRoute</span><span class="p">,</span>
+						<span class="k">protected</span> <span class="nx">guidedFlowStoreService</span><span class="p">:</span> <span class="nx">GuidedFlowStoreService</span><span class="p">)</span> <span class="p">{</span>
+				<span class="k">super</span><span class="p">(</span><span class="nx">activatedRoute</span><span class="p">,</span> <span class="nx">guidedFlowStoreService</span><span class="p">);</span>
+			<span class="p">}</span>
+		
+			<span class="nx">ngOnInit</span><span class="p">():</span> <span class="k">void</span> <span class="p">{</span>
+				<span class="k">super</span><span class="p">.</span><span class="nx">initStep</span><span class="p">();</span>
+				<span class="k">this</span><span class="p">.</span><span class="nx">activatedRoute</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+					<span class="k">this</span><span class="p">.</span><span class="nx">userName</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">greeting</span><span class="p">;</span>
+				<span class="p">});</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+		</code></pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="multi-code__pane" data-pane="3">
+			<div class="language-typescript highlighter-rouge">
+				<div class="highlight">
+					<pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">ActivatedRoute</span><span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@angular/router</span><span class="dl">"</span><span class="p">;</span>
+		<span class="k">import</span> <span class="p">{</span><span class="nx">GuidedFlowStep</span><span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">../../../domain/guided-flow-step</span><span class="dl">"</span><span class="p">;</span>
+		<span class="k">import</span> <span class="p">{</span><span class="nx">Directive</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@angular/core</span><span class="dl">'</span><span class="p">;</span>
+		<span class="k">import</span> <span class="p">{</span><span class="nx">GuidedFlowStoreService</span><span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">../../../services/guided-flow-store.service</span><span class="dl">"</span><span class="p">;</span>
+		
+		<span class="p">@</span><span class="nd">Directive</span><span class="p">()</span>
+		<span class="k">export</span> <span class="kd">class</span> <span class="nx">BaseStep</span> <span class="p">{</span>
+		
+			<span class="nl">response</span><span class="p">:</span> <span class="nx">GuidedFlowStep</span><span class="p">;</span>
+		
+			<span class="nl">loading</span><span class="p">:</span> <span class="nx">boolean</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+		
+			<span class="kd">constructor</span><span class="p">(</span><span class="k">protected</span> <span class="nx">activatedRoute</span><span class="p">:</span> <span class="nx">ActivatedRoute</span><span class="p">,</span>
+						<span class="k">protected</span> <span class="nx">guidedFlowStoreService</span><span class="p">:</span> <span class="nx">GuidedFlowStoreService</span><span class="p">)</span> <span class="p">{</span>
+			<span class="p">}</span>
+		
+			<span class="nx">initStep</span><span class="p">():</span> <span class="k">void</span> <span class="p">{</span>
+				<span class="k">this</span><span class="p">.</span><span class="nx">activatedRoute</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+					<span class="k">this</span><span class="p">.</span><span class="nx">response</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">response</span><span class="p">;</span>
+				<span class="p">});</span>
+				<span class="k">this</span><span class="p">.</span><span class="nx">guidedFlowStoreService</span><span class="p">.</span><span class="nx">setPageTitle</span><span class="p">(</span><span class="kc">undefined</span><span class="p">);</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+		</code></pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

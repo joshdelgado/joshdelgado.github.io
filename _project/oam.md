@@ -64,6 +64,8 @@ jsarr:
 			<div class="flex-row__column">
 				<p>The app utilizes a Java back-end to supply all database data that is shared with the Java/JSP application it's nested inside.</p>
 				<p>The app is fully responsive and leverages existing libraries (largely Angular Material and our inhouse AngularCommon library) to keep a consistent UX, speed up the development time, and reduce potential bugs in production.</p>
+				<p>We create Angular analogs for services, objects, etc used on the Java side of the project. This helps our front-end and back-end devs communicate by eliminating most common misunderstandings. - [snippet of java and angular endpoints]</p>
+				<p></p>
 			</div>
 			<div class="flex-row__column">
 				<div class="project-section__mockups">
@@ -124,7 +126,24 @@ jsarr:
 				<p>The team held weekly standup meetings to give everyone a high level overview of the going-ons throughout the project. Additionally the developers would informally meet near-daily to ask each other questions and ensure there were little to no blocking tasks.</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<p>This project showed us that our previous angular library contained a lot of code that was specific to our Intranet applications [see other project]. I decided we should split up gargantuan library into more manageable Angular Common and Intranet Common libraries. In the future, we will add an OAM Common library for the planned angular apps across the OAM project.</p>
+				<p>The project is split into multiple modules for quicker load times.</p>
+			</div>
+			<div class="flex-row__column flex-row__column--6">
+				<span class="project-section__img">
+					<span markdown="1">![Buttons](/assets/img/oam/file-structure.png)</span>
+				</span>
+			</div>
+			<div class="flex-row__column flex-row__column--6">
+				{% include multi-code.html %}
+				<!-- <span class="project-section__img">
+					<span markdown="1">![Buttons](/assets/img/oam-init-step.png)</span>
+				</span> -->
+			</div>
+			<div class="flex-row__column flex-row__column--6">
+				<p>Data-driven card-based design</p>
+			</div>
+			<div class="flex-row__column flex-row__column--6">
+				<p markdown="1">This project showed us that our previous angular library contained a lot of code that was specific to our Intranet applications [see other project]. I decided we should split up gargantuan library into more manageable [Angular Common](/project/intranet-angular-common) and Intranet Common libraries. In the future, we will add an OAM Common library for the planned angular apps across the OAM project.</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<span class="project-section__img">

@@ -1,0 +1,28 @@
+.multi-code {
+	&__options {
+		span {
+			cursor: pointer;
+			padding: 0.25rem 1rem;
+		}
+	}
+
+	&__body {
+		position: relative;
+		max-width: 100%;
+		overflow: hidden;
+	}
+	
+	&__pane {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		cursor: pointer;
+
+		&--selected {
+			position: relative;
+			z-index: 9;
+			opacity: 1;
+		}
+	}
+}
