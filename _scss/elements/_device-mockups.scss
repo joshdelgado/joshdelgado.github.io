@@ -7,8 +7,6 @@ $screen-color-iphone: #BCE6AD;
 $desktop-width: 800px;
 $desktop-height: calc(#{$desktop-width} * (9/16));
 $tablet-width: 300px;
-$phone-width: 150px;
-$phone-border-radius: 24px;
 $box-shadow: 0px 6px 8px 0 #00000040;
 $box-shadow-hover: 0px 10px 12px 0 #00000025;
 
@@ -87,6 +85,8 @@ $box-shadow-hover: 0px 10px 12px 0 #00000025;
   }
 }
 
+$phone-width: 150px;
+$phone-border-radius: $phone-width / 8;
 
 .iphone {
     @include display();
@@ -113,9 +113,47 @@ $box-shadow-hover: 0px 10px 12px 0 #00000025;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    height: 10px;
+    height: $phone-width / 15; //10px
     width: calc(#{$phone-width}* 0.35);
     background-color: $black;
     border-radius: 0 0 8px 8px;
   }
+}
+
+$phone-width: 300px;
+$phone-border-radius: $phone-width / 8;
+
+.iphone--large {
+	@include display();
+	margin: 0 auto;
+	height: calc(#{$phone-width} * (1/.488));
+	width: $phone-width;
+	background-color: $black;
+	border: 8px solid $black;
+	border-radius: $phone-border-radius;
+	box-shadow: $box-shadow;
+	
+	.iphone {
+		&__screen {
+			height: 100%;
+			width: 100%;
+			border-radius: calc(#{$phone-border-radius} * 0.9);
+			background-image: url(http://www.fillmurray.com/134/291);
+			background-size: cover;
+			overflow: hidden;
+		}
+	}
+		
+	&:after {
+		display: inline-block;
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		height: $phone-width / 15; //10px
+		width: calc(#{$phone-width}* 0.35);
+		background-color: $black;
+		border-radius: 0 0 12px 12px;
+	}
 }
