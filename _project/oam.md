@@ -135,9 +135,6 @@ jsarr:
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				{% include multi-code.html %}
-				<!-- <span class="project-section__img">
-					<span markdown="1">![Buttons](/assets/img/oam-init-step.png)</span>
-				</span> -->
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<p>Data-driven card-based design</p>

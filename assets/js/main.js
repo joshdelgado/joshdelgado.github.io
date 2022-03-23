@@ -6,6 +6,9 @@ jQuery(document).ready(function () {
 
 	$('.js-tab-option').on('click', function () {
 		let option = $(this).attr('data-id');
+
+		$(this).parent().find('.multi-code__option').removeClass('multi-code__option--selected');
+		$(this).addClass('multi-code__option--selected');
 		$(this).parent().parent().find('.multi-code__pane').removeClass('multi-code__pane--selected');
 		$(this).parent().parent().find('.multi-code__pane[data-pane=' + option + ']').addClass('multi-code__pane--selected');
 	});
