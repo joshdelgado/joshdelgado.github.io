@@ -51,7 +51,7 @@ jsarr:
 		<div class="flex-row flex-row--container flex-row--justify-center">
 			<div class="flex-row__column flex-row__column--8">
 				<p>This was one of the older projects in the company's codebase which means there was A LOT of undocumneted and spaghetti code. Few developers wanted to work on the project since it was difficult to find the code you needed to address. And when you did, it would often change something unintended.</p>
-				<p>The demographic for this application skewed older and less tech-savvy so support calls and messages were aggerssively high.</p>
+				<p>The demographic for this application skewed older and less tech-savvy so support calls and messages were aggressively high.</p>
 				<p>This is a multi-phase transition to an entirely angular application. The phase one focus was to convert the most common use-case into a guided flow in order to grow our teams knowledge of the angular framework and to get user testing feedback to improve future flows.</p>
 			</div>
 		</div>
@@ -61,11 +61,6 @@ jsarr:
 	<div class="project-section__inner">
 		<h2 class="project-section__title">The Project</h2>
 		<div class="flex-row flex-row--container">
-			<div class="flex-row__column">
-				<p>The app utilizes a Java back-end to supply all database data that is shared with the Java/JSP application it's nested inside.</p>
-				<p>The app is fully responsive and leverages existing libraries (largely Angular Material and our inhouse AngularCommon library) to keep a consistent UX, speed up the development time, and reduce potential bugs in production.</p>
-				<p>We create Angular analogs for services, objects, etc used on the Java side of the project. This helps our front-end and back-end devs communicate by eliminating most common misunderstandings. - [snippet of java and angular endpoints]</p>
-			</div>
 			<div class="flex-row__column">
 				<div class="project-section__mockups">
 					<div class="desktop">
@@ -100,8 +95,12 @@ jsarr:
 	<div class="project-section__inner">
 		<h2 class="project-section__title">The Process</h2>
 		<div class="flex-row flex-row--container">
+			<div class="flex-row__column">
+				<p>The app is fully responsive and leverages existing libraries (largely Angular Material and our inhouse AngularCommon library) to keep a consistent UX, speed up the development time, and reduce potential bugs in production.</p>
+			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<p>We designed the product in Figma and built the application Angular 11. The intention was to allow seamless transition between the existing Java application and the new Angular one. So the Angular app preloads and remains hidden until the user clicks (or taps) on the bar that exists at the top of all dashboard pages.</p>
+				<p>The app utilizes a Java back-end to supply all database data that is shared with the Java/JSP application it's nested inside.</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<div class="desktop">
@@ -130,22 +129,6 @@ jsarr:
 					<span markdown="1">![Buttons](/assets/img/oam/file-structure.png)</span>
 				</span>
 			</div>
-			<!-- <div class="flex-row__column flex-row__column--6">
-				<span class="project-section__img">
-					<span markdown="1">![Buttons](/assets/img/angular-common/fields-controls.svg)</span>
-				</span>
-			</div>
-			<div class="flex-row__column flex-row__column--6">
-				<p>The team held weekly standup meetings to give everyone a high level overview of the going-ons throughout the project. Additionally the developers would informally meet near-daily to ask each other questions and ensure there were little to no blocking tasks.</p>
-			</div> -->
-			<!-- <div class="flex-row__column flex-row__column--6">
-				<p markdown="1">This project showed us that our previous angular library contained a lot of code that was specific to our Intranet applications [see other project]. I decided we should split up gargantuan library into more manageable [Angular Common](/project/intranet-angular-common) and Intranet Common libraries. In the future, we will add an OAM Common library for the planned angular apps across the OAM project.</p>
-			</div>
-			<div class="flex-row__column flex-row__column--6">
-				<span class="project-section__img">
-					<span markdown="1">![Buttons](/assets/img/angular-common/fields-controls.svg)</span>
-				</span>
-			</div> -->
 			<div class="flex-row__column flex-row__column--6">
 				<div class="iphone iphone--large">
 					<div class="iphone__screen">
@@ -167,6 +150,12 @@ jsarr:
 				<span class="project-section__img">
 					<span markdown="1">![Icons](/assets/img/angular-common/icons.svg)</span>
 				</span>
+			</div>
+			<div class="flex-row__column flex-row__column--6">
+				{% include multi-code2.html %}
+			</div>
+			<div class="flex-row__column flex-row__column--6">
+				<p>We create Angular analogs for services, objects, etc used on the Java side of the project. This helps our front-end and back-end devs communicate by eliminating most common misunderstandings. - [snippet of java and angular endpoints]</p>
 			</div>
 		</div>
 	</div>

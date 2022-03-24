@@ -1,0 +1,66 @@
+<div class="multi-code">
+	<ul class="multi-code__options">
+		<li class="multi-code__option multi-code__option--selected js-tab-option" data-id="1">Typescript</li>
+		<li class="multi-code__option js-tab-option" data-id="2">Java</li>
+	</ul>
+	<div class="multi-code__body">
+		<div class="multi-code__pane multi-code__pane--selected" data-pane="1">
+			<div class="language-typescript highlighter-rouge">
+				<div class="highlight">
+					<pre class="highlight"><code><span class="p">@</span><span class="nd">Injectable</span><span class="p">({</span>
+	<span class="na">providedIn</span><span class="p">:</span> <span class="dl">'</span><span class="s1">root</span><span class="dl">'</span>
+<span class="p">})</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">GuidedFlowHttpService</span> <span class="p">{</span>
+
+	<span class="k">readonly</span> <span class="nx">baseUrl</span><span class="p">:</span> <span class="kr">string</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">service/guided-flow/</span><span class="dl">'</span><span class="p">;</span>
+	<span class="k">readonly</span> <span class="nx">profileUrl</span><span class="p">:</span> <span class="kr">string</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">service/profile/</span><span class="dl">'</span><span class="p">;</span>
+
+	<span class="kd">constructor</span><span class="p">(</span><span class="k">private</span> <span class="nx">httpService</span><span class="p">:</span> <span class="nx">HttpService</span><span class="p">)</span> <span class="p">{</span>
+	<span class="p">}</span>
+
+	<span class="nx">getGreeting</span><span class="p">():</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="kr">any</span><span class="o">&gt;</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">httpService</span><span class="p">.</span><span class="kd">get</span><span class="o">&lt;</span><span class="kr">any</span><span class="o">&gt;</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">baseUrl</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">greeting/</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span><span class="na">responseType</span><span class="p">:</span> <span class="dl">'</span><span class="s1">text</span><span class="dl">'</span><span class="p">});</span>
+	<span class="p">}</span>
+
+	<span class="nx">getInitialGuidedFlow</span><span class="p">(</span><span class="nx">cardLimit</span><span class="p">:</span> <span class="kr">number</span><span class="p">):</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">GuidedFlowStep</span><span class="o">&gt;</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">httpService</span><span class="p">.</span><span class="kd">get</span><span class="o">&lt;</span><span class="nx">GuidedFlowStep</span><span class="o">&gt;</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">baseUrl</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">initial/</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span><span class="na">params</span><span class="p">:</span> <span class="p">{</span><span class="na">cardLimit</span><span class="p">:</span> <span class="nx">cardLimit</span><span class="p">}},</span> <span class="nx">GuidedFlowStep</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+			</code></pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="multi-code__pane" data-pane="2">
+			<div class="language-java highlighter-rouge">
+				<div class="highlight">
+					<pre class="highlight"><code><span class="nd">@RestController</span>
+<span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">"/service/guided-flow"</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">GuidedFlowServiceController</span> <span class="o">{</span>
+
+	<span class="nd">@Autowired</span>
+	<span class="nd">@Qualifier</span><span class="o">(</span><span class="s">"westgateGuidedFlowService"</span><span class="o">)</span>
+	<span class="kd">private</span> <span class="nc">WestgateGuidedFlowService</span> <span class="n">westgateGuidedFlowService</span><span class="o">;</span>
+
+	<span class="nd">@Autowired</span>
+	<span class="nd">@Qualifier</span><span class="o">(</span><span class="s">"reservationsWestgateGuidedFlowService"</span><span class="o">)</span>
+	<span class="kd">private</span> <span class="nc">ReservationsWestgateGuidedFlowService</span> <span class="n">reservationsWestgateGuidedFlowService</span><span class="o">;</span>
+
+	<span class="nd">@Autowired</span>
+	<span class="kd">private</span> <span class="nc">CompanySettings</span> <span class="n">companySettings</span><span class="o">;</span>
+
+	<span class="nd">@GetMapping</span><span class="o">(</span><span class="s">"/initial"</span><span class="o">)</span>
+	<span class="kd">public</span> <span class="nc">WGRGuidedFlowStep</span> <span class="nf">getInitialGuidedFlow</span><span class="o">(</span><span class="nd">@RequestParam</span><span class="o">(</span><span class="s">"cardLimit"</span><span class="o">)</span> <span class="kt">int</span> <span class="n">cardLimit</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">if</span> <span class="o">(</span><span class="nc">UserUtil</span><span class="o">.</span><span class="na">isVacpacUser</span><span class="o">())</span> <span class="o">{</span>
+			<span class="k">return</span> <span class="n">reservationsWestgateGuidedFlowService</span><span class="o">.</span><span class="na">getInitialGuidedFlowStep</span><span class="o">(</span><span class="nc">UserUtil</span><span class="o">.</span><span class="na">getVacpacUserDetails</span><span class="o">());</span>
+		<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+			<span class="k">return</span> <span class="n">westgateGuidedFlowService</span><span class="o">.</span><span class="na">getInitialGuidedFlowStep</span><span class="o">(</span><span class="nc">UserUtil</span><span class="o">.</span><span class="na">getWestgateUserDetails</span><span class="o">(),</span> <span class="n">cardLimit</span><span class="o">);</span>
+		<span class="o">}</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+				</code></pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

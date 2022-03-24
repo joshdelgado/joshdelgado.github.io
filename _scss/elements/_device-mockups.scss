@@ -21,29 +21,39 @@ $box-shadow-hover: 0px 10px 12px 0 #00000025;
   justify-content: flex-start;
   align-items: center;
   @include display();
+  margin: 0;
   
   &__screen {
     position: relative;
     z-index: 3;
-    width: $desktop-width;
-    height: $desktop-height;
-	background-image: url(http://www.fillmurray.com/800/450);
-	background-size: cover;
+	// width: $desktop-width;
+    // height: $desktop-height;
+	max-width: 800px;
+	background-color: $black;
     border: 12px solid $black;
     border-radius: 8px;
     box-shadow: $box-shadow;
 	overflow: hidden;
+
+	video,
+	img {
+		display: inherit;
+	}
   }
   
   &__stand {
     height: calc(#{$desktop-height} / 6);
     width: calc(#{$desktop-width} / 5);
+	width: 21.5%;
+	min-width: 50px;
     background-color: #666666;
     box-shadow: $box-shadow;
   }
   
   &__base {
       width: calc(#{$desktop-width} / 2.5);
+	  width: 43%;
+	  min-width: 100px;
       height: 16px;
       background-color: $black;
       border-radius: 8px 8px 0 0;
