@@ -150,7 +150,7 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 		&--inline{
 			display: flex;
 			justify-content: center;
-			align-items: flex-top;
+			align-items: flex-start;
 			padding-top: 3.25rem;
 
 			.project-section__team-member {
