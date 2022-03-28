@@ -50,9 +50,9 @@ jsarr:
 		<h2 class="project-section__title">The Problem(s)</h2>
 		<div class="flex-row flex-row--container flex-row--justify-center">
 			<div class="flex-row__column flex-row__column--8">
-				<p>This was one of the older projects in the company's codebase which means there was A LOT of undocumneted and spaghetti code. Few developers wanted to work on the project since it was difficult to find the code you needed to address. And when you did, it would often change something unintended.</p>
-				<p>The demographic for this application skewed older and less tech-savvy so support calls and messages were aggressively high.</p>
-				<p>This is a multi-phase transition to an entirely angular application. The phase one focus was to convert the most common use-case into a guided flow in order to grow our teams knowledge of the angular framework and to get user testing feedback to improve future flows.</p>
+				<p>This was one of the older projects in the company's codebase which means there was A LOT of undocumneted and spaghetti code. Few developers wanted to work on the project since it was difficult to find the code you needed to address and when you did, it would often change something else in addition.</p>
+				<p>The demographic for this application skews older and less tech-savvy so support calls and messages were aggressively high.</p>
+				<p>This is a the first part of a multi-phase transition to an entirely angular application. The phase one purpose was to create a guided flow that would direct the user to the existing page to complete their goal. Since this was an addition to the site instead of a conversion, it allowed our team to discover pitfalls in our design through live user testing.</p>
 			</div>
 		</div>
 	</div>
@@ -95,12 +95,8 @@ jsarr:
 	<div class="project-section__inner">
 		<h2 class="project-section__title">The Process</h2>
 		<div class="flex-row flex-row--container">
-			<div class="flex-row__column">
-				<p>The app is fully responsive and leverages existing libraries (largely Angular Material and our inhouse AngularCommon library) to keep a consistent UX, speed up the development time, and reduce potential bugs in production.</p>
-			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<p>We designed the product in Figma and built the application Angular 11. The intention was to allow seamless transition between the existing Java application and the new Angular one. So the Angular app preloads and remains hidden until the user clicks (or taps) on the bar that exists at the top of all dashboard pages.</p>
-				<p>The app utilizes a Java back-end to supply all database data that is shared with the Java/JSP application it's nested inside.</p>
+				<p>The Angular application lives within the existing Java/JSP website. Angular preloads the base module and remains hidden until the user clicks the "Show Guided Flow" bar that exists throughout the website.</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<div class="desktop">
@@ -119,14 +115,16 @@ jsarr:
 				{% include multi-code.html %}
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<p>Data-driven card-based design reduces the number of front-end components that need to be written</p>
+				<p>It has a data-driven, card-based design reduces the number of front-end components that need to be written.</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<p>The project is split into multiple modules to reduce bandwidth and speed up page load times.</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<span class="project-section__img2">
-					<span markdown="1">![Buttons](/assets/img/oam/file-structure.png)</span>
+					<span>
+						<img src="/assets/img/oam/file-structure.png" alt="File Structure" style="max-width: 500px;">
+					</span>
 				</span>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
@@ -141,10 +139,10 @@ jsarr:
 				</div>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<p markdown="1">The user base is 90% desktop users (our demographic skews older) but the development is still mobile focused.</p>
+				<p markdown="1">The user base is 90% desktop users (the demographic skews older) but the development is still mobile focused.</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<p>Who wants to reinvent the wheel? We utilized Angular Material Forms and Icons to do some of the heavy lifting and reduce our development time.</p>
+				<p>We utilize Angular Material Forms and Icons to do some of the heavy lifting and reduce our development time. Who wants to reinvent the wheel? </p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<span class="project-section__img">
@@ -155,7 +153,7 @@ jsarr:
 				{% include multi-code2.html %}
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<p>We create Angular analogs for services, objects, etc used on the Java side of the project. This helps our front-end and back-end devs communicate by eliminating most common misunderstandings. - [snippet of java and angular endpoints]</p>
+				<p>We create Angular analogs for services, objects, etc that exist on the Java side. This helps our front-end and back-end devs communicate and eliminates many common misunderstandings.</p>
 			</div>
 		</div>
 	</div>

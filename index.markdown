@@ -10,5 +10,5 @@ jsarr:
 
 {% include section-about.html %}
 {% include section-projects.md %}
-{% include section-blog.html %}
+<!-- {% include section-blog.html %} -->
 {% include section-contact.html %}

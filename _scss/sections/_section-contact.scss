@@ -5,9 +5,23 @@
 			border-bottom: 0;
 		}
 
+		&__title {
+			padding: 1rem 0;
+		}
+
 		&__subtitle {
 			margin: 0 auto;
 			max-width: 480px;
+		}
+		
+		&__gif {
+			display: block;
+			width: 36px;
+			margin: 0 auto;
+	
+			img {
+				width: 100%;
+			}
 		}
 	}
 }
