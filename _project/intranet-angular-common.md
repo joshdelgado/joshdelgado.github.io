@@ -56,15 +56,16 @@ jsarr:
 			<div class="flex-row__column">
 				<div class="project-section__mockups">
 					<div class="desktop">
-						<div class="desktop__screen"></div>
+						<div class="desktop__screen">
+							<img src="/assets/img/angular-common/greeter-desktop--clean.png" />
+						</div>
 						<div class="desktop__stand"></div>
 						<div class="desktop__base"></div>
 					</div>
 					<div class="tablet">
-						<div class="tablet__screen"></div>
-					</div>
-					<div class="iphone">
-						<div class="iphone__screen"></div>
+						<div class="tablet__screen">
+							<img src="/assets/img/angular-common/greeter-tablet--clean.png" />
+						</div>
 					</div>
 				</div>
 			</div>

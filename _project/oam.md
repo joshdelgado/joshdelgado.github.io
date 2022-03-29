@@ -65,19 +65,19 @@ jsarr:
 				<div class="project-section__mockups">
 					<div class="desktop">
 						<div class="desktop__screen">
-							<img src="/assets/img/oam/oam-display-desktop.jpg" />
+							<img src="/assets/img/oam/oam-display-desktop--clean-small.png" />
 						</div>
 						<div class="desktop__stand"></div>
 						<div class="desktop__base"></div>
 					</div>
 					<div class="tablet">
 						<div class="tablet__screen">
-							<img src="/assets/img/oam/oam-display-tablet.jpg" />
+							<img src="/assets/img/oam/oam-display-tablet--clean-small.png" />
 							</div>
 					</div>
 					<div class="iphone">
 						<div class="iphone__screen">
-							<img src="/assets/img/oam/oam-display-mobile.jpg" />
+							<img src="/assets/img/oam/oam-display-mobile--clean-small.png" />
 						</div>
 					</div>
 				</div>
