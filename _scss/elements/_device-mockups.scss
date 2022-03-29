@@ -76,8 +76,7 @@ $box-shadow-hover: 0px 10px 12px 0 #00000025;
     height: 100%;
     width: 100%;
     border-radius: 2px;
-	background-image: url(http://www.fillmurray.com/276/340);
-	background-size: cover;
+	overflow: hidden;
   }
   
   &:after {
@@ -111,8 +110,6 @@ $phone-border-radius: $phone-width / 8;
     height: 100%;
     width: 100%;
     border-radius: calc(#{$phone-border-radius} * 0.6667);
-	background-image: url(http://www.fillmurray.com/134/291);
-	background-size: cover;
 	overflow: hidden;
   }
   
