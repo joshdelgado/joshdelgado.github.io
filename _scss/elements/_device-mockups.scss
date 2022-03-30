@@ -10,95 +10,87 @@ $tablet-width: 300px;
 $box-shadow: 0px 6px 8px 0 #00000040;
 $box-shadow-hover: 0px 10px 12px 0 #00000025;
 
-@mixin display(){
-  position: relative;
-  margin: 0 2rem;
-}
-
 .desktop {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  @include display();
-  margin: 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
   
-  &__screen {
-    position: relative;
-    z-index: 3;
-	// width: $desktop-width;
-    // height: $desktop-height;
-	max-width: 800px;
-	background-color: $black;
-    border: 12px solid $black;
-    border-radius: 8px;
-    box-shadow: $box-shadow;
-	overflow: hidden;
+	&__screen {
+		position: relative;
+		z-index: 3;
+		max-width: 800px;
+		background-color: $black;
+		border: 12px solid $black;
+		border-radius: 8px;
+		box-shadow: $box-shadow;
+		overflow: hidden;
 
-	video,
-	img {
-		display: inherit;
-	}
-  }
+		video,
+		img {
+			display: inherit;
+		}
+	}	
   
-  &__stand {
-    height: calc(#{$desktop-height} / 6);
-    width: calc(#{$desktop-width} / 5);
-	width: 21.5%;
-	min-width: 50px;
-    background-color: #666666;
-    box-shadow: $box-shadow;
-  }
+	&__stand {
+		height: calc(#{$desktop-height} / 6);
+		width: calc(#{$desktop-width} / 5);
+		width: 21.5%;
+		min-width: 50px;
+		background-color: #666666;
+		box-shadow: $box-shadow;	
+	}
   
   &__base {
-      width: calc(#{$desktop-width} / 2.5);
-	  width: 43%;
-	  min-width: 100px;
-      height: 16px;
-      background-color: $black;
-      border-radius: 8px 8px 0 0;
-      box-shadow: $box-shadow;
-  }
+		width: calc(#{$desktop-width} / 2.5);
+		width: 43%;
+		min-width: 100px;
+		height: 16px;
+		background-color: $black;
+		border-radius: 8px 8px 0 0;
+		box-shadow: $box-shadow;
+	}
 }
 
 .tablet {
-  @include display();
-  height: calc(#{$tablet-width} * (4/3));
-  width: $tablet-width;
-  background-color: $black;
-  border: 12px solid $black;
-  border-top-width: 30px;
-  border-bottom-width: 30px;
-  border-radius: 12px;
-  box-shadow: $box-shadow;
+	position: relative;
+	height: calc(#{$tablet-width} * (4/3));
+	width: $tablet-width;
+	background-color: $black;
+	border: 12px solid $black;
+	border-top-width: 30px;
+	border-bottom-width: 30px;
+	border-radius: 12px;
+	box-shadow: $box-shadow;
   
-  &__screen {
-    height: 100%;
-    width: 100%;
-    border-radius: 2px;
-	overflow: hidden;
-  }
+	&__screen {
+		height: 100%;
+		width: 100%;
+		border-radius: 2px;
+		overflow: hidden;
+	}
   
   &:after {
-    display: inline-block;
-    content: '';
-    position: absolute;
-    bottom: -25px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 17px;
-    width: 17px;
-    background-color: #ffffff15;
-    border-radius: 100%;
-    border: 2px solid #ffffff30;
-  }
+		display: inline-block;
+		content: '';
+		position: absolute;
+		bottom: -25px;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 17px;
+		width: 17px;
+		background-color: #ffffff15;
+		border-radius: 100%;
+		border: 2px solid #ffffff30;
+	}
 }
 
 $phone-width: 150px;
 $phone-border-radius: $phone-width / 8;
 
 .iphone {
-    @include display();
+	position: relative;
     height: calc(#{$phone-width} * (1/.488));
     width: $phone-width;
     background-color: $black;
@@ -131,7 +123,7 @@ $phone-width: 300px;
 $phone-border-radius: $phone-width / 8;
 
 .iphone--large {
-	@include display();
+	position: relative;
 	margin: 0 auto;
 	height: calc(#{$phone-width} * (1/.488));
 	width: $phone-width;

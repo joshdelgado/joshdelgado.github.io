@@ -18,7 +18,7 @@ jsarr:
 		<div class="project-section__intro-text">
 			<p class="project-section__summary">An Angular 11 application living inside a legacy Java application to guide users through common functions of the Owner Account Management portal.</p>
 		</div>
-		<ul class="flex-row__column project-section__team project-section__team--inline">
+		<ul class="flex-row__column project-section__team">
 			<li class="project-section__team-member">
 				<strong>Designer</strong>
 				<span>Angela Shockey</span>
@@ -40,8 +40,8 @@ jsarr:
 				<span>Westgate Resorts</span>
 			</li>
 		</ul>
-		<span class="project-section__img">
-			<span markdown="1">![Florida Beach Weddings - Shopify - 2022](/assets/img/oam-init-step.png)</span>
+		<span class="project-section__img project-section__img--intro">
+			<span markdown="1">![Florida Beach Weddings - Shopify - 2022](/assets/img/oam/oam-dashboard--best.png)</span>
 		</span>
 	</div>
 </section>
@@ -62,22 +62,22 @@ jsarr:
 		<h2 class="project-section__title">The Project</h2>
 		<div class="flex-row flex-row--container">
 			<div class="flex-row__column">
-				<div class="project-section__mockups">
+				<div class="project-section__mockups project-section__mockups--oam">
 					<div class="desktop">
 						<div class="desktop__screen">
-							<img src="/assets/img/oam/oam-display-desktop--clean-small.png" />
+							<img src="/assets/img/oam/oam-desktop--best.png" />
 						</div>
 						<div class="desktop__stand"></div>
 						<div class="desktop__base"></div>
 					</div>
 					<div class="tablet">
 						<div class="tablet__screen">
-							<img src="/assets/img/oam/oam-display-tablet--clean-small.png" />
+							<img src="/assets/img/oam/oam-tablet--best.png" />
 							</div>
 					</div>
 					<div class="iphone">
 						<div class="iphone__screen">
-							<img src="/assets/img/oam/oam-display-mobile--clean-small.png" />
+							<img src="/assets/img/oam/oam-mobile--best.png" />
 						</div>
 					</div>
 				</div>
@@ -115,9 +115,9 @@ jsarr:
 				<p>The project is split into multiple modules to reduce bandwidth and speed up page load times.</p>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<span class="project-section__img2">
+				<span class="project-section__img project-section__img--max-width">
 					<span>
-						<img src="/assets/img/oam/file-structure.png" alt="File Structure" style="max-width: 500px;">
+						<img src="/assets/img/oam/file-structure.png" alt="File Structure">
 					</span>
 				</span>
 			</div>
@@ -140,7 +140,7 @@ jsarr:
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<span class="project-section__img">
-					<span markdown="1">![Icons](/assets/img/angular-common/icons.svg)</span>
+					<span markdown="1">![Icons](/assets/img/angular-common/final/icons-svg.jpg)</span>
 				</span>
 			</div>
 			<div class="flex-row__column flex-row__column--6">

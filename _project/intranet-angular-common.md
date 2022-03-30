@@ -17,7 +17,7 @@ jsarr:
 		<div class="project-section__intro-text">
 			<p class="project-section__summary">A common-code library for all Angular projects made for Westgate. Originally written in AngularJS but upgraded to Angular 7, and later, Angular 11.</p>
 		</div>
-		<ul class="flex-row__column project-section__team project-section__team--inline">
+		<ul class="flex-row__column project-section__team">
 			<li class="project-section__team-member">
 				<strong>Designer</strong>
 				<span>Jose De La Vega</span>
@@ -31,8 +31,8 @@ jsarr:
 				<span>Westgate Resorts</span>
 			</li>
 		</ul>
-		<span class="project-section__img">
-			<span markdown="1">![Buttons](/assets/img/angular-common/navigations.svg)</span>
+		<span class="project-section__img project-section__img--intro">
+			<span markdown="1">![Buttons](/assets/img/angular-common/final/navigations-svg.svg)</span>
 		</span>
 	</div>
 </section>
@@ -54,17 +54,17 @@ jsarr:
 		<h2 class="project-section__title">The Project</h2>
 		<div class="flex-row flex-row--container">
 			<div class="flex-row__column">
-				<div class="project-section__mockups">
+				<div class="project-section__mockups project-section__mockups--ac">
 					<div class="desktop">
 						<div class="desktop__screen">
-							<img src="/assets/img/angular-common/greeter-desktop--clean.png" />
+							<img src="/assets/img/angular-common/greeter-desktop--best.png" />
 						</div>
 						<div class="desktop__stand"></div>
 						<div class="desktop__base"></div>
 					</div>
 					<div class="tablet">
 						<div class="tablet__screen">
-							<img src="/assets/img/angular-common/greeter-tablet--clean.png" />
+							<img src="/assets/img/angular-common/greeter-tablet--best.png" />
 						</div>
 					</div>
 				</div>
@@ -81,7 +81,7 @@ jsarr:
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<span class="project-section__img">
-					<span markdown="1">![Buttons](/assets/img/angular-common/fields-controls.svg)</span>
+					<span markdown="1">![Buttons](/assets/img/angular-common/final/fields-controls-svg.svg)</span>
 				</span>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
@@ -95,12 +95,12 @@ jsarr:
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<span class="project-section__img">
-					<span markdown="1">![Buttons](/assets/img/angular-common/colors.svg)</span>
+					<span markdown="1">![Buttons](/assets/img/angular-common/final/colors-svg.svg)</span>
 				</span>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
 				<span class="project-section__img">
-					<span markdown="1">![Buttons](/assets/img/angular-common/buttons.svg)</span>
+					<span markdown="1">![Buttons](/assets/img/angular-common/final/buttons-svg.svg)</span>
 				</span>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
@@ -113,7 +113,10 @@ jsarr:
 				{% include code.html %}
 			</div>
 			<div class="flex-row__column flex-row__column--6">
-				<span class="project-section__img project-section__img--no-scroll" markdown="1">![Buttons](/assets/img/angular-common/compodoc.png)
+				<span class="project-section__img">
+					<span>
+						<img src="/assets/img/angular-common/compodoc.png" alt="Compodoc">
+					</span>
 				</span>
 			</div>
 			<div class="flex-row__column flex-row__column--6">
