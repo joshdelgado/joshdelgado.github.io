@@ -152,32 +152,6 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 		}
 	}
 
-	&__img2 span {
-		display: inline-block;
-		position: relative;
-		z-index: 1;
-		margin: 8px;
-		border-radius: 8px;
-
-		img {
-			display: block;
-			border-radius: 8px;
-		}
-
-		&:after {
-			content: '';
-			position: absolute;
-			top: -8px;
-			left: -8px;
-			z-index: -1;
-			height: calc(100% + 16px);
-			width: calc(100% + 16px);
-			border-radius: 8px;
-			background-image: linear-gradient(to bottom, #0fffc1 0%, #7e0fff 100%);
-			box-shadow: $box-shadow-img;
-		}
-	}
-
 	&__img {
 		span {
 			display: inline-block;
