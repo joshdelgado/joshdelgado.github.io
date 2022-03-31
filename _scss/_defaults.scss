@@ -28,6 +28,8 @@ $theme-text: $color4;
 $theme-accent: $color3;
 $theme-heading: $color4;
 
+$percentage: 2%;
+
 @import 'vendors/sass-code-highlight/monokai.scss';
 
 * {

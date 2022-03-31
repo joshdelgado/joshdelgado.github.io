@@ -68,6 +68,6 @@
 		right: 0;
 		height: 200px;
 		z-index: 10;
-		@include ease-in-out-sine-gradient(darken($theme-background2, 3%), to top);
+		@include ease-in-out-sine-gradient(darken($theme-background2, 4%), to top);
 	}
 }

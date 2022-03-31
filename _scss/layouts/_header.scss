@@ -55,12 +55,14 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
+		padding-left: 1rem;
 	}
 
 	&__right {
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
+		padding-right: 1rem;
 	}
 
 	&__logo {

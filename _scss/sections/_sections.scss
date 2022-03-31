@@ -1,4 +1,5 @@
 .section {
+	position: relative;
 	@include container();
 	padding-bottom: 0;
 
@@ -56,12 +57,28 @@
 		margin: 1rem 0 0;
 	}
 
-	&:nth-child(even){
-		background-color: $theme-background2;
-	}
+	@for $i from 2 to 6 {
+		&:nth-last-child(#{$i}){
+			background-color: darken($theme-background2, $percentage * ($i - 1));
 
-	&:nth-child(odd){
-		background-color: darken($theme-background2, 3%);
+			@if ($i == 2){
+				margin-bottom: 100px;
+		
+				&:after{
+					display: inline-block;
+					content:'';
+					position: absolute;
+					left: 0;
+					background-color: $theme-background;
+					width: 100%;
+					height: 100px;
+					border-top: solid 100px darken($theme-background2, $percentage);
+					border-left: solid 50vw $theme-background2;
+					border-right: solid 50vw $theme-background2;
+					transition: all 350ms ease;
+				}
+			}
+		}
 	}
 
 	&:last-child {
