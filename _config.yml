@@ -37,6 +37,7 @@ collections:
     permalink: /:collection/:title
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 sass:
   sass_dir: _scss
 
