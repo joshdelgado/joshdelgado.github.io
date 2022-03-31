@@ -12,4 +12,8 @@ jQuery(document).ready(function () {
 		$(this).parent().parent().find('.multi-code__pane').removeClass('multi-code__pane--selected');
 		$(this).parent().parent().find('.multi-code__pane[data-pane=' + option + ']').addClass('multi-code__pane--selected');
 	});
+
+	$('.js-social-dropdown-trigger').on('click', function () {
+		$(this).parent().find('.js-social-dropdown').toggleClass('social-links--closed');
+	});
 });

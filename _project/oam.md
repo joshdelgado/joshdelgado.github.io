@@ -1,5 +1,5 @@
 ---
-title: OAM
+title: Owner Management Portal
 alias: oam
 cardImage: /assets/img/oam-init-step.png
 layout: project
