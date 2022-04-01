@@ -2,10 +2,11 @@
 	position: relative;
 	@include container();
 	padding-bottom: 0;
+	padding-top: 0;
 
 	&__inner {
 		text-align: center;
-		padding: 1rem 0 2rem;
+		padding: 10rem 0 12rem;
 	}
 
 	&__img {
@@ -18,9 +19,13 @@
 		font-size: 48px;
 		font-weight: 700;
 		color: $theme-text;
-		padding: 6rem 0 0.5rem;
+		padding: 0 0 6rem;
 		margin: 0;
 		@include text-shadow();
+
+		&--has-subtitle {
+			padding-bottom: 1rem;
+		}
 	}
 
 	&__subtitle {
@@ -32,29 +37,56 @@
 		padding-bottom: 6rem;
 	}
 
+	// About Section
 	&__text {
 		font-size: 20px;
+		text-align: left;
+		margin-bottom: 1rem;
 		color: $theme-text;
 	}
-
-	&__row {
+	&__skills-list {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
+		padding-top: 1rem;
+	}
 
-		&--align-items-center {
-			align-items: center;
+	&__list-item {
+		width: 50%;
+		padding: 0.25rem 0;
+		text-align: left;
+		color: $theme-text;
+
+		&:before {
+			content: '';
+			position: relative;
+			top: -3px;
+			display: inline-block;
+			margin-right: 0.5rem;
+			background-color: darken($theme-accent, 35%);
+			height: 5px;
+			width: 5px;
+			transform: rotate(45deg);
 		}
 	}
 
-	&__column {
-		width: calc(50% - 1rem);
-	}
-
+	// Project Section
 	&__projects {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		margin: 1rem 0 0;
+	}
+
+	// Contact Section
+	&__gif {
+		display: block;
+		width: 36px;
+		margin: 0 auto;
+		padding-bottom: 1rem;
+
+		img {
+			width: 100%;
+		}
 	}
 
 	@for $i from 2 to 6 {

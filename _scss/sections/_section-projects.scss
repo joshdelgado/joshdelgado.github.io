@@ -1,7 +1,12 @@
 &--projects {
+}
+
+&--project {
 	.section {
 		&__inner {
-			padding: 4rem 0 14rem;
+			padding-top: 6rem;
+			padding-bottom: 6rem;
+			overflow: hidden;
 		}
 	}
 }

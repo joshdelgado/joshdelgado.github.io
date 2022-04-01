@@ -48,7 +48,6 @@
 	&__content {
 		background-color: $theme-background2;
 		color: $theme-text;
-		padding-bottom: 4rem;
 
 		p {
 			font-size: 18px;
@@ -81,11 +80,12 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 
 .project-section {
 	position: relative;
+	padding: 0 1rem;
 	border-bottom: 2px solid $theme-background2;
 
 	&__inner {
-		padding-top: 4rem;
-		padding-bottom: 4rem;
+		padding-top: 6rem;
+		padding-bottom: 6rem;
 		overflow: hidden;
 	}
 
