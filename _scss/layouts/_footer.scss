@@ -22,7 +22,7 @@
 		padding-top: 2rem;
     }
 
-	&:before {
-		@include after-section-angle($theme-background, $theme-background, $theme-background2, true);
+	&:before{
+		@include after-section-angle($theme-background2, $theme-background, false);
 	}
 }

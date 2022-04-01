@@ -102,7 +102,7 @@
 			@if ($i == 2){
 				margin-bottom: 100px;
 				&:after {
-					@include after-section-angle($theme-background, $theme-background2, darken($theme-background2, $percentage));
+					@include after-section-angle(darken($theme-background2, $percentage), $theme-background2, true);
 				}
 			}
 		}

@@ -5,15 +5,15 @@
 		<div class="section__projects">
 			{% assign projectsToDisplay = site.project | where: "display", "true" %}
 			{% for project in projectsToDisplay %}
-			<div class="project-card project-card--{{project.alias}}"> 
+			<a class="project-card project-card--{{project.alias}}" href="{{ project.url | prepend: site.baseurl }}"> 
 				{% if project.cardImage %}
 					<div class="project-card__image" style="background-image: url({{ project.cardImage }})"></div>
 				{% endif %}
-				<a class="project-card__text" href="{{ project.url | prepend: site.baseurl }}">
+				<div class="project-card__text">
 					<h2 class="project-card__title">{{ project.title }}</h2>
 					<span class="project-card__link fa fa-caret-right"></span>
-				</a>
-			</div>
+				</div>
+			</a>
 			{% endfor %}
 		</div>
 	</div>
