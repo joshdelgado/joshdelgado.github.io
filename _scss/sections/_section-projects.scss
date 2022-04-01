@@ -1,6 +1,13 @@
 &--projects {
+	.section {
+		&__inner {
+			padding-left: 0.5rem;
+			padding-right: 0.5rem;
+		}
+	}
 }
 
+// Contact section in project page?
 &--project {
 	.section {
 		&__inner {

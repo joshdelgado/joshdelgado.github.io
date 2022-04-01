@@ -138,3 +138,11 @@
 		transition: all 350ms ease;;
 	}
 }
+
+@media (max-width: $breakpoint) {
+	.header {
+		&__nav {
+			display: none;
+		}
+	}
+}

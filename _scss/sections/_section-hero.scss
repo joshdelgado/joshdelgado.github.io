@@ -5,7 +5,8 @@
 	align-items: flex-start;
 	z-index: 1;
 	justify-content: center;
-	height: 95vh;
+	min-height: calc(98vh - 76px);
+	margin-top: 76px;
 
 	.section {
 		&__inner {
@@ -13,7 +14,7 @@
 			z-index: 8;
 			text-align: left;
 			border-bottom: none;
-			padding: 1rem 0 2rem;
+			padding: 2rem 1rem 160px;
 		}
 		
 		&__img {
@@ -69,5 +70,26 @@
 		height: 200px;
 		z-index: 10;
 		@include ease-in-out-sine-gradient(darken($theme-background2, 4%), to top);
+	}
+}
+
+@media (max-width: $breakpoint-mobile) {
+	&--hero {
+		.section {	
+			&__pre-title {
+				padding-bottom: 0.25rem;
+			}
+			
+			&__title {
+				font-size: 48px;
+				padding-bottom: 0.75rem;
+			}
+	
+			&__subtitle {
+				// font-size: 32px;
+				font-size: 22px;
+				padding-bottom: 3rem;
+			}
+		}
 	}
 }
