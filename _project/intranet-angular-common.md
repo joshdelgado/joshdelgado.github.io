@@ -39,13 +39,11 @@ jsarr:
 <section class="project-section project-section--problem">
 	<div class="project-section__inner">
 		<h2 class="project-section__title">The Problem(s)</h2>
-		<div class="flex-row flex-row--container flex-row--justify-center">
-			<div class="flex-row__column flex-row__column--8">
-				<p markdown="1">Have you ever played one of those "spot the difference" games from [Highlights Magazine](https://pbs.twimg.com/media/DNZrTQ9UIAYn8eP.jpg)? That's what it was like developing our internal applications before we created this library. Sure, we had a common library, but it was maintained the same way an 6 year old maintains a fish tank: poorly and only when someone in charge noticed the fish were dying.</p> 
-				<p markdown="1">Some components were treated as a StackOverflow examples to be [copypasta](https://en.wikipedia.org/wiki/Copypasta)-ed. Others began as application-specific components but later were copied into a new application instead of abstracted into the library, leaving us with two (or more) snippets to maintain in parallel. And what was most frustrating for our designers, the few blues in our brand had evolved into a mess of (no joke) 37 slight blue variations.</p>
-				<p>All this inconsistency led to increased development times, development of redundant code, and an eerie sense of discord when navigating within our Intranet.</p>
-				<p>Unfortunately, the code repository is private by corporate decree and all legacy repositories before 2020 are lost. I've included code snippets and images from the style guide to help illustrate what was done.</p>
-			</div>
+		<div class="project-section__copy-area">
+			<p markdown="1">Have you ever played one of those "spot the difference" games from [Highlights Magazine](https://pbs.twimg.com/media/DNZrTQ9UIAYn8eP.jpg)? That's what it was like developing our internal applications before we created this library. Sure, we had a common library, but it was maintained the same way an 6 year old maintains a fish tank: poorly and only when someone in charge noticed the fish were dying.</p> 
+			<p markdown="1">Some components were treated as a StackOverflow examples to be [copypasta](https://en.wikipedia.org/wiki/Copypasta)-ed. Others began as application-specific components but later were copied into a new application instead of abstracted into the library, leaving us with two (or more) snippets to maintain in parallel. And what was most frustrating for our designers, the few blues in our brand had evolved into a mess of (no joke) 37 slight blue variations.</p>
+			<p>All this inconsistency led to increased development times, development of redundant code, and an eerie sense of discord when navigating within our Intranet.</p>
+			<p>Unfortunately, the code repository is private by corporate decree and all legacy repositories before 2020 are lost. I've included code snippets and images from the style guide to help illustrate what was done.</p>
 		</div>
 	</div>
 </section>
@@ -138,11 +136,9 @@ jsarr:
 <section class="project-section project-section--conclusion">
 	<div class="project-section__inner">
 		<h2 class="project-section__title">Conclusion</h2>
-		<div class="flex-row flex-row--container flex-row--justify-center">
-			<div class="flex-row__column flex-row__column--8 project-section__intro">
-				<p>Since the company continues to develop new applications with unique needs and use-cases, this is a living library. But in the time it's been a part of our development cycle the number of basic questions and "this already exists" review comments has drastically decreased. Additionally, the level of knowledge developers need to create a well-functioning and on-brand application has gone from a few months to a few weeks.</p>
-				<p>Our internal applications have escaped the uncanny valley and feel like a single cohesive brand.</p>
-			</div>
+		<div class="project-section__copy-area">
+			<p>Since the company continues to develop new applications with unique needs and use-cases, this is a living library. But in the time it's been a part of our development cycle the number of basic questions and "this already exists" review comments has drastically decreased. Additionally, the level of knowledge developers need to create a well-functioning and on-brand application has gone from a few months to a few weeks.</p>
+			<p>Our internal applications have escaped the uncanny valley and feel like a single cohesive brand.</p>
 		</div>
 	</div>
 </section>

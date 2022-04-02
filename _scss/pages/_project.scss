@@ -112,6 +112,11 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 		margin: 0 auto;
 	}
 
+	&__copy-area {
+		max-width: 996px;
+		margin: 0 auto;
+	}
+
 	&__team {
 		display: flex;
 		justify-content: center;
@@ -204,10 +209,12 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 
 		&--ac {
 			.desktop {
+				flex: 0 0 auto;
 				right: -2.5rem;
 				z-index: 1;
 			}
 			.tablet {
+				flex: 0 0 auto;
 				left: -2.5rem;
 				z-index: 2;
 			}
