@@ -75,51 +75,61 @@ jsarr:
 <section class="project-section project-section--process">
 	<div class="project-section__inner">
 		<h2 class="project-section__title">The Process</h2>
-		<div class="flex-row flex-row--container">
-			<div class="flex-row__column flex-row__column--6">
+		<div class="project-section__process-row">
+			<div class="project-section__process-cell">
 				<p>We define essential components, styles, and services across apps such as form fields and controls.</p>
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+			<div class="project-section__process-cell">
 				<span class="project-section__img">
 					<span markdown="1">![Buttons](/assets/img/angular-common/final/fields-controls-svg.svg)</span>
 				</span>
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+		</div>
+		<div class="project-section__process-row">
+			<div class="project-section__process-cell">
 				{% include code2.html %}
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+			<div class="project-section__process-cell">
 				<p>The most used complex components, such as modals and search forms, have flexible abstractions which reduces development time and eases the learning curve.</p>
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+		</div>
+		<div class="project-section__process-row">
+			<div class="project-section__process-cell">
 				<p>The framework contains variables for all colors and branding elements used throughout our Intranet. Additionally, every color combination is verified to be ADA compliant.</p>
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+			<div class="project-section__process-cell">
 				<span class="project-section__img">
 					<span markdown="1">![Buttons](/assets/img/angular-common/final/colors-svg.svg)</span>
 				</span>
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+		</div>
+		<div class="project-section__process-row">
+			<div class="project-section__process-cell">
 				<span class="project-section__img">
 					<span markdown="1">![Buttons](/assets/img/angular-common/final/buttons-svg.svg)</span>
 				</span>
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+			<div class="project-section__process-cell">
 				<p>Frequently used components, elements, and patterns that don't require abstraction exist to be invoked wherever needed.</p>
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+		</div>
+		<div class="project-section__process-row">
+			<div class="project-section__process-cell">
 				<p markdown="1">All style declarations are written using the [Block Element Modifier](http://getbem.com/) naming convention which greatly helps developers zero-in on bugs.</p>
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+			<div class="project-section__process-cell">
 				{% include code.html %}
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+			</div>
+		<div class="project-section__process-row">
+			<div class="project-section__process-cell">
 				<span class="project-section__img">
 					<span>
 						<img src="/assets/img/angular-common/compodoc.png" alt="Compodoc">
 					</span>
 				</span>
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+			<div class="project-section__process-cell">
 				<p markdown="1">We use [Compodoc](https://compodoc.app/) to generate basic documentation for the components and services within the library.</p>
 			</div>
 		</div>
