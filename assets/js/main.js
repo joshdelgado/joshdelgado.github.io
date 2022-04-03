@@ -16,4 +16,36 @@ jQuery(document).ready(function () {
 	$('.js-social-dropdown-trigger').on('click', function () {
 		$(this).parent().find('.js-social-dropdown').toggleClass('social-links--closed');
 	});
+
+	$('.js-slider-right').on('click', function () {
+		let currentSlide = $('.mockup--visible').attr('data-slide'),
+			nextSlide = +currentSlide + 1,
+			totalSlides = $('.js-mockup').length;
+
+		if (nextSlide > totalSlides) {
+			nextSlide = 1;
+		}
+
+		$('.mockup--visible').addClass('mockup--transition');
+		setTimeout(function () {
+			$('.mockup--visible').removeClass('mockup--transition').removeClass('mockup--visible');
+			$('.js-mockup[data-slide=' + nextSlide + ']').addClass('mockup--visible');
+		}, 500);
+	});
+
+	$('.js-slider-left').on('click', function () {
+		let currentSlide = $('.mockup--visible').attr('data-slide'),
+			nextSlide = +currentSlide - 1,
+			totalSlides = $('.js-mockup').length;
+
+		if (nextSlide <= 0) {
+			nextSlide = totalSlides;
+		}
+
+		$('.mockup--visible').addClass('mockup--transition');
+		setTimeout(function () {
+			$('.mockup--visible').removeClass('mockup--transition').removeClass('mockup--visible');
+			$('.js-mockup[data-slide=' + nextSlide + ']').addClass('mockup--visible');
+		}, 500);
+	});
 });

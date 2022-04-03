@@ -209,7 +209,7 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 
 		&--ac {
 			.desktop {
-				flex: 0 0 auto;
+				flex: 0 1 auto;
 				right: -2.5rem;
 				z-index: 1;
 			}
@@ -218,6 +218,28 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 				left: -2.5rem;
 				z-index: 2;
 			}
+		}
+	}
+
+	&__mockups-nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem 0 0;
+		margin: 0;
+	}
+
+	&__mockups-nav-item {
+		font-size: 2rem;
+		padding: 0 1rem;
+		cursor: pointer;
+
+		i {
+			color: $theme-accent;
+		}
+
+		&:hover i {
+			color: darken($theme-accent, 20%);
 		}
 	}
 
@@ -253,6 +275,47 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 			}
 		}
 	}	
+}
+
+@keyframes slide-out{
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes slide-in{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.js-mockup,
+.js-mockup.desktop {
+	display: none;
+}
+
+.mockup--transition {
+	animation-name: slide-out !important;
+	animation-duration: 500ms !important;
+	animation-direction: normal;
+}
+
+.js-mockup.desktop.mockup--visible{
+	display: flex;
+	animation-name: slide-in;
+	animation-duration: 500ms;
+}
+
+.mockup--visible {
+	display: block;
+	animation-name: slide-in;
+	animation-duration: 500ms;
 }
 
 .project-section--intro {
@@ -317,11 +380,36 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 				padding-bottom: 0;
 			}
 		}
-		.project-section__process-cell {			
+		&__process-cell {			
 			width: 100%;
 			flex: 1 1 100%;
 			padding-left: 0;
 			padding-right: 0;
+		}
+		&__mockups {
+			&--oam {
+				.desktop {
+					right: -7.5rem;
+					z-index: 1;
+				}
+				.tablet {
+					left: -2.5rem;
+					z-index: 2;
+				}
+				.iphone {
+					left: -7.5rem;
+					z-index: 3;
+				}
+			}
+	
+			&--ac {
+				.desktop {
+					right: 0;
+				}
+				.tablet {
+					left: 0;
+				}
+			}
 		}
 	}
 }

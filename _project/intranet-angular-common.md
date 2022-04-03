@@ -50,24 +50,24 @@ jsarr:
 <section class="project-section project-section--project">
 	<div class="project-section__inner">
 		<h2 class="project-section__title">The Project</h2>
-		<div class="flex-row flex-row--container">
-			<div class="flex-row__column">
-				<div class="project-section__mockups project-section__mockups--ac">
-					<div class="desktop">
-						<div class="desktop__screen">
-							<img src="/assets/img/angular-common/greeter-desktop--best.png" />
-						</div>
-						<div class="desktop__stand"></div>
-						<div class="desktop__base"></div>
-					</div>
-					<div class="tablet">
-						<div class="tablet__screen">
-							<img src="/assets/img/angular-common/greeter-tablet--best.png" />
-						</div>
-					</div>
+		<div class="project-section__mockups project-section__mockups--ac">
+			<div class="desktop js-mockup mockup--visible" data-slide="1">
+				<div class="desktop__screen">
+					<img src="/assets/img/angular-common/greeter-desktop--best.png" />
+				</div>
+				<div class="desktop__stand"></div>
+				<div class="desktop__base"></div>
+			</div>
+			<div class="tablet js-mockup" data-slide="2">
+				<div class="tablet__screen">
+					<img src="/assets/img/angular-common/greeter-tablet--best.png" />
 				</div>
 			</div>
 		</div>
+		<ul class="project-section__mockups-nav">
+			<li class="project-section__mockups-nav-item js-slider-left"><i class="fa fa-chevron-left"></i></li>
+			<li class="project-section__mockups-nav-item js-slider-right"><i class="fa fa-chevron-right"></i></li>
+		</ul>
 	</div>
 </section>
 <section class="project-section project-section--process">
