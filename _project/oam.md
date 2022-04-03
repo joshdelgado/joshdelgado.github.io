@@ -48,12 +48,10 @@ jsarr:
 <section class="project-section">
 	<div class="project-section__inner">
 		<h2 class="project-section__title">The Problem(s)</h2>
-		<div class="flex-row flex-row--container flex-row--justify-center">
-			<div class="flex-row__column flex-row__column--8">
-				<p>This was one of the older projects in the company's codebase which means there was A LOT of undocumneted and spaghetti code. Few developers wanted to work on the project since it was difficult to find the code you needed to address and when you did, it would often change something else in addition.</p>
-				<p>The demographic for this application skews older and less tech-savvy so support calls and messages were aggressively high.</p>
-				<p>This is a the first part of a multi-phase transition to an entirely angular application. The phase one purpose was to create a guided flow that would direct the user to the existing page to complete their goal. Since this was an addition to the site instead of a conversion, it allowed our team to discover pitfalls in our design through live user testing.</p>
-			</div>
+		<div class="project-section__copy-area">
+			<p>This was one of the older projects in the company's codebase which means there was A LOT of undocumneted and spaghetti code. Few developers wanted to work on the project since it was difficult to find the code you needed to address and when you did, it would often change something else in addition.</p>
+			<p>The demographic for this application skews older and less tech-savvy so support calls and messages were aggressively high.</p>
+			<p>This is a the first part of a multi-phase transition to an entirely angular application. The phase one purpose was to create a guided flow that would direct the user to the existing page to complete their goal. Since this was an addition to the site instead of a conversion, it allowed our team to discover pitfalls in our design through live user testing.</p>
 		</div>
 	</div>
 </section>
@@ -88,11 +86,11 @@ jsarr:
 <section class="project-section project-section--process">
 	<div class="project-section__inner">
 		<h2 class="project-section__title">The Process</h2>
-		<div class="flex-row flex-row--container">
-			<div class="flex-row__column flex-row__column--6">
+		<div class="project-section__process-row">
+			<div class="project-section__process-cell">
 				<p>The Angular application lives within the existing Java/JSP website. Angular preloads the base module and remains hidden until the user clicks the "Show Guided Flow" bar that exists throughout the website.</p>
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+			<div class="project-section__process-cell">
 				<div class="desktop">
 					<div class="desktop__screen">
 						<video width="100%" autoplay muted loop playsinline>
@@ -105,23 +103,29 @@ jsarr:
 					<div class="desktop__base"></div>
 				</div>
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+		</div>
+		<div class="project-section__process-row">
+			<div class="project-section__process-cell">
 				{% include multi-code.html %}
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+			<div class="project-section__process-cell">
 				<p>It has a data-driven, card-based design reduces the number of front-end components that need to be written.</p>
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+		</div>
+		<div class="project-section__process-row">
+			<div class="project-section__process-cell">
 				<p>The project is split into multiple modules to reduce bandwidth and speed up page load times.</p>
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+			<div class="project-section__process-cell">
 				<span class="project-section__img project-section__img--max-width">
 					<span>
 						<img src="/assets/img/oam/file-structure.png" alt="File Structure">
 					</span>
 				</span>
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+		</div>
+		<div class="project-section__process-row">
+			<div class="project-section__process-cell">
 				<div class="iphone iphone--large">
 					<div class="iphone__screen">
 						<video width="100%" autoplay muted loop playsinline>
@@ -132,21 +136,25 @@ jsarr:
 					</div>
 				</div>
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+			<div class="project-section__process-cell">
 				<p markdown="1">The user base is 90% desktop users (the demographic skews older) but the development is still mobile focused.</p>
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+		</div>
+		<div class="project-section__process-row">
+			<div class="project-section__process-cell">
 				<p>We utilize Angular Material Forms and Icons to do some of the heavy lifting and reduce our development time. Who wants to reinvent the wheel? </p>
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+			<div class="project-section__process-cell">
 				<span class="project-section__img">
 					<span markdown="1">![Icons](/assets/img/angular-common/final/icons-svg.jpg)</span>
 				</span>
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+		</div>
+		<div class="project-section__process-row">
+			<div class="project-section__process-cell">
 				{% include multi-code2.html %}
 			</div>
-			<div class="flex-row__column flex-row__column--6">
+			<div class="project-section__process-cell">
 				<p>We create Angular analogs for services, objects, etc that exist on the Java side. This helps our front-end and back-end devs communicate and eliminates many common misunderstandings.</p>
 			</div>
 		</div>

@@ -194,14 +194,17 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 
 		&--oam {
 			.desktop {
+				flex: 0 1 auto;
 				right: -7.5rem;
 				z-index: 1;
 			}
 			.tablet {
+				flex: 0 0 auto;
 				left: -2.5rem;
 				z-index: 2;
 			}
 			.iphone {
+				flex: 0 0 auto;
 				left: -7.5rem;
 				z-index: 3;
 			}
@@ -248,7 +251,8 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 		justify-content: space-between;
 		align-items: stretch;
 		flex-wrap: wrap;
-		max-width: 100%;
+		max-width: 1600px;
+		margin: 0 auto;
 	}
 
 	&__process-cell {
