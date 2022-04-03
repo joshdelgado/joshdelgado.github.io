@@ -222,7 +222,7 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 	}
 
 	&__mockups-nav {
-		display: flex;
+		display: none;
 		justify-content: center;
 		align-items: center;
 		padding: 2rem 0 0;
@@ -293,29 +293,6 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 	100% {
 		opacity: 1;
 	}
-}
-
-.js-mockup,
-.js-mockup.desktop {
-	display: none;
-}
-
-.mockup--transition {
-	animation-name: slide-out !important;
-	animation-duration: 500ms !important;
-	animation-direction: normal;
-}
-
-.js-mockup.desktop.mockup--visible{
-	display: flex;
-	animation-name: slide-in;
-	animation-duration: 500ms;
-}
-
-.mockup--visible {
-	display: block;
-	animation-name: slide-in;
-	animation-duration: 500ms;
 }
 
 .project-section--intro {
@@ -389,15 +366,15 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 		&__mockups {
 			&--oam {
 				.desktop {
-					right: -7.5rem;
+					right: 0;
 					z-index: 1;
 				}
 				.tablet {
-					left: -2.5rem;
+					left: 0;
 					z-index: 2;
 				}
 				.iphone {
-					left: -7.5rem;
+					left: 0;
 					z-index: 3;
 				}
 			}
@@ -411,5 +388,30 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 				}
 			}
 		}
+		&__mockups-nav {
+			display: flex;
+		}
+	}
+	.js-mockup,
+	.js-mockup.desktop {
+		display: none;
+	}
+
+	.mockup--transition {
+		animation-name: slide-out !important;
+		animation-duration: 500ms !important;
+		animation-direction: normal;
+	}
+
+	.js-mockup.desktop.mockup--visible{
+		display: flex;
+		animation-name: slide-in;
+		animation-duration: 500ms;
+	}
+
+	.mockup--visible {
+		display: block;
+		animation-name: slide-in;
+		animation-duration: 500ms;
 	}
 }

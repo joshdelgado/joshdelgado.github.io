@@ -70,7 +70,7 @@ jsarr:
 			</div>
 			<div class="tablet js-mockup" data-slide="2">
 				<div class="tablet__screen">
-					<img src="/assets/img/oam/oam-tablet--best.png" />
+					<img src="/assets/img/oam/oam-tablet--best2.png" />
 					</div>
 			</div>
 			<div class="iphone js-mockup" data-slide="3">

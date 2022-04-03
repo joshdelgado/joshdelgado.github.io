@@ -56,7 +56,7 @@ $box-shadow-hover: 0px 10px 12px 0 #00000025;
 
 .tablet {
 	position: relative;
-	height: calc(#{$tablet-width} * (4/3));
+	max-height: calc(#{$tablet-width} * (4/3));
 	width: $tablet-width;
 	background-color: $black;
 	border: 12px solid $black;
@@ -68,6 +68,7 @@ $box-shadow-hover: 0px 10px 12px 0 #00000025;
 	&__screen {
 		height: 100%;
 		width: 100%;
+		max-height: 340px;
 		border-radius: 2px;
 		overflow: hidden;
 	}
@@ -92,7 +93,7 @@ $phone-border-radius: $phone-width / 8;
 
 .iphone {
 	position: relative;
-    height: calc(#{$phone-width} * (1/.488));
+    max-height: calc(#{$phone-width} * (1/.488));
     width: $phone-width;
     background-color: $black;
     border: 8px solid $black;
