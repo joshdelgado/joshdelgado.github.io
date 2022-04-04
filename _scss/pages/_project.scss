@@ -419,3 +419,23 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 		animation-duration: 500ms;
 	}
 }
+
+@media (max-width: $breakpoint) {
+	.project {
+		&__title {
+			font-size: 36px;
+		}
+	}
+}
+
+@media (max-width: $breakpoint-mobile) {
+	.project {
+		&__title {
+			font-size: 24px;
+
+			span {
+				padding: 1.5rem;
+			}
+		}
+	}
+}
