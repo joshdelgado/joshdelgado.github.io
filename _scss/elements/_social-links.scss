@@ -56,9 +56,21 @@
 		&__icon {
 			margin: 0.5rem 0;
 		}
-
-		&--closed {
+	}
+	
+	&--closed {
+		.social-links-dropdown__trigger {
+			transform: scale(-1);
+			transition: all 350ms ease;
+		}
+		.social-links {
 			transform: translateY(-120%);
 		}
+	}
+}
+
+@media (max-width: $breakpoint) {
+	.social-links-dropdown {
+		display: none;
 	}
 }

@@ -18,7 +18,7 @@ jsarr:
 		<div class="project-section__intro-text">
 			<p class="project-section__summary">An Angular 11 application living inside a legacy Java application to guide users through common functions of the Owner Account Management portal.</p>
 		</div>
-		<ul class="flex-row__column project-section__team">
+		<ul class="project-section__team">
 			<li class="project-section__team-member">
 				<strong>Designer</strong>
 				<span>Angela Shockey</span>

@@ -17,7 +17,7 @@ jsarr:
 		<div class="project-section__intro-text">
 			<p class="project-section__summary">A common-code library for all Angular projects made for Westgate. Originally written in AngularJS but upgraded to Angular 7, and later, Angular 11.</p>
 		</div>
-		<ul class="flex-row__column project-section__team">
+		<ul class="project-section__team">
 			<li class="project-section__team-member">
 				<strong>Designer</strong>
 				<span>Jose De La Vega</span>

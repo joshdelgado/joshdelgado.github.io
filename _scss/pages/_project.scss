@@ -310,7 +310,7 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 		}
 		&__img {
 			position: relative;
-			bottom: -0.5rem;
+			bottom: -1rem;
 			margin: 0 auto;
 
 			img {
@@ -361,8 +361,7 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 				padding-bottom: 0;
 			}
 		}
-		&__process-cell {			
-			width: 100%;
+		&__process-cell {
 			flex: 1 1 100%;
 			padding-left: 0;
 			padding-right: 0;
