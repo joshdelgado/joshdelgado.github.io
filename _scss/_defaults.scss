@@ -32,12 +32,12 @@ $percentage: 2%;
 
 $breakpoint-tablet: 1024px;
 $breakpoint: 860px;
-$breakpoint-mobile: 530px;
+$breakpoint-mobile: 576px;
 
 @import 'vendors/sass-code-highlight/monokai.scss';
 
 * {
-	transition: all 350ms ease;
+	// transition: all 350ms ease;
 }
 
 html {

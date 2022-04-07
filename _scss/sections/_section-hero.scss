@@ -73,9 +73,30 @@
 	}
 }
 
+@media (max-width: $breakpoint-tablet) {
+	&--hero {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+		.section {
+			&__inner {
+				max-width: 576px;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
 @media (max-width: $breakpoint-mobile) {
 	&--hero {
+
 		.section {	
+			&__inner {
+				max-width: 100%;
+				padding: 0 1rem 1rem;
+			}
+
 			&__pre-title {
 				padding-bottom: 0.25rem;
 			}
@@ -90,6 +111,10 @@
 				font-size: 22px;
 				padding-bottom: 3rem;
 			}
+		}
+		
+		&:after {
+			height: 120px;
 		}
 	}
 }

@@ -10,3 +10,13 @@
 		}
 	}
 }
+
+@media (max-width: $breakpoint-mobile){
+	&--contact {
+		.section {
+			&__title {
+				font-size: 48px;
+			}
+		}
+	}
+}

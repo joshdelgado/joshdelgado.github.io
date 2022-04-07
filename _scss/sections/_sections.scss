@@ -37,9 +37,9 @@
 		padding-bottom: 6rem;
 	}
 
-	// About Section\
+	// About Section
 	&__about-body {
-		max-width:466px;
+		max-width: 468px;
 		margin: 0 auto;
 	}
 
@@ -123,6 +123,9 @@
 	.section {
 		&__inner {
 			padding: 5rem 1rem;
+		}
+		&__title {
+			font-size: 36px;
 		}
 		&--contact {
 			.section {

@@ -1,2 +1,12 @@
 &--about {
 }
+
+@media (max-width: $breakpoint-mobile){
+	&--about {
+		.section {
+			&__title {
+				padding-bottom: 4.5rem;
+			}
+		}
+	}
+}

@@ -55,7 +55,7 @@ jsarr:
 		</div>
 	</div>
 </section>
-<section class="project-section">
+<section class="project-section project-section--project">
 	<div class="project-section__inner">
 		<h2 class="project-section__title">The Project</h2>
 		<div class="project-section__mockups project-section__mockups--oam">
@@ -163,13 +163,11 @@ jsarr:
 <section class="project-section">
 	<div class="project-section__inner">
 		<h2 class="project-section__title">Conclusion</h2>
-		<div class="flex-row flex-row--container flex-row--justify-center">
-			<div class="flex-row__column flex-row__column--8">
-				<p>This project pushed us to bring our common angular library to the next level with further abstractions and increased organization. It was a pain at first to stop development to work on the library but the time has already been made up for.</p>
-				<p>Early user testing has been received well. The common use-cases are much easier for our applications demographic to navigate through.</p>
-				<p>Going forward, more documentation for the project is needed. As it's an in-progress application, certain patterns are still up for debate so we haven't written extensive documentation for it. If you'd like to see examples of my documentation style you can do so here.</p>
-				<p markdown="1">And lastly, If you happen to have a Westgate account, [check it out!](https://my.westgateresorts.com/)</p>
-			</div>
+		<div class="project-section__copy-area">
+			<p>This project pushed us to bring our common angular library to the next level with further abstractions and increased organization. It was a pain at first to stop development to work on the library but the time has already been made up for.</p>
+			<p>Early user testing has been received well. The common use-cases are much easier for our applications demographic to navigate through.</p>
+			<p>Going forward, more documentation for the project is needed. As it's an in-progress application, certain patterns are still up for debate so we haven't written extensive documentation for it. If you'd like to see examples of my documentation style you can do so here.</p>
+			<p markdown="1">And lastly, If you happen to have a Westgate account, [check it out!](https://my.westgateresorts.com/)</p>
 		</div>
 	</div>
 </section>

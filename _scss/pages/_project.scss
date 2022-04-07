@@ -113,7 +113,7 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 	}
 
 	&__copy-area {
-		max-width: 996px;
+		max-width: 700px;
 		margin: 0 auto;
 	}
 
@@ -435,6 +435,89 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 			span {
 				padding: 1.5rem;
 			}
+		}
+	}
+	.project-section {
+
+		&__summary {
+			font-size: 24px !important;
+		}
+
+		&__title {
+			font-size: 36px;
+			padding-bottom: 5rem;
+		}
+
+		&__team {
+			flex-direction: column;
+			padding: 1.5rem 0;
+		}
+
+		&__team-member {
+			margin: 0.25rem 0;
+		}
+
+		&__process-row {
+			padding-bottom: 8rem;
+
+			&:nth-child(odd){
+				.project-section__process-cell {
+					&:nth-child(2){
+						padding-bottom: 2rem;
+					}
+				}
+			}
+			&:nth-child(even){
+				.project-section__process-cell {
+					&:nth-child(1) {
+						padding-bottom: 2rem;
+					}
+				}
+			}
+		}
+
+		&__process-cell {
+			margin: 0;
+	
+			p {
+				font-size: 24px;
+			}
+		}
+
+		&__copy-area {
+			p {
+				line-height: 1.5;
+			}
+		}
+
+		&--process,
+		&--project {
+			padding: 0 0.5rem;
+		}
+
+		&--intro{	
+			.project-section__img {
+				bottom: 0;
+				margin: 2rem 0 1rem;
+			}
+		}
+	}
+
+	// TODO move this to correct file
+	.highlighter-rouge > .highlight {
+		overflow: auto;
+		max-height: 400px;
+	}
+
+	.multi-code {
+		&__options{
+			flex-wrap: wrap;
+		}
+		&__option {
+			flex: 1 1 150px;
+		}
+		&__pane {
+			height: auto !important;
 		}
 	}
 }

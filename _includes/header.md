@@ -2,7 +2,9 @@
 	<div class="header__inner">
 		<div class="header__left">
 			<div class="header__logo">
-				{% include logo.html %}
+				<a href="/">
+					{% include logo.html %}
+				</a>
 			</div>
 			<nav class="header__nav">
 				<a href="/" class="header__nav-item header__nav-item--active">Home</a>
@@ -59,5 +61,4 @@
 			</div>
 		</div>
 	</div>
-	<div class="header__bottom"></div>
 </header>
