@@ -50,7 +50,8 @@
 		color: $theme-text;
 
 		p {
-			font-size: 18px;
+			font-size: 20px;
+			line-height: 1.5;
 			margin-bottom: 1rem;
 
 			&:last-child {
@@ -281,24 +282,6 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 	}	
 }
 
-@keyframes slide-out{
-	0% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
-}
-
-@keyframes slide-in{
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
 .project-section--intro {
 	.project-section {
 		&__inner {
@@ -361,11 +344,13 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 				padding-bottom: 0;
 			}
 		}
+		
 		&__process-cell {
 			flex: 1 1 100%;
 			padding-left: 0;
 			padding-right: 0;
 		}
+
 		&__mockups {
 			&--oam {
 				.desktop {
@@ -395,6 +380,8 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 			display: flex;
 		}
 	}
+
+	// TODO clean up class names and make a scss partial
 	.js-mockup,
 	.js-mockup.desktop {
 		display: none;
@@ -438,7 +425,6 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 		}
 	}
 	.project-section {
-
 		&__summary {
 			font-size: 24px !important;
 		}
@@ -500,24 +486,6 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 				bottom: 0;
 				margin: 2rem 0 1rem;
 			}
-		}
-	}
-
-	// TODO move this to correct file
-	.highlighter-rouge > .highlight {
-		overflow: auto;
-		max-height: 400px;
-	}
-
-	.multi-code {
-		&__options{
-			flex-wrap: wrap;
-		}
-		&__option {
-			flex: 1 1 150px;
-		}
-		&__pane {
-			height: auto !important;
 		}
 	}
 }

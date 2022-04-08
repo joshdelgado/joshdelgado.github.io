@@ -82,3 +82,18 @@
 		box-shadow: $box-shadow-img;
 	}
 }
+
+
+@media (max-width: $breakpoint-mobile) {
+	.multi-code {
+		&__options{
+			flex-wrap: wrap;
+		}
+		&__option {
+			flex: 1 1 150px;
+		}
+		&__pane {
+			height: auto !important;
+		}
+	}
+}

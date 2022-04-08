@@ -1,6 +1,6 @@
 jQuery(document).ready(function () {
 	$('.js-toggle-theme').on('click', function () {
-		$(this).toggleClass('header__theme-toggle--dark-mode');
+		$(this).toggleClass('theme-toggle--dark-mode');
 		$('.body').toggleClass('body__light-mode');
 	});
 
@@ -14,7 +14,8 @@ jQuery(document).ready(function () {
 	});
 
 	$('.js-social-dropdown-trigger').on('click', function () {
-		$(this).parent().toggleClass('social-links-dropdown--closed');
+		$(this).parent().toggleClass('nav-dropdown2--closed');
+		// $(this).parent().toggleClass('social-links-dropdown--closed');
 	});
 
 	$('.js-social-dropdown-trigger2').on('click', function () {

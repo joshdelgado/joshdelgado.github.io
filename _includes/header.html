@@ -1,0 +1,53 @@
+<header class="header">
+	<div class="header__inner">
+		<div class="header__left">
+			<div class="header__logo">
+				<a href="/">
+					{% include logo.html %}
+				</a>
+			</div>
+			<nav class="header__nav">
+				<a href="/" class="header__nav-item header__nav-item--active">Home</a>
+				<a href="/about" class="header__nav-item">About</a>
+				<a href="/work" class="header__nav-item">Projects</a>
+				<a href="/resume.pdf" download="Josh Delgado's Resume" class="header__nav-item">Resume</a>
+			</nav>
+		</div>
+		<div class="header__right">
+			{% include theme-toggle.html %}
+			<!-- <div class="social-links-dropdown social-links-dropdown--closed">
+				<i class="social-links-dropdown__trigger fa fa-chevron-up js-social-dropdown-trigger"></i>
+				{% include social-links.html %}
+			</div>
+			<div class="nav-dropdown">
+				<i class="nav-dropdown__trigger fa fa-bars js-social-dropdown-trigger2"></i>
+				<div class="mobile-nav mobile-nav--closed js-social-dropdown">
+					<nav class="mobile-nav__nav">
+						<a href="/" class="mobile-nav__nav-item mobile-nav__nav-item--active">Home</a>
+						<a href="/about" class="mobile-nav__nav-item">About</a>
+						<a href="/work" class="mobile-nav__nav-item">Projects</a>
+						<a href="/" class="mobile-nav__nav-item">Resume</a>
+					</nav>
+					{% include social-links.html %}
+				</div>
+			</div> -->
+			<div class="nav-dropdown2 nav-dropdown2--closed">
+				<span class="nav-dropdown2__trigger nav-dropdown2__trigger--mobile js-social-dropdown-trigger">
+					<i class="fa fa-bars"></i>
+				</span>
+				<span class="nav-dropdown2__trigger js-social-dropdown-trigger">
+					<i class="fa fa-chevron-up"></i>
+				</span>
+				<div class="mobile-nav js-social-dropdown">
+					<nav class="mobile-nav__nav">
+						<a href="/" class="mobile-nav__nav-item mobile-nav__nav-item--active">Home</a>
+						<a href="/about" class="mobile-nav__nav-item">About</a>
+						<a href="/work" class="mobile-nav__nav-item">Projects</a>
+						<a href="/" class="mobile-nav__nav-item">Resume</a>
+					</nav>
+					{% include social-links.html %}
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

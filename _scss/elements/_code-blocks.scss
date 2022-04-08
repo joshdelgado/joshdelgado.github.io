@@ -4,7 +4,6 @@
 	z-index: 1;
 	margin: 8px;
 	border-radius: 8px;
-	// max-width: calc(100% - 2rem);
 	
 	> .highlight {
 		overflow-x: auto;
@@ -56,4 +55,11 @@
 
 .highlight {
 	border-radius: 8px;
+}
+
+@media (max-width: $breakpoint-mobile) {
+	.highlighter-rouge > .highlight {
+		overflow: auto;
+		max-height: 400px;
+	}
 }
