@@ -17,7 +17,7 @@
 
 		&:hover {
 			a {
-				color: darken($theme-accent, 20%);
+				color: $theme-accent-hover;
 			}
 		}
 	}

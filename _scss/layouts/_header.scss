@@ -73,7 +73,7 @@
 			display: block;
 			max-width: 100%;
 
-			path{
+			path {
 				fill: $theme-accent;
 				transition: fill 350ms ease;
 			}
@@ -81,7 +81,7 @@
 
 		&:hover {
 			svg path {
-				fill: darken($theme-accent, 20%);
+				fill: $theme-accent-hover;
 			}
 		}
 	}

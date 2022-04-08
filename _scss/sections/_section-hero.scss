@@ -47,7 +47,7 @@
 			font-weight: 700;
 			padding: 0 0 1.25rem;
 			max-width: 100%;
-			color: darken($theme-text, 15%);
+			color: $theme-subtitle;
 			@include text-shadow();
 		}
 
@@ -69,7 +69,7 @@
 		right: 0;
 		height: 200px;
 		z-index: 10;
-		@include ease-in-out-sine-gradient(darken($theme-background2, 4%), to top);
+		@include ease-in-out-sine-gradient(#243e44, to top);
 	}
 }
 

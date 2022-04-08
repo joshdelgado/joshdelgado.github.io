@@ -1,0 +1,3 @@
+@function hsl-darken($h,$s,$l,$change) {
+	@return hsl(#{$h}, #{$s}, calc(#{$l} * (1 - (#{$change})) ));
+}

@@ -14,12 +14,7 @@ jQuery(document).ready(function () {
 	});
 
 	$('.js-social-dropdown-trigger').on('click', function () {
-		$(this).parent().toggleClass('nav-dropdown2--closed');
-		// $(this).parent().toggleClass('social-links-dropdown--closed');
-	});
-
-	$('.js-social-dropdown-trigger2').on('click', function () {
-		$(this).parent().find('.js-social-dropdown').toggleClass('mobile-nav--closed');
+		$(this).parent().toggleClass('nav-dropdown--closed');
 	});
 
 	$('.js-slider-right').on('click', function () {

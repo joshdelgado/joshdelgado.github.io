@@ -64,7 +64,9 @@
 		}
 
 		&:after{
-			@include after-section-angle(darken($theme-background2, $percentage), $theme-background2);
+			@include after-section-angle(
+				hsl-darken(var(--bg2-color-h), var(--bg2-color-s), var(--bg2-color-l),  #{$hsl-percentage}*2), 
+				$theme-background2);
 		}
 	}
 }
@@ -243,7 +245,7 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 		}
 
 		&:hover i {
-			color: darken($theme-accent, 20%);
+			color: $theme-accent-hover;
 		}
 	}
 
@@ -273,7 +275,7 @@ $box-shadow-img: 0 0 16px 0 #00000030;
 
 	@for $i from 1 to 10 {
 		&:nth-last-child(#{$i}){
-			background-color: darken($theme-background2, $percentage * $i);
+			background-color: hsl-darken(var(--bg2-color-h), var(--bg2-color-s), var(--bg2-color-l), (calc(#{$i} + 1) * #{$hsl-percentage}));
 
 			@if ($i == 1){
 				border-width: 0;

@@ -1,3 +1,17 @@
+:root {
+	--background-color: #0f1a1c;
+	--background-color2: #2A484E;
+	--text-color: #DDEFE3;
+	--accent-color: #A8D8CD;
+	--accent-color-hover: #62b8a5;
+
+
+	--bg2-color-h: 190;
+	--bg2-color-s: 30%;
+	--bg2-color-l: 24%;
+	--bg2-color-hsl: hsl(var(--bg2-color-h), var(--bg2-color-s), var(--bg2-color-l));
+}
+
 $navy: #03263A;
 $blue: #36578C;
 $green: #4EA701;
@@ -10,25 +24,19 @@ $color3: #A8D8CD;
 $color4: #DDEFE3;
 $color5: #CE4A50;
 
-$color1: #040c18;
-$color2: #19394b;
-$color3: #1e132c;
-$color4: #4b7d97;
-$color5: #a1afbd;
+$theme-background: #0f1a1c;
+$theme-background2: #2A484E;
+$theme-text: #DDEFE3;
+$theme-subtitle: #a9d7b8;
+$theme-accent: #A8D8CD;
+$theme-heading: #DDEFE3;
+$theme-accent-hover: #62b8a5;
+$theme-accent-darken: #408e7c;
 
-$color1: #2A484E;
-$color2: #377375;
-$color3: #A8D8CD;
-$color4: #DDEFE3;
-$color5: #CE4A50;
-
-$theme-background: darken($color1, 15%);
-$theme-background2: $color1;
-$theme-text: $color4;
-$theme-accent: $color3;
-$theme-heading: $color4;
+$theme-background2-hsl: hsl(190, 30%, 24%);
 
 $percentage: 2%;
+$hsl-percentage: 0.05;
 
 $breakpoint-tablet: 1024px;
 $breakpoint: 860px;
@@ -39,7 +47,6 @@ $breakpoint-mobile: 576px;
 
 html {
 	font-size: 16px;
-	color: $navy;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
@@ -57,7 +64,6 @@ html {
 			&__title,
 			&__subtitle,
 			&__text {
-				color: $blue;
 			}
 		}
 

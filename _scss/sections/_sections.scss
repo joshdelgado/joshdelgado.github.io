@@ -69,7 +69,7 @@
 			top: -3px;
 			display: inline-block;
 			margin-right: 0.5rem;
-			background-color: darken($theme-accent, 35%);
+			background-color: $theme-accent-darken;
 			height: 5px;
 			width: 5px;
 			transform: rotate(45deg);
@@ -97,12 +97,12 @@
 
 	@for $i from 2 to 6 {
 		&:nth-last-child(#{$i}){
-			background-color: darken($theme-background2, $percentage * ($i - 1));
+			background-color: hsl-darken(var(--bg2-color-h), var(--bg2-color-s), var(--bg2-color-l), (#{$i} * #{$hsl-percentage}) );
 
 			@if ($i == 2){
 				margin-bottom: 100px;
 				&:after {
-					@include after-section-angle(darken($theme-background2, $percentage), $theme-background2, true);
+					@include after-section-angle(hsl-darken(var(--bg2-color-h), var(--bg2-color-s), var(--bg2-color-l), (#{$i} * $hsl-percentage) ), $theme-background2, true);
 				}
 			}
 		}
