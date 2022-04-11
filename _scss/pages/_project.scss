@@ -19,7 +19,8 @@
 		text-shadow: 1px 1px 1px $theme-background;
 		position: relative;
 		display: flex;
-		@include backlight(0, 0, 40px, 0.95, .75, #0fffc1, #7e0fff, 10s);
+		@include backlight(0, 0, 40px, 0.95, .75, var(--glow-color1), var(--glow-color2), 10s);
+		
 
 		span {
 			background-color:  #191919;

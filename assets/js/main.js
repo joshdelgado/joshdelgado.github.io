@@ -1,7 +1,12 @@
 jQuery(document).ready(function () {
 	$('.js-toggle-theme').on('click', function () {
 		$(this).toggleClass('theme-toggle--dark-mode');
-		$('.body').toggleClass('body__light-mode');
+
+		if ($('.body').attr('data-theme') === 'light') {
+			$('.body').attr('data-theme', 'dark');
+		} else {
+			$('.body').attr('data-theme', 'light');
+		}
 	});
 
 	$('.js-tab-option').on('click', function () {

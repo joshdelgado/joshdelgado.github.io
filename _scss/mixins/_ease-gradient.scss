@@ -1,10 +1,4 @@
-@mixin ease-in-out-sine-gradient($startColor, $direction, $satOverwrite: null, $lightOverwrite: null){
-	$hue: hue($startColor);
-	$saturation: saturation($startColor);
-	$lightness: lightness($startColor);
-	@if $satOverwrite != null { $saturation: $satOverwrite; }
-	@if $lightOverwrite != null { $lightness: $lightOverwrite; }
-	
+@mixin ease-in-out-sine-gradient-hsl($hue, $saturation, $lightness, $direction){
 	background: linear-gradient(
 	  $direction,
 	  hsl($hue, $saturation, $lightness) 0%,

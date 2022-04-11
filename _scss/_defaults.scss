@@ -1,15 +1,68 @@
 :root {
 	--background-color: #0f1a1c;
 	--background-color2: #2A484E;
+	--no: #243e44;
 	--text-color: #DDEFE3;
 	--accent-color: #A8D8CD;
 	--accent-color-hover: #62b8a5;
 
+	--glow-color1: #0fffc1;
+	--glow-color2: #7e0fff;
 
 	--bg2-color-h: 190;
 	--bg2-color-s: 30%;
 	--bg2-color-l: 24%;
 	--bg2-color-hsl: hsl(var(--bg2-color-h), var(--bg2-color-s), var(--bg2-color-l));
+
+	--bg-color-h: 189;
+	--bg-color-s: 30%;
+	--bg-color-l: 8%;
+	--bg-color-hsl: hsl(var(--bg-color-h), var(--bg-color-s), var(--bg-color-l));
+
+	--text-color-h: 140;
+	--text-color-s: 36%;
+	--text-color-l: 90%;
+	--text-color-hsl: hsl(var(--text-color-h), var(--text-color-s), var(--text-color-l));
+	
+	--accent-color-h: 166;
+	--accent-color-s: 38%;
+	--accent-color-l: 75%;
+	--accent-color-hsl: hsl(var(--accent-color-h), var(--accent-color-s), var(--accent-color-l));
+	
+	--glow-color1-h: 165;
+	--glow-color1-s: 100%;
+	--glow-color1-l: 53%;
+	--glow-color1-hsl: hsl(var(--glow-color1-h), var(--glow-color1-s), var(--glow-color1-l));
+	
+	--glow-color2-h: 268;
+	--glow-color2-s: 100%;
+	--glow-color2-l: 53%;
+	--glow-color2-hsl: hsl(var(--glow-color2-h), var(--glow-color2-s), var(--glow-color2-l));
+
+	// #08A4BD
+	--hero-color1-h: 188;
+	--hero-color1-s: 192%;
+	--hero-color1-l: 39%;
+	--hero-color1-hsl: hsl(var(--hero-color1-h), var(--hero-color1-s), var(--hero-color1-l));
+	
+	// #08827B
+	--hero-color2-h: 177;
+	--hero-color2-s: 88%;
+	--hero-color2-l: 27%;
+	--hero-color2-hsl: hsl(var(--hero-color2-h), var(--hero-color2-s), var(--hero-color2-l));
+	
+	// #01172F
+	--hero-color3-h: 211;
+	--hero-color3-s: 96%;
+	--hero-color3-l: 9%;
+	--hero-color3-hsl: hsl(var(--hero-color3-h), var(--hero-color3-s), var(--hero-color3-l));
+
+	// #446DF6
+	--hero-color-bg-h: 226;
+	--hero-color-bg-s: 91%;
+	--hero-color-bg-l: 62%;
+	--hero-color-bg-hsl: hsl(var(--hero-color-bg-h), var(--hero-color-bg-s), var(--hero-color-bg-l));
+	
 }
 
 $navy: #03263A;
@@ -56,6 +109,10 @@ html {
 	background-color: $theme-background2;
 	overflow-x: hidden;
 	transition: all 350ms ease;
+
+	&[data-theme='light']{
+		--background-color: red;
+	}
 
 	&__light-mode {
 		background-color: $theme-background;

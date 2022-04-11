@@ -39,7 +39,7 @@ $theme-text-timing: 500ms;
 		width: 100%;
 		padding: 0.75rem;
 		transform: translateY(100%);
-		@include ease-in-out-sine-gradient(#00000020, to top);
+		@include ease-in-out-sine-gradient-hsl(0, 0%, 0%, to top);
 		transition: all $gradient-timing ease;
 	}
 	

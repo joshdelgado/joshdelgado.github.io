@@ -1,10 +1,4 @@
 $duration: 20s;
-$color1: #446DF6;
-$color2: #08827B;
-$color3: #00635D; // unused at the moment
-$color4: #08A4BD;
-$color5: #01172F;
-$fontColor: white;
 
 .animation {
 	position: absolute;
@@ -14,7 +8,7 @@ $fontColor: white;
 	width: 100%;
 	background-color: rgba($color: $navy, $alpha: 0.85);
 	overflow: hidden;
-	background-color: $color1;
+	background-color: var(--hero-color-bg-hsl);
 
 	&__gradient {
 		display: block;
@@ -25,19 +19,19 @@ $fontColor: white;
 		left: 0;
 		
 		&--to-right {
-			@include ease-in-out-sine-gradient($color2, to right);
+			@include ease-in-out-sine-gradient-hsl(var(--hero-color2-h), var(--hero-color2-s), var(--hero-color2-l), to right);
 			background-size: 400%;
 			background-position: center;
 			animation: backgroundMoveX ($duration/2) ease-in-out infinite;
 		}
 		
 		&--to-bottom {
-			@include ease-in-out-sine-gradient($color5, to bottom);
+			@include ease-in-out-sine-gradient-hsl(var(--hero-color3-h), var(--hero-color3-s), var(--hero-color3-l), to bottom);
 			animation: backgroundMoveY $duration ease infinite;
 		}
 		
 		&--to-top-left {
-			@include ease-in-out-sine-gradient($color4, to top left);
+			@include ease-in-out-sine-gradient-hsl(var(--hero-color1-h), var(--hero-color1-s), var(--hero-color1-l), to top left);
 		}
 	}
 
@@ -54,58 +48,5 @@ $fontColor: white;
 		animation-duration: 6s;
 		animation-iteration-count: infinite;
 		animation-timing-function: cubic-bezier(.32,.81,.35,.87);
-	}
-
-	&__mountain {
-		bottom: 0;
-		left: -50px;
-		@include mountain();
-	}
-
-	&__mountain-small {
-		bottom: 0;
-		left: 10%;
-		@include mountain();
-	}
-
-	&__mountain-small-2 {
-		bottom: 0;
-		left: 40%;
-		@include mountain();
-	}
-
-	&__mountain-small-3 {
-		bottom: 0;
-		left: 46%;
-		@include mountain();
-	}
-
-	&__mountain-med {
-		bottom: 0;
-		left: 20%;
-		@include mountain(20vw, 20vw, true, 'medium');
-		transform-origin: bottom left;
-	}
-
-	&__mountain-med-2 {
-		bottom: 0;
-		left: 55%;
-		@include mountain(20vw, 20vw, true, 'medium');
-		transform-origin: bottom left;
-	}
-
-	&__mountain-large {
-		bottom: 0;
-		right: 0;
-		@include mountain(30vw, 30vw, true, 'large');
-		transform-origin: bottom left;
-	}
-
-	&__mountain-back {
-		bottom: 0;
-		left: -5%;
-		@include mountain(30vw, 30vw, true, 'large');
-		opacity: 0.9;
-		z-index: 1;
 	}
 }

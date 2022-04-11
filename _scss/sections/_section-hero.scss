@@ -69,7 +69,7 @@
 		right: 0;
 		height: 200px;
 		z-index: 10;
-		@include ease-in-out-sine-gradient(#243e44, to top);
+		@include ease-in-out-sine-gradient-hsl(var(--bg2-color-h), var(--bg2-color-s), calc(var(--bg2-color-l) * 0.85), to top);
 	}
 }
 
