@@ -1,12 +1,27 @@
 jQuery(document).ready(function () {
+	localStorage.setItem('theme', localStorage['theme'] ? localStorage['theme'] : 'dark');
+	let theme = localStorage['theme'];
+
+	$('html').attr('data-theme', theme ? theme : 'dark');
+	if (theme === 'light') {
+		$('.js-toggle-theme').removeClass('theme-toggle--dark-mode');
+	}
+
 	$('.js-toggle-theme').on('click', function () {
 		$(this).toggleClass('theme-toggle--dark-mode');
 
-		if ($('.body').attr('data-theme') === 'light') {
-			$('.body').attr('data-theme', 'dark');
+		$('html').addClass('theme-in-transition');
+
+		if ($('html').attr('data-theme') === 'light') {
+			$('html').attr('data-theme', 'dark');
+			localStorage.setItem('theme', 'dark');
 		} else {
-			$('.body').attr('data-theme', 'light');
+			$('html').attr('data-theme', 'light');
+			localStorage.setItem('theme', 'light');
 		}
+		setTimeout(() => {
+			$('html').removeClass('theme-in-transition');
+		}, 500);
 	});
 
 	$('.js-tab-option').on('click', function () {

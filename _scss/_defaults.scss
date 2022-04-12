@@ -58,7 +58,7 @@
 	// --glow-color1-s: 100%;
 	// --glow-color1-l: 53%;
 	// --glow-color1-hsl: hsl(var(--glow-color1-h), var(--glow-color1-s), var(--glow-color1-l));
-	--glow-color1-hsl: hsl(var(--accent-color-h), 80%, 53%);
+	--glow-color1-hsl: hsl(var(--accent-color-h), 85%, 53%);
 	
 	// // color: #7e0fff;
 	// --glow-color2-h: 268;
@@ -68,7 +68,7 @@
 	--glow-color2-s: 80%;
 	--glow-color2-l: 53%;
 	// --glow-color2-hsl: hsl(var(--glow-color2-h), var(--glow-color2-s), var(--glow-color2-l));
-	--glow-color2-hsl: hsl(var(--accent-color3-h), 80%, 53%);
+	--glow-color2-hsl: hsl(var(--accent-color3-h), 75%, 58%);
 
 	color: #446DF6;
 	--hero-color-bg-h: 226;
@@ -114,25 +114,46 @@ html {
 	font-size: 16px;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 
-	&[data-theme='light']{
-		--bg-color-h: 189;
-		--bg-color-s: 30%;
-		--bg-color-l: 8%;
+	&.theme-in-transition,
+	&.theme-in-transition *,
+	&.theme-in-transition *:before,
+	&.theme-in-transition *:after {
+		transition: all 500ms !important;
+		transition-delay: 0 !important;
+	}
+
+	&[data-theme='light']{		
+		//color: #1f1f1f;
+		--black-hsl: hsl(0, 0%, 90%);
+
+		// color: #191919;
+		--blacker-hsl: hsl(0, 0%, 95%);
+
+		// color: #111;
+		--blackest-hsl: hsl(0, 0%, 98%);
+		
+		// #FFFFFF
+		--bg-color-h: 0;
+		--bg-color-s: 0%;
+		--bg-color-l: 98%;
 		--bg-color-hsl: hsl(var(--bg-color-h), var(--bg-color-s), var(--bg-color-l));
 		
-		--bg-color2-h: 190;
-		--bg-color2-s: 30%;
-		--bg-color2-l: 24%;
+		// #FFFBFE
+		--bg-color2-h: 0;
+		--bg-color2-s: 70%;
+		--bg-color2-l: 95%;
 		--bg-color2-hsl: hsl(var(--bg-color2-h), var(--bg-color2-s), var(--bg-color2-l));
 
-		--text-color-h: 140;
-		--text-color-s: 36%;
-		--text-color-l: 90%;
+		// #565254
+		--text-color-h: 330;
+		--text-color-s: 2%;
+		--text-color-l: 13%;
 		--text-color-hsl: hsl(var(--text-color-h), var(--text-color-s), var(--text-color-l));
 		
-		--accent-color-h: 166;
-		--accent-color-s: 38%;
-		--accent-color-l: 75%;
+		// #54BAB9
+		--accent-color-h: 179;
+		--accent-color-s: 42%;
+		--accent-color-l: 43%;
 		--accent-color-hsl: hsl(var(--accent-color-h), var(--accent-color-s), var(--accent-color-l));
 		
 		--glow-color1-h: 165;
