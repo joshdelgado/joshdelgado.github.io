@@ -1,71 +1,102 @@
 :root {
-	//#1f1f1f
+	//color: #1f1f1f;
 	--black-hsl: hsl(0, 0%, 12%);
 
-	//#111
-	--blackest-hsl: hsl(0, 0%, 7%);
-
+	// color: #191919;
 	--blacker-hsl: hsl(0, 0%, 10%);
 
-	// #0f1a1c
+	// color: #111;
+	--blackest-hsl: hsl(0, 0%, 7%);
+
+	// color: #0f1a1c;
 	--bg-color-h: 189;
 	--bg-color-s: 30%;
 	--bg-color-l: 8%;
 	--bg-color-hsl: hsl(var(--bg-color-h), var(--bg-color-s), var(--bg-color-l));
 
-	// #2A484E
+	// color: #2A484E;
 	--bg-color2-h: 190;
 	--bg-color2-s: 30%;
 	--bg-color2-l: 24%;
 	--bg-color2-hsl: hsl(var(--bg-color2-h), var(--bg-color2-s), var(--bg-color2-l));
 
-	// #DDEFE3
+	// color: #DDEFE3;
 	--text-color-h: 140;
 	--text-color-s: 36%;
 	--text-color-l: 90%;
 	--text-color-hsl: hsl(var(--text-color-h), var(--text-color-s), var(--text-color-l));
 	
-	// #A8D8CD
+	color: #A8D8CD;
 	--accent-color-h: 166;
 	--accent-color-s: 38%;
 	--accent-color-l: 75%;
 	--accent-color-hsl: hsl(var(--accent-color-h), var(--accent-color-s), var(--accent-color-l));
+
+	color: #D8A8B3;
+	--accent-color2-h: 346;
+	--accent-color2-s: 38%;
+	--accent-color2-l: 75%;
+	--accent-color2-hsl: hsl(var(--accent-color2-h), var(--accent-color2-s), var(--accent-color2-l));
+
+	color: #D8CDA8;
+	--accent-color3-h: 256;
+	--accent-color3-s: 38%;
+	--accent-color3-l: 75%;
+	--accent-color3-hsl: hsl(var(--accent-color3-h), var(--accent-color3-s), var(--accent-color3-l));
+
+	color: #D8CDA8;
+	--accent-color4-h: 76;
+	--accent-color4-s: 38%;
+	--accent-color4-l: 75%;
+	--accent-color4-hsl: hsl(var(--accent-color4-h), var(--accent-color4-s), var(--accent-color4-l));
 	
-	// #0fffc1
-	--glow-color1-h: 165;
-	--glow-color1-s: 100%;
+	// color: #0fffc1;
+	--glow-color1-h: var(--accent-color-h);
+	--glow-color1-s: 80%;
 	--glow-color1-l: 53%;
-	--glow-color1-hsl: hsl(var(--glow-color1-h), var(--glow-color1-s), var(--glow-color1-l));
+	// --glow-color1-h: 165;
+	// --glow-color1-s: 100%;
+	// --glow-color1-l: 53%;
+	// --glow-color1-hsl: hsl(var(--glow-color1-h), var(--glow-color1-s), var(--glow-color1-l));
+	--glow-color1-hsl: hsl(var(--accent-color-h), 80%, 53%);
 	
-	// #7e0fff
-	--glow-color2-h: 268;
-	--glow-color2-s: 100%;
+	// // color: #7e0fff;
+	// --glow-color2-h: 268;
+	// --glow-color2-s: 100%;
+	// --glow-color2-l: 53%;
+	--glow-color2-h: var(--accent-color3-h);
+	--glow-color2-s: 80%;
 	--glow-color2-l: 53%;
-	--glow-color2-hsl: hsl(var(--glow-color2-h), var(--glow-color2-s), var(--glow-color2-l));
+	// --glow-color2-hsl: hsl(var(--glow-color2-h), var(--glow-color2-s), var(--glow-color2-l));
+	--glow-color2-hsl: hsl(var(--accent-color3-h), 80%, 53%);
 
-	// #08A4BD
-	--hero-color1-h: 188;
-	--hero-color1-s: 192%;
-	--hero-color1-l: 39%;
-	--hero-color1-hsl: hsl(var(--hero-color1-h), var(--hero-color1-s), var(--hero-color1-l));
-	
-	// #08827B
-	--hero-color2-h: 177;
-	--hero-color2-s: 88%;
-	--hero-color2-l: 27%;
-	--hero-color2-hsl: hsl(var(--hero-color2-h), var(--hero-color2-s), var(--hero-color2-l));
-	
-	// #01172F
-	--hero-color3-h: 211;
-	--hero-color3-s: 96%;
-	--hero-color3-l: 9%;
-	--hero-color3-hsl: hsl(var(--hero-color3-h), var(--hero-color3-s), var(--hero-color3-l));
-
-	// #446DF6
+	color: #446DF6;
 	--hero-color-bg-h: 226;
 	--hero-color-bg-s: 91%;
 	--hero-color-bg-l: 62%;
-	--hero-color-bg-hsl: hsl(var(--hero-color-bg-h), var(--hero-color-bg-s), var(--hero-color-bg-l));
+	// --hero-color-bg-hsl: hsl(var(--hero-color-bg-h), var(--hero-color-bg-s), var(--hero-color-bg-l));
+	--hero-color-bg-hsl: var(--accent-color-hsl);
+
+	color: #08A4BD;
+	--hero-color1-h: 188;
+	--hero-color1-s: 192%;
+	--hero-color1-l: 39%;
+	// --hero-color1-hsl: hsl(var(--hero-color1-h), var(--hero-color1-s), var(--hero-color1-l));
+	--hero-color1-hsl: var(--accent-color3-hsl);
+	
+	color: #08827B;
+	--hero-color2-h: 177;
+	--hero-color2-s: 88%;
+	--hero-color2-l: 27%;
+	// --hero-color2-hsl: hsl(var(--hero-color2-h), var(--hero-color2-s), var(--hero-color2-l));
+	--hero-color2-hsl: var(--accent-color2-hsl);
+	
+	color: #01172F;
+	--hero-color3-h: 211;
+	--hero-color3-s: 96%;
+	--hero-color3-l: 9%;
+	// --hero-color3-hsl: hsl(var(--hero-color3-h), var(--hero-color3-s), var(--hero-color3-l));
+	--hero-color3-hsl: var(--accent-color4-hsl);
 	
 }
 
@@ -82,14 +113,6 @@ $breakpoint-mobile: 576px;
 html {
 	font-size: 16px;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
-}
-
-.body {
-	position: relative;
-	min-height: 100vh;
-	background-color: var(--bg-color2-hsl); 
-	overflow-x: hidden;
-	transition: all 350ms ease;
 
 	&[data-theme='light']{
 		--bg-color-h: 189;
@@ -148,6 +171,14 @@ html {
 	}
 }
 
+.body {
+	position: relative;
+	min-height: 100vh;
+	background-color: var(--bg-color2-hsl); 
+	overflow-x: hidden;
+	transition: all 350ms ease;
+}
+
 a {
 	color: var(--accent-color-hsl);
 }
@@ -158,4 +189,8 @@ p {
 
 pre {
 	padding: 1rem;
+}
+
+@media (prefers-color-scheme: light) {
+
 }
