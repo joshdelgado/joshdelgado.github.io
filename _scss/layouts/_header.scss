@@ -12,8 +12,8 @@
 		justify-content: space-between;
 		align-items: center;
 		text-align: center;
-		background-color: var(--background-color);
-		border-bottom: 2px solid $theme-accent;
+		background-color: var(--bg-color-hsl);
+		border-bottom: 2px solid var(--accent-color-hsl);
 	}
     
     &__nav {
@@ -24,7 +24,7 @@
 		position: relative;
 		display: inline-block;
 		font-size: 20px;
-		color: $theme-accent;
+		color: var(--accent-color-hsl);
 		padding: 0 0.5rem;
 		transition: all 200ms ease;
 
@@ -37,7 +37,7 @@
 			height: 3px;
 			width: 100%;
 			border-radius: 4px;
-			background-color: $theme-accent;
+			background-color: var(--accent-color-hsl);
 			opacity: 0;
 			transition: all 200ms ease;
 		}
@@ -74,14 +74,14 @@
 			max-width: 100%;
 
 			path {
-				fill: $theme-accent;
+				fill: var(--accent-color-hsl);
 				transition: fill 350ms ease;
 			}
 		}
 
 		&:hover {
 			svg path {
-				fill: $theme-accent-hover;
+				fill: hsl-darken(var(--accent-color-h), var(--accent-color-s), var(--accent-color-l), 0.2);
 			}
 		}
 	}

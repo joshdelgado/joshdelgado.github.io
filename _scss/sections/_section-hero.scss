@@ -26,7 +26,7 @@
 			display: inline-block;
 			font-size: 16px;
 			font-weight: 300;
-			color: $theme-text;
+			color: var(--text-color-hsl);
 			padding: 0 0 1rem;
 			@include text-shadow();
 		}
@@ -37,7 +37,7 @@
 			letter-spacing: 1px;
 			font-weight: 900;
 			padding: 0 0 1rem;
-			color: $theme-text;
+			color: var(--text-color-hsl);
 			@include text-shadow();
 		}
 
@@ -47,7 +47,7 @@
 			font-weight: 700;
 			padding: 0 0 1.25rem;
 			max-width: 100%;
-			color: $theme-subtitle;
+			color: hsl-darken(var(--text-color-h), var(--text-color-s), var(--text-color-l), .15);
 			@include text-shadow();
 		}
 
@@ -55,9 +55,9 @@
 			font-size: 20px;
 			line-height: 1.25;
 			padding: 0;
-			color: $theme-text;
+			color: var(--text-color-hsl);
 			max-width: 480px;
-			text-shadow: 1px 1px 1px $theme-background;
+			@include text-shadow();
 		}
 	}
 	
@@ -69,7 +69,7 @@
 		right: 0;
 		height: 200px;
 		z-index: 10;
-		@include ease-in-out-sine-gradient-hsl(var(--bg2-color-h), var(--bg2-color-s), calc(var(--bg2-color-l) * 0.85), to top);
+		@include ease-in-out-sine-gradient-hsl(var(--bg-color2-h), var(--bg-color2-s), calc(var(--bg-color2-l) * 0.85), to top);
 	}
 }
 
@@ -107,7 +107,6 @@
 			}
 	
 			&__subtitle {
-				// font-size: 32px;
 				font-size: 22px;
 				padding-bottom: 3rem;
 			}

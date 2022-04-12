@@ -47,8 +47,7 @@
 		height: calc(100% + 16px);
 		width: calc(100% + 16px);
 		border-radius: 8px;
-		background-color: $gray;
-		background-image: linear-gradient(to bottom, #0fffc1 0%, #7e0fff 100%);
+		background-image: linear-gradient(to bottom, var(--glow-color1-hsl) 0%, var(--glow-color2-hsl) 100%);
 		box-shadow: $box-shadow-img;
 	}
 }

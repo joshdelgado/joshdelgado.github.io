@@ -18,7 +18,7 @@
 	&__title {
 		font-size: 48px;
 		font-weight: 700;
-		color: $theme-text;
+		color: var(--text-color-hsl);
 		padding: 0 0 6rem;
 		margin: 0;
 		@include text-shadow();
@@ -30,7 +30,7 @@
 
 	&__subtitle {
 		font-size: 20px;
-		color: $theme-text;
+		color: var(--text-color-hsl);
 		@include text-shadow();
 		margin: 0 auto;
 		max-width: 480px;
@@ -47,7 +47,7 @@
 		font-size: 20px;
 		text-align: left;
 		margin-bottom: 1rem;
-		color: $theme-text;
+		color: var(--text-color-hsl);
 	}
 	
 	&__skills-list {
@@ -61,7 +61,7 @@
 		width: 50%;
 		padding: 0.25rem 0;
 		text-align: left;
-		color: $theme-text;
+		color: var(--text-color-hsl);
 
 		&:before {
 			content: '';
@@ -69,7 +69,7 @@
 			top: -3px;
 			display: inline-block;
 			margin-right: 0.5rem;
-			background-color: $theme-accent-darken;
+			background-color: hsl-darken(var(--accent-color-h), var(--accent-color-s), var(--accent-color-l), 0.45);
 			height: 5px;
 			width: 5px;
 			transform: rotate(45deg);
@@ -97,19 +97,19 @@
 
 	@for $i from 2 to 6 {
 		&:nth-last-child(#{$i}){
-			background-color: hsl-darken(var(--bg2-color-h), var(--bg2-color-s), var(--bg2-color-l), (#{$i} * #{$hsl-percentage}) );
+			background-color: hsl-darken(var(--bg-color2-h), var(--bg-color2-s), var(--bg-color2-l), (#{$i} * #{$hsl-percentage}) );
 
 			@if ($i == 2){
 				margin-bottom: 100px;
 				&:after {
-					@include after-section-angle(hsl-darken(var(--bg2-color-h), var(--bg2-color-s), var(--bg2-color-l), (#{$i} * $hsl-percentage) ), $theme-background2, true);
+					@include after-section-angle(hsl-darken(var(--bg-color2-h), var(--bg-color2-s), var(--bg-color2-l), (#{$i} * $hsl-percentage) ), var(--bg-color2-hsl), true);
 				}
 			}
 		}
 	}
 
 	&:last-child {
-		background-color: $theme-background2;
+		background-color: var(--bg-color2-hsl);
 	}
 	
 	@import 'section-about';

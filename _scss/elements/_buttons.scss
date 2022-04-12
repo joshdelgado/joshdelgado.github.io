@@ -1,6 +1,6 @@
 .button {
 	display: inline-block;
-	border: 2px solid $theme-accent;
+	border: 2px solid var(--accent-color-hsl);
 	border-radius: 4px;
 	padding: 1rem 2.5rem;
 	font-size: 1.25rem;
@@ -8,7 +8,7 @@
 	transition: all 350ms ease;
 
 	&:hover {
-		color: $theme-background;
-		background-color: $theme-accent;
+		color: var(--bg-color-hsl);
+		background-color: var(--accent-color-hsl);
 	}
 }

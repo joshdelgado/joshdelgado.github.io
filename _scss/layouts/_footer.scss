@@ -2,7 +2,7 @@
 	position: absolute;
 	bottom: 0;
     display: block;
-    background-color: $theme-background;
+    background-color: var(--bg-color-hsl);
 	padding-bottom: 1rem;
 	transition: all 350ms ease;
     
@@ -18,11 +18,11 @@
     &__text {
         display: block;
         text-align: center;
-		color: $theme-accent;
+		color: var(--accent-color-hsl);
 		padding-top: 2rem;
     }
 
 	&:before{
-		@include after-section-angle($theme-background2, $theme-background, false);
+		@include after-section-angle(var(--bg-color2-hsl), var(--bg-color-hsl), false);
 	}
 }

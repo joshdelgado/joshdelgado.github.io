@@ -8,7 +8,7 @@
 		width: 2rem;
 		line-height: 2rem;
 		font-size: 2rem;
-		color: $theme-accent;
+		color: var(--accent-color-hsl);
 		text-align: center;
 		cursor: pointer;
 
@@ -26,7 +26,7 @@
 		}
 
 		&:hover {
-			color: $theme-accent-hover;
+			color: hsl-darken(var(--accent-color-h), var(--accent-color-s), var(--accent-color-l), 0.2);
 		}
 
 		&--mobile {
@@ -39,7 +39,7 @@
 		height: calc(200px + 1rem);
 		bottom: -231px;
 		left: 50%;
-		background-color: $theme-background;
+		background-color: var(--bg-color);
 		padding: 1rem 1rem 0.5rem;
 		border-radius: 0 0 8px 8px;
 		z-index: -1;
@@ -70,7 +70,7 @@
 		display: inline-block;
 		font-size: 64px;
 		font-weight: 500;
-		color: $theme-accent;
+		color: var(--accent-color-hsl);
 		padding: 1rem 0;
 		transition: all 200ms ease;
 	}
@@ -116,7 +116,7 @@
 			width: 100vw;
 			top: 0;
 			right: 0;
-			background-color: $theme-background;
+			background-color: var(--bg-color);
 			padding: 1rem;
 			z-index: -1;
 			@include box-shadow;

@@ -1,39 +1,35 @@
 :root {
-	--background-color: #0f1a1c;
-	--background-color2: #2A484E;
-	--no: #243e44;
-	--text-color: #DDEFE3;
-	--accent-color: #A8D8CD;
-	--accent-color-hover: #62b8a5;
-
-	--glow-color1: #0fffc1;
-	--glow-color2: #7e0fff;
-
-	--bg2-color-h: 190;
-	--bg2-color-s: 30%;
-	--bg2-color-l: 24%;
-	--bg2-color-hsl: hsl(var(--bg2-color-h), var(--bg2-color-s), var(--bg2-color-l));
-
+	// #0f1a1c
 	--bg-color-h: 189;
 	--bg-color-s: 30%;
 	--bg-color-l: 8%;
 	--bg-color-hsl: hsl(var(--bg-color-h), var(--bg-color-s), var(--bg-color-l));
 
+	// #2A484E
+	--bg-color2-h: 190;
+	--bg-color2-s: 30%;
+	--bg-color2-l: 24%;
+	--bg-color2-hsl: hsl(var(--bg-color2-h), var(--bg-color2-s), var(--bg-color2-l));
+
+	// #DDEFE3
 	--text-color-h: 140;
 	--text-color-s: 36%;
 	--text-color-l: 90%;
 	--text-color-hsl: hsl(var(--text-color-h), var(--text-color-s), var(--text-color-l));
 	
+	// #A8D8CD
 	--accent-color-h: 166;
 	--accent-color-s: 38%;
 	--accent-color-l: 75%;
 	--accent-color-hsl: hsl(var(--accent-color-h), var(--accent-color-s), var(--accent-color-l));
 	
+	// #0fffc1
 	--glow-color1-h: 165;
 	--glow-color1-s: 100%;
 	--glow-color1-l: 53%;
 	--glow-color1-hsl: hsl(var(--glow-color1-h), var(--glow-color1-s), var(--glow-color1-l));
 	
+	// #7e0fff
 	--glow-color2-h: 268;
 	--glow-color2-s: 100%;
 	--glow-color2-l: 53%;
@@ -65,29 +61,6 @@
 	
 }
 
-$navy: #03263A;
-$blue: #36578C;
-$green: #4EA701;
-$gray: #90918C;
-$white: #FFFFFF;
-
-$color1: #2A484E;
-$color2: #377375;
-$color3: #A8D8CD;
-$color4: #DDEFE3;
-$color5: #CE4A50;
-
-$theme-background: #0f1a1c;
-$theme-background2: #2A484E;
-$theme-text: #DDEFE3;
-$theme-subtitle: #a9d7b8;
-$theme-accent: #A8D8CD;
-$theme-heading: #DDEFE3;
-$theme-accent-hover: #62b8a5;
-$theme-accent-darken: #408e7c;
-
-$theme-background2-hsl: hsl(190, 30%, 24%);
-
 $percentage: 2%;
 $hsl-percentage: 0.05;
 
@@ -106,46 +79,69 @@ html {
 .body {
 	position: relative;
 	min-height: 100vh;
-	background-color: $theme-background2;
+	background-color: var(--bg-color2-hsl); 
 	overflow-x: hidden;
 	transition: all 350ms ease;
 
 	&[data-theme='light']{
-		--background-color: red;
-	}
+		--bg-color-h: 189;
+		--bg-color-s: 30%;
+		--bg-color-l: 8%;
+		--bg-color-hsl: hsl(var(--bg-color-h), var(--bg-color-s), var(--bg-color-l));
+		
+		--bg-color2-h: 190;
+		--bg-color2-s: 30%;
+		--bg-color2-l: 24%;
+		--bg-color2-hsl: hsl(var(--bg-color2-h), var(--bg-color2-s), var(--bg-color2-l));
 
-	&__light-mode {
-		background-color: $theme-background;
+		--text-color-h: 140;
+		--text-color-s: 36%;
+		--text-color-l: 90%;
+		--text-color-hsl: hsl(var(--text-color-h), var(--text-color-s), var(--text-color-l));
+		
+		--accent-color-h: 166;
+		--accent-color-s: 38%;
+		--accent-color-l: 75%;
+		--accent-color-hsl: hsl(var(--accent-color-h), var(--accent-color-s), var(--accent-color-l));
+		
+		--glow-color1-h: 165;
+		--glow-color1-s: 100%;
+		--glow-color1-l: 53%;
+		--glow-color1-hsl: hsl(var(--glow-color1-h), var(--glow-color1-s), var(--glow-color1-l));
+		
+		--glow-color2-h: 268;
+		--glow-color2-s: 100%;
+		--glow-color2-l: 53%;
+		--glow-color2-hsl: hsl(var(--glow-color2-h), var(--glow-color2-s), var(--glow-color2-l));
 
-		.section {
-			&__title,
-			&__subtitle,
-			&__text {
-			}
-		}
+		// #08A4BD
+		--hero-color1-h: 188;
+		--hero-color1-s: 192%;
+		--hero-color1-l: 39%;
+		--hero-color1-hsl: hsl(var(--hero-color1-h), var(--hero-color1-s), var(--hero-color1-l));
+		
+		// #08827B
+		--hero-color2-h: 177;
+		--hero-color2-s: 88%;
+		--hero-color2-l: 27%;
+		--hero-color2-hsl: hsl(var(--hero-color2-h), var(--hero-color2-s), var(--hero-color2-l));
+		
+		// #01172F
+		--hero-color3-h: 211;
+		--hero-color3-s: 96%;
+		--hero-color3-l: 9%;
+		--hero-color3-hsl: hsl(var(--hero-color3-h), var(--hero-color3-s), var(--hero-color3-l));
 
-		.header {
-			background-color: $theme-background2;
-		}
-
-		.footer {
-			background-color: $theme-background2;
-
-			&__text {
-				color: $theme-background;
-			}
-
-			&:before {
-				border-top: solid 100px $theme-background;
-				border-left: solid 50vw $theme-background2;
-				border-right: solid 50vw $theme-background2;
-			}
-		}
+		// #446DF6
+		--hero-color-bg-h: 226;
+		--hero-color-bg-s: 91%;
+		--hero-color-bg-l: 62%;
+		--hero-color-bg-hsl: hsl(var(--hero-color-bg-h), var(--hero-color-bg-s), var(--hero-color-bg-l));
 	}
 }
 
 a {
-	color: $theme-accent;
+	color: var(--accent-color-hsl);
 }
 
 p {

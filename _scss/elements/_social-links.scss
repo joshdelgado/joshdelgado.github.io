@@ -17,7 +17,7 @@
 
 		&:hover {
 			a {
-				color: $theme-accent-hover;
+				color: hsl-darken(var(--accent-color-h), var(--accent-color-s), var(--accent-color-l), 0.2);
 			}
 		}
 	}
