@@ -1,3 +1,3 @@
 @mixin text-shadow() {
-	text-shadow: 1px 1px 1px rgba(var(--bg-color-hsl), 0.5);
+	text-shadow: 1px 1px 1px hsla(var(--bg-color-h), var(--bg-color-s), var(--bg-color-l), 0.5);
 }

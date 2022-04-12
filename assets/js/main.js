@@ -53,4 +53,17 @@ jQuery(document).ready(function () {
 			$('.js-mockup[data-slide=' + nextSlide + ']').addClass('mockup--visible');
 		}, 500);
 	});
+
+	$('a').on('click', function (event) {
+		if (this.hash !== '') {
+			var hash = this.hash;
+
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 500, function () {
+				window.location.hash = hash;
+			});
+			return false;
+		}
+	});
 });
