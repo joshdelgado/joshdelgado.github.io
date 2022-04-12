@@ -1,3 +1,8 @@
+:root {
+	// #888
+	--code-gray: hsl(0, 0%, 53%);
+}
+
 .highlighter-rouge {
 	display: block;
 	position: relative;
@@ -28,7 +33,7 @@
 	}
 	
 	::-webkit-scrollbar-thumb {
-		background: #888;
+		background: var(--code-gray);
 		border-radius: 8px;
 		width: 4px;
 		height: 4px;

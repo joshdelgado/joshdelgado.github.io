@@ -6,7 +6,7 @@
 		justify-content: center;
 		margin-top: 66px;
 		min-height: 320px;
-		background-color: #111;
+		background-color: var(--blackest-hsl);
 	}
 
 	&__title {
@@ -23,7 +23,7 @@
 		
 
 		span {
-			background-color:  #191919;
+			background-color: var(--blacker-hsl);
 			height: 100%;
 			width: 100%;
 			padding: 2rem 3rem;
@@ -72,7 +72,7 @@
 	}
 }
 
-$box-shadow-img: 0 0 16px 0 #00000030;
+$box-shadow-img: 0 0 16px 0 hsla(0, 0%, 0, .3);
 
 .project-section {
 	position: relative;
