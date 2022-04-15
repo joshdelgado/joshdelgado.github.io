@@ -20,7 +20,7 @@ jsarr:
 		<ul class="project-section__team">
 			<li class="project-section__team-member">
 				<strong>Designer</strong>
-				<span>Jose De La Vega</span>
+				<span markdown="1">[Jose De La Vega](https://dlvjose.com/)</span>
 			</li>
 			<li class="project-section__team-member">
 				<strong>Developers</strong>

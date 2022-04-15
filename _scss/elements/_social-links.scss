@@ -15,9 +15,16 @@
 		line-height: 2rem;
 		font-size: 2rem;
 
+		a:before {
+			color: var(--accent-color-hsl);
+		}
+
 		&:hover {
-			a {
+
+			a,
+			a:before {
 				color: hsl-darken(var(--accent-color-h), var(--accent-color-s), var(--accent-color-l), 0.2);
+				transition: all 350ms ease;
 			}
 		}
 	}

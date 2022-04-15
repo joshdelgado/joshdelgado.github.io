@@ -21,7 +21,11 @@
 		font-size: 20px;
 		color: var(--accent-color-hsl);
 		opacity: 0;
-		transition: all 350ms ease;;
+		transition: all 350ms ease;
+
+		&:before {
+			color: var(--accent-color-hsl);
+		}
 	}
 
 	&:after {

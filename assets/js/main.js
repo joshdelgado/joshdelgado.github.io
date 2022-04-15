@@ -5,6 +5,7 @@ jQuery(document).ready(function () {
 	$('html').attr('data-theme', theme ? theme : 'dark');
 	if (theme === 'light') {
 		$('.js-toggle-theme').removeClass('theme-toggle--dark-mode');
+		$('.js-home-hero').removeClass('section--hero-dark');
 	}
 
 	$('.js-toggle-theme').on('click', function () {
@@ -14,9 +15,11 @@ jQuery(document).ready(function () {
 
 		if ($('html').attr('data-theme') === 'light') {
 			$('html').attr('data-theme', 'dark');
+			$('.js-home-hero').addClass('section--hero-dark');
 			localStorage.setItem('theme', 'dark');
 		} else {
 			$('html').attr('data-theme', 'light');
+			$('.js-home-hero').removeClass('section--hero-dark');
 			localStorage.setItem('theme', 'light');
 		}
 		setTimeout(() => {

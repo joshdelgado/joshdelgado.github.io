@@ -3,15 +3,10 @@
 		&__inner {
 			padding: 12rem 1rem;
 		}
-
-		&__subtitle {
-			margin: 0 auto;
-			max-width: 480px;
-		}
 	}
 }
 
-@media (max-width: $breakpoint-mobile){
+@media (max-width: $breakpoint-mobile) {
 	&--contact {
 		.section {
 			&__title {

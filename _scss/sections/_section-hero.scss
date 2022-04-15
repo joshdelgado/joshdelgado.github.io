@@ -16,7 +16,7 @@
 			border-bottom: none;
 			padding: 2rem 1rem 160px;
 		}
-		
+
 		&__img {
 			margin-bottom: 2rem;
 			@include box-shadow();
@@ -30,7 +30,7 @@
 			padding: 0 0 1rem;
 			@include text-shadow();
 		}
-		
+
 		&__title {
 			font-size: 64px;
 			line-height: 1;
@@ -56,11 +56,28 @@
 			line-height: 1.25;
 			padding: 0;
 			color: var(--text-color-hsl);
-			max-width: 480px;
+			max-width: 600px;
 			@include text-shadow();
 		}
 	}
-	
+
+	// light
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 200px;
+		z-index: 10;
+		opacity: 1;
+		transform-origin: bottom;
+		@include ease-in-out-sine-gradient-hsl(0, 70%, calc(95% * 0.85), to top);
+		// @include ease-in-out-sine-gradient-hsl(var(--bg-color2-h), var(--bg-color2-s), calc(var(--bg-color2-l) * 0.85), to top);
+		transition: opacity 500ms ease;
+	}
+
+	// dark
 	&:after {
 		content: '';
 		position: absolute;
@@ -69,7 +86,22 @@
 		right: 0;
 		height: 200px;
 		z-index: 10;
-		@include ease-in-out-sine-gradient-hsl(var(--bg-color2-h), var(--bg-color2-s), calc(var(--bg-color2-l) * 0.85), to top);
+		opacity: 0;
+		transform-origin: bottom;
+		@include ease-in-out-sine-gradient-hsl(190, 30%, calc(24% * 0.85), to top);
+		transition: opacity 500ms ease;
+	}
+
+	&.section--hero-dark {
+		&:before {
+			// light
+			opacity: 0;
+		}
+
+		&:after {
+			// dark
+			opacity: 1;
+		}
 	}
 }
 
@@ -91,7 +123,7 @@
 @media (max-width: $breakpoint-mobile) {
 	&--hero {
 
-		.section {	
+		.section {
 			&__inner {
 				max-width: 100%;
 				padding: 0 1rem 1rem;
@@ -100,18 +132,18 @@
 			&__pre-title {
 				padding-bottom: 0.25rem;
 			}
-			
+
 			&__title {
 				font-size: 48px;
 				padding-bottom: 0.75rem;
 			}
-	
+
 			&__subtitle {
 				font-size: 22px;
 				padding-bottom: 3rem;
 			}
 		}
-		
+
 		&:after {
 			height: 120px;
 		}

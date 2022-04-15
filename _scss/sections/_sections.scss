@@ -33,13 +33,13 @@
 		color: var(--text-color-hsl);
 		@include text-shadow();
 		margin: 0 auto;
-		max-width: 480px;
+		max-width: 600px;
 		padding-bottom: 6rem;
 	}
 
 	// About Section
 	&__about-body {
-		max-width: 468px;
+		max-width: 600px;
 		margin: 0 auto;
 	}
 
@@ -49,7 +49,7 @@
 		margin-bottom: 1rem;
 		color: var(--text-color-hsl);
 	}
-	
+
 	&__skills-list {
 		display: flex;
 		justify-content: space-between;
@@ -96,13 +96,14 @@
 	}
 
 	@for $i from 2 to 6 {
-		&:nth-last-child(#{$i}){
-			background-color: hsl-darken(var(--bg-color2-h), var(--bg-color2-s), var(--bg-color2-l), (#{$i} * #{$hsl-percentage}) );
+		&:nth-last-child(#{$i}) {
+			background-color: hsl-darken(var(--bg-color2-h), var(--bg-color2-s), var(--bg-color2-l), (#{$i} * #{$hsl-percentage}));
 
-			@if ($i == 2){
+			@if ($i==2) {
 				margin-bottom: 100px;
+
 				&:after {
-					@include after-section-angle(hsl-darken(var(--bg-color2-h), var(--bg-color2-s), var(--bg-color2-l), (#{$i} * $hsl-percentage) ), var(--bg-color2-hsl), true);
+					@include after-section-angle(hsl-darken(var(--bg-color2-h), var(--bg-color2-s), var(--bg-color2-l), (#{$i} * $hsl-percentage)), var(--bg-color2-hsl), true);
 				}
 			}
 		}
@@ -111,7 +112,7 @@
 	&:last-child {
 		background-color: var(--bg-color2-hsl);
 	}
-	
+
 	@import 'section-about';
 	@import 'section-hero';
 	@import 'section-blog';
@@ -124,9 +125,11 @@
 		&__inner {
 			padding: 5rem 1rem;
 		}
+
 		&__title {
 			font-size: 36px;
 		}
+
 		&--contact {
 			.section {
 				&__inner {

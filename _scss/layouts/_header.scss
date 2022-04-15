@@ -1,24 +1,24 @@
 .header {
-    display: block;
+	display: block;
 	width: 100%;
-	@include box-shadow();
 	position: fixed;
 	top: 0;
 	z-index: 99;
 
 	&__inner {
-        @include container(large);
+		@include container(large);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		text-align: center;
+		@include box-shadow();
 		background-color: var(--bg-color-hsl);
 		border-bottom: 2px solid var(--accent-color-hsl);
 	}
-    
-    &__nav {
+
+	&__nav {
 		padding-left: 3rem;
-    }
+	}
 
 	&__nav-item {
 		position: relative;
@@ -51,7 +51,7 @@
 		}
 	}
 
-	&__left{
+	&__left {
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
@@ -68,7 +68,7 @@
 	&__logo {
 		width: 50px;
 		cursor: pointer;
-		
+
 		svg {
 			display: block;
 			max-width: 100%;
