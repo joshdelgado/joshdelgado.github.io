@@ -72,9 +72,8 @@
 		z-index: 10;
 		opacity: 1;
 		transform-origin: bottom;
-		@include ease-in-out-sine-gradient-hsl(0, 70%, calc(95% * 0.85), to top);
-		// @include ease-in-out-sine-gradient-hsl(var(--bg-color2-h), var(--bg-color2-s), calc(var(--bg-color2-l) * 0.85), to top);
-		transition: opacity 500ms ease;
+		@include ease-in-out-sine-gradient-hsl(190, 30%, calc(95% * 0.85), to top);
+		transition: opacity 0ms ease;
 	}
 
 	// dark
@@ -85,7 +84,7 @@
 		left: 0;
 		right: 0;
 		height: 200px;
-		z-index: 10;
+		z-index: 11;
 		opacity: 0;
 		transform-origin: bottom;
 		@include ease-in-out-sine-gradient-hsl(190, 30%, calc(24% * 0.85), to top);
@@ -96,6 +95,8 @@
 		&:before {
 			// light
 			opacity: 0;
+			transition-delay: 500ms;
+			transition: opacity 5s ease;
 		}
 
 		&:after {

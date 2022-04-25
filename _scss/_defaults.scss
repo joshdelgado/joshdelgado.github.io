@@ -139,8 +139,13 @@ html {
 		--bg-color-hsl: hsl(var(--bg-color-h), var(--bg-color-s), var(--bg-color-l));
 
 		// #FFFBFE
-		--bg-color2-h: 0;
-		--bg-color2-s: 70%;
+		// --bg-color2-h: 0;
+		// --bg-color2-s: 70%;
+		// --bg-color2-l: 95%;
+		// --bg-color2-hsl: hsl(var(--bg-color2-h), var(--bg-color2-s), var(--bg-color2-l));
+
+		--bg-color2-h: 190;
+		--bg-color2-s: 30%;
 		--bg-color2-l: 95%;
 		--bg-color2-hsl: hsl(var(--bg-color2-h), var(--bg-color2-s), var(--bg-color2-l));
 
