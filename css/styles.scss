@@ -1,8 +1,8 @@
----
----
+--- 
+--- 
 
 .test-class {
-    display: block;
+	display: block;
 }
 
 @import 'defaults';
@@ -29,26 +29,32 @@
 			width: calc(25% - 1rem);
 			flex: 0 1 calc(25% - 1rem);
 		}
+
 		&--4 {
 			width: calc((100% / 3) - 1rem);
 			flex: 0 1 calc((100% / 3) - 1rem);
 		}
+
 		&--5 {
 			width: calc(((5 / 12) * 100%) - 1rem);
 			flex: 0 1 calc(((5 / 12) * 100%) - 1rem);
 		}
+
 		&--6 {
 			width: calc(50% - 1rem);
 			flex: 0 1 calc(50% - 1rem);
 		}
+
 		&--7 {
 			width: calc(((7 / 12) * 100%) - 1rem);
 			flex: 0 1 calc(((7 / 12) * 100%) - 1rem);
 		}
+
 		&--8 {
 			width: calc(((100% / 3) * 2) - 1rem);
 			flex: 0 1 calc(((100% / 3) * 2) - 1rem);
 		}
+
 		&--9 {
 			width: calc(75% - 1rem);
 			flex: 0 1 calc(75% - 1rem);
@@ -63,13 +69,13 @@
 	&--align-center {
 		align-items: center;
 	}
-	
+
 	&--justify-center {
 		justify-content: center;
 	}
 }
 
-@media (max-width: $breakpoint){
+@media (max-width: $breakpoint) {
 	.flex-row {
 		&__column {
 			width: 100%;

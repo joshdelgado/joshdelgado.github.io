@@ -38,7 +38,7 @@
 		overflow: hidden;
 		border-top: 2px solid var(--glow-color1-hsl);
 	}
-	
+
 	&__pane {
 		position: absolute;
 		top: 0;
@@ -56,7 +56,7 @@
 		.highlighter-rouge {
 			margin: 0;
 
-			&:after{
+			&:after {
 				content: none;
 			}
 		}
@@ -85,12 +85,14 @@
 
 @media (max-width: $breakpoint-mobile) {
 	.multi-code {
-		&__options{
+		&__options {
 			flex-wrap: wrap;
 		}
+
 		&__option {
 			flex: 1 1 150px;
 		}
+
 		&__pane {
 			height: auto !important;
 		}

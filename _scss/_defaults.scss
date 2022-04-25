@@ -98,10 +98,8 @@
 	// --hero-color3-hsl: hsl(var(--hero-color3-h), var(--hero-color3-s), var(--hero-color3-l));
 	--hero-color3-hsl: var(--accent-color4-hsl);
 
+	--change-percentage: 0.05;
 }
-
-$percentage: 2%;
-$hsl-percentage: 0.05;
 
 $breakpoint-tablet: 1024px;
 $breakpoint: 860px;
@@ -194,6 +192,8 @@ html {
 		--hero-color-bg-s: 91%;
 		--hero-color-bg-l: 62%;
 		--hero-color-bg-hsl: hsl(var(--hero-color-bg-h), var(--hero-color-bg-s), var(--hero-color-bg-l));
+
+		--change-percentage: 0.025;
 	}
 }
 

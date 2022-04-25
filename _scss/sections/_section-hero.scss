@@ -72,8 +72,9 @@
 		z-index: 10;
 		opacity: 1;
 		transform-origin: bottom;
-		@include ease-in-out-sine-gradient-hsl(190, 30%, calc(95% * 0.85), to top);
+		@include ease-in-out-sine-gradient-hsl(190, 30%, 95% * 0.925, to top);
 		transition: opacity 0ms ease;
+		transition-delay: 0ms;
 	}
 
 	// dark
@@ -87,7 +88,7 @@
 		z-index: 11;
 		opacity: 0;
 		transform-origin: bottom;
-		@include ease-in-out-sine-gradient-hsl(190, 30%, calc(24% * 0.85), to top);
+		@include ease-in-out-sine-gradient-hsl(190, 30%, 24% * 0.85, to top);
 		transition: opacity 500ms ease;
 	}
 
@@ -95,8 +96,8 @@
 		&:before {
 			// light
 			opacity: 0;
+			transition: opacity 3000ms ease;
 			transition-delay: 500ms;
-			transition: opacity 1s ease;
 		}
 
 		&:after {

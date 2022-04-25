@@ -67,7 +67,7 @@
 		}
 
 		&:after {
-			@include after-section-angle(hsl-darken(var(--bg-color2-h), var(--bg-color2-s), var(--bg-color2-l), #{$hsl-percentage}*2),
+			@include after-section-angle(hsl-darken(var(--bg-color2-h), var(--bg-color2-s), var(--bg-color2-l), calc(var(--change-percentage)*2)),
 				var(--bg-color2-hsl));
 		}
 	}
@@ -291,7 +291,8 @@ $box-shadow-img: 0 0 16px 0 hsla(0, 0%, 0, .3);
 
 	@for $i from 1 to 10 {
 		&:nth-last-child(#{$i}) {
-			background-color: hsl-darken(var(--bg-color2-h), var(--bg-color2-s), var(--bg-color2-l), (calc(#{$i} + 1) * #{$hsl-percentage}));
+			background-color: hsl-darken(var(--bg-color2-h), var(--bg-color2-s), var(--bg-color2-l),
+				calc((#{$i} + 1) * var(--change-percentage)));
 
 			@if ($i==1) {
 				border-width: 0;

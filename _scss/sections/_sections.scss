@@ -97,13 +97,13 @@
 
 	@for $i from 2 to 6 {
 		&:nth-last-child(#{$i}) {
-			background-color: hsl-darken(var(--bg-color2-h), var(--bg-color2-s), var(--bg-color2-l), (#{$i} * #{$hsl-percentage}));
+			background-color: hsl-darken(var(--bg-color2-h), var(--bg-color2-s), var(--bg-color2-l), calc(#{$i} * var(--change-percentage)));
 
 			@if ($i==2) {
 				margin-bottom: 100px;
 
 				&:after {
-					@include after-section-angle(hsl-darken(var(--bg-color2-h), var(--bg-color2-s), var(--bg-color2-l), (#{$i} * $hsl-percentage)), var(--bg-color2-hsl), true);
+					@include after-section-angle(hsl-darken(var(--bg-color2-h), var(--bg-color2-s), var(--bg-color2-l), calc(#{$i} * var(--change-percentage))), var(--bg-color2-hsl), true);
 				}
 			}
 		}
