@@ -44,7 +44,7 @@ $theme-text-timing: 500ms;
 	&__title {
 		font-size: 24px;
 		line-height: 24px;
-		color: var(--text-color-hsl);
+		color: hsl(140, 36%, 90%);
 		opacity: 0;
 		transition: all $theme-text-timing ease;
 	}
@@ -52,9 +52,13 @@ $theme-text-timing: 500ms;
 	&__link {
 		text-decoration: none;
 		font-size: 20px;
-		color: var(--text-color-hsl);
+		color: hsl(140, 36%, 90%);
 		opacity: 0;
 		transition: all $theme-text-timing ease;
+
+		&:before {
+			color: hsl(140, 36%, 90%);
+		}
 	}
 
 	&--internal-angular-library {

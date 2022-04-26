@@ -3,6 +3,7 @@
 	@include container();
 	padding-bottom: 0;
 	padding-top: 0;
+	border-bottom: 2px solid var(--bg-color2-hsl);
 
 	&__inner {
 		text-align: center;
