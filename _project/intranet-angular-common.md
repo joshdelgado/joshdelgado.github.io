@@ -51,16 +51,20 @@ jsarr:
 	<div class="project-section__inner">
 		<h2 class="project-section__title">The Project</h2>
 		<div class="project-section__mockups project-section__mockups--ac">
-			<div class="desktop js-mockup mockup--visible" data-slide="1">
-				<div class="desktop__screen">
-					<img src="/assets/img/angular-common/greeter-desktop--best.png" />
+			<div class="js-mockup device-slider__slide device-slider__slide--visible" data-slide="1">
+				<div class="desktop">
+					<div class="desktop__screen">
+						<img src="/assets/img/angular-common/greeter-desktop--best.png" />
+					</div>
+					<div class="desktop__stand"></div>
+					<div class="desktop__base"></div>
 				</div>
-				<div class="desktop__stand"></div>
-				<div class="desktop__base"></div>
 			</div>
-			<div class="tablet js-mockup" data-slide="2">
-				<div class="tablet__screen">
-					<img src="/assets/img/angular-common/greeter-tablet--best.png" />
+			<div class="js-mockup device-slider__slide" data-slide="2">
+				<div class="tablet">
+					<div class="tablet__screen">
+						<img src="/assets/img/angular-common/greeter-tablet--best.png" />
+					</div>
 				</div>
 			</div>
 		</div>
