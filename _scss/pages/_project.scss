@@ -324,14 +324,6 @@ $box-shadow-img: 0 0 16px 0 hsla(0, 0%, 0, .3);
 	}
 }
 
-.project-section--problem {}
-
-.project-section--project {}
-
-.project-section--process {}
-
-.project-section--conclusion {}
-
 @media (max-width: $breakpoint-tablet) {
 	.project-section {
 		&__process-row {
@@ -409,30 +401,6 @@ $box-shadow-img: 0 0 16px 0 hsla(0, 0%, 0, .3);
 		&__mockups-nav {
 			display: flex;
 		}
-	}
-
-	// TODO clean up class names and make a scss partial
-	.js-mockup,
-	.js-mockup.desktop {
-		display: none;
-	}
-
-	.mockup--transition {
-		animation-name: slide-out !important;
-		animation-duration: 500ms !important;
-		animation-direction: normal;
-	}
-
-	.js-mockup.desktop.mockup--visible {
-		display: flex;
-		animation-name: slide-in;
-		animation-duration: 500ms;
-	}
-
-	.mockup--visible {
-		display: block;
-		animation-name: slide-in;
-		animation-duration: 500ms;
 	}
 }
 

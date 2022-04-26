@@ -1,0 +1,26 @@
+@media (max-width: $breakpoint-tablet){
+	.device-slider {
+		&__slide {
+			display: none;
+			
+			&.desktop {
+				display: none;
+			}
+
+			&--transition {
+				animation-name: slide-out !important;
+				animation-duration: 500ms !important;
+				animation-direction: normal;
+			}
+			&--visible {	
+				display: block;
+				animation-name: slide-in;
+				animation-duration: 500ms;
+	
+				&.desktop {
+					display: flex;
+				}
+			}
+		}
+	}
+}

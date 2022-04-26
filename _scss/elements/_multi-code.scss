@@ -18,10 +18,12 @@
 	&__option {
 		position: relative;
 		top: -8px;
+		color: hsl(140, 36%, 90%);
 		background-color: var(--glow-color2-hsl);
 		padding: 0.75rem 1.5rem;
 		border-radius: 8px 8px 0 0;
 		cursor: pointer;
+		transition: all 350ms ease;
 
 		&:hover {
 			background-color: hsl-darken(var(--glow-color2-h), var(--glow-color2-s), var(--glow-color2-l), .1);
@@ -29,6 +31,10 @@
 
 		&--selected {
 			background-color: hsl-darken(var(--glow-color2-h), var(--glow-color2-s), var(--glow-color2-l), .25);
+
+			&:hover {
+				background-color: hsl-darken(var(--glow-color2-h), var(--glow-color2-s), var(--glow-color2-l), .25);
+			}
 		}
 	}
 

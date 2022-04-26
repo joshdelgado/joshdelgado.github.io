@@ -26,25 +26,25 @@
 	--text-color-l: 90%;
 	--text-color-hsl: hsl(var(--text-color-h), var(--text-color-s), var(--text-color-l));
 
-	color: #A8D8CD;
+	// color: #A8D8CD;
 	--accent-color-h: 166;
 	--accent-color-s: 38%;
 	--accent-color-l: 75%;
 	--accent-color-hsl: hsl(var(--accent-color-h), var(--accent-color-s), var(--accent-color-l));
 
-	color: #D8A8B3;
+	// color: #D8A8B3;
 	--accent-color2-h: 346;
 	--accent-color2-s: 38%;
 	--accent-color2-l: 75%;
 	--accent-color2-hsl: hsl(var(--accent-color2-h), var(--accent-color2-s), var(--accent-color2-l));
 
-	color: #D8CDA8;
+	// color: #D8CDA8;
 	--accent-color3-h: 256;
 	--accent-color3-s: 38%;
 	--accent-color3-l: 75%;
 	--accent-color3-hsl: hsl(var(--accent-color3-h), var(--accent-color3-s), var(--accent-color3-l));
 
-	color: #D8CDA8;
+	// color: #D8CDA8;
 	--accent-color4-h: 76;
 	--accent-color4-s: 38%;
 	--accent-color4-l: 75%;
@@ -156,8 +156,10 @@ html {
 
 		// #54BAB9
 		--accent-color-h: 179;
-		--accent-color-s: 42%;
-		--accent-color-l: 43%;
+		--accent-color-s: 75%;
+		--accent-color-l: 25%;
+		// --accent-color-s: 42%;
+		// --accent-color-l: 43%;
 		--accent-color-hsl: hsl(var(--accent-color-h), var(--accent-color-s), var(--accent-color-l));
 
 		--glow-color1-h: 165;

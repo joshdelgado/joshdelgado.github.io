@@ -58,22 +58,28 @@ jsarr:
 <section class="project-section project-section--project">
 	<div class="project-section__inner">
 		<h2 class="project-section__title">The Project</h2>
-		<div class="project-section__mockups project-section__mockups--oam">
-			<div class="desktop js-mockup mockup--visible" data-slide="1">
-				<div class="desktop__screen">
-					<img src="/assets/img/oam/oam-desktop--best.png" />
-				</div>
-				<div class="desktop__stand"></div>
-				<div class="desktop__base"></div>
-			</div>
-			<div class="tablet js-mockup" data-slide="2">
-				<div class="tablet__screen">
-					<img src="/assets/img/oam/oam-tablet--best2.png" />
+		<div class="project-section__mockups project-section__mockups--oam device-slider">
+			<div class="js-mockup device-slider__slide device-slider__slide--visible" data-slide="1">
+				<div class="desktop" >
+					<div class="desktop__screen">
+						<img src="/assets/img/oam/oam-desktop--best.png" />
 					</div>
+					<div class="desktop__stand"></div>
+					<div class="desktop__base"></div>
+				</div>
 			</div>
-			<div class="iphone js-mockup" data-slide="3">
-				<div class="iphone__screen">
-					<img src="/assets/img/oam/oam-mobile--best.png" />
+			<div class="js-mockup device-slider__slide" data-slide="2">
+				<div class="tablet">
+					<div class="tablet__screen">
+						<img src="/assets/img/oam/oam-tablet--best2.png" />
+						</div>
+				</div>
+			</div>
+			<div class="js-mockup device-slider__slide" data-slide="3">
+				<div class="iphone">
+					<div class="iphone__screen">
+						<img src="/assets/img/oam/oam-mobile--best.png" />
+					</div>
 				</div>
 			</div>
 		</div>
