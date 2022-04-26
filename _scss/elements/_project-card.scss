@@ -10,7 +10,7 @@ $theme-text-timing: 500ms;
 	height: 19.5rem;
 	margin: 0.5rem;
 	border-radius: 8px;
-	@include box-shadow();
+	box-shadow: 0 0 12px 0 hsla(0, 0%, 0, .2);
 	cursor: pointer;
 	overflow: hidden;
 

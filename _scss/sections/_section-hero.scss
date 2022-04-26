@@ -20,14 +20,13 @@
 
 		&__img {
 			margin-bottom: 2rem;
-			@include box-shadow();
+			box-shadow: 0 0 16px 0 hsla(0, 0%, 0, .3);
 		}
 
 		&__pre-title {
 			display: inline-block;
 			font-size: 16px;
 			font-weight: 300;
-			// color: var(--text-color-hsl);
 			color: hsl(140, 36%, 90%);
 			padding: 0 0 1rem;
 			@include text-shadow(true);
@@ -39,7 +38,6 @@
 			letter-spacing: 1px;
 			font-weight: 900;
 			padding: 0 0 1rem;
-			// color: var(--text-color-hsl);
 			color: hsl(140, 36%, 90%);
 			@include text-shadow($fixed: true);
 		}
@@ -50,7 +48,6 @@
 			font-weight: 700;
 			padding: 0 0 1.25rem;
 			max-width: 100%;
-			// color: hsl-darken(var(--text-color-h), var(--text-color-s), var(--text-color-l), .15);
 			color: hsl-darken(140, 36%, 90%, .15);
 			@include text-shadow(true);
 		}
@@ -59,7 +56,6 @@
 			font-size: 20px;
 			line-height: 1.25;
 			padding: 0;
-			// color: var(--text-color-hsl);
 			color: hsl(140, 36%, 90%);
 			max-width: 600px;
 			@include text-shadow(true);

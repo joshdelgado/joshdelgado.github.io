@@ -11,7 +11,7 @@
 		justify-content: space-between;
 		align-items: center;
 		text-align: center;
-		@include box-shadow();
+		box-shadow: 0 0 12px 0 hsla(0, 0%, 0, .3);
 		background-color: var(--bg-color-hsl);
 		border-bottom: 2px solid var(--accent-color-hsl);
 	}
@@ -55,14 +55,14 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
-		padding-left: 1rem;
+		padding-left: 1.5rem;
 	}
 
 	&__right {
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
-		padding-right: 1rem;
+		padding-right: 1.5rem;
 	}
 
 	&__logo {

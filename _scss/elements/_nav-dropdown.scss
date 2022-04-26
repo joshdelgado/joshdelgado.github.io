@@ -49,7 +49,7 @@
 		border-radius: 0 0 8px 8px;
 		z-index: -1;
 		transform: translate(-50%, 0);
-		@include box-shadow;
+		box-shadow: 0px 2px 8px hsla(0, 0%, 0%, .1);
 		transition: transform 500ms ease;
 
 		.social-links {
@@ -118,16 +118,11 @@
 		}
 
 		&__dropdown {
-			position: absolute;
 			height: 100vh;
 			width: 100vw;
 			top: 0;
 			right: 0;
-			background-color: var(--bg-color-hsl);
 			padding: 1rem;
-			z-index: -1;
-			@include box-shadow;
-			transition: transform 500ms ease;
 
 			.social-links {
 				position: absolute;
