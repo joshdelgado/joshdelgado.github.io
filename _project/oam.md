@@ -1,7 +1,7 @@
 ---
 title: Owner Management Portal
 alias: oam
-cardImage: ./assets/img/oam/oam-init-step.png
+cardImage: /assets/img/oam/oam-init-step.png
 layout: project
 display: true
 tools:

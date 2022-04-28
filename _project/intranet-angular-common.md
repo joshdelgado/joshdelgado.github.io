@@ -1,7 +1,7 @@
 ---
 title: Internal Angular Library
 alias: internal-angular-library
-cardImage: ./assets/img/angular-common/colors.svg
+cardImage: /assets/img/angular-common/colors.svg
 layout: project
 display: true
 tools:
@@ -32,7 +32,7 @@ jsarr:
 			</li>
 		</ul>
 		<span class="project-section__img project-section__img--intro">
-			<span markdown="1">![Buttons](/assets/img/angular-common/final/navigations-svg.svg)</span>
+			<span markdown="1">![Angular Library Navigations](/portfolio-2022/assets/img/angular-common/final/navigations-svg.svg)</span>
 		</span>
 	</div>
 </section>
