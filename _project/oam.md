@@ -125,7 +125,7 @@ jsarr:
 			<div class="project-section__process-cell">
 				<span class="project-section__img project-section__img--max-width">
 					<span>
-						<img src="/assets/img/oam/file-structure.png" alt="File Structure">
+						<img src="/assets/img/oam/file-structure.png" alt="Owner Account Management File Structure">
 					</span>
 				</span>
 			</div>
@@ -152,7 +152,7 @@ jsarr:
 			</div>
 			<div class="project-section__process-cell">
 				<span class="project-section__img">
-					<span markdown="1">![Icons](/assets/img/angular-common/final/icons-svg.jpg)</span>
+					<span markdown="1">![Angular Library Icons](/assets/img/angular-common/final/icons-svg.jpg)</span>
 				</span>
 			</div>
 		</div>

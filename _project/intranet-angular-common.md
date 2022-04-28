@@ -32,7 +32,7 @@ jsarr:
 			</li>
 		</ul>
 		<span class="project-section__img project-section__img--intro">
-			<span markdown="1">![Angular Library Navigations]({{'/assets/img/angular-common/final/navigations-svg.svg' | relative_url}})</span>
+			<span markdown="1">![Angular Library Navigations]({{'assets/img/angular-common/final/navigations-svg.svg' | relative_url}})</span>
 		</span>
 	</div>
 </section>
@@ -101,14 +101,14 @@ jsarr:
 			</div>
 			<div class="project-section__process-cell">
 				<span class="project-section__img">
-					<span markdown="1">![Buttons](/assets/img/angular-common/final/colors-svg.svg)</span>
+					<span markdown="1">![Angular Library Colors](/assets/img/angular-common/final/colors-svg.svg)</span>
 				</span>
 			</div>
 		</div>
 		<div class="project-section__process-row">
 			<div class="project-section__process-cell">
 				<span class="project-section__img">
-					<span markdown="1">![Buttons](/assets/img/angular-common/final/buttons-svg.svg)</span>
+					<span markdown="1">![Angular Library Button Styles](/assets/img/angular-common/final/buttons-svg.svg)</span>
 				</span>
 			</div>
 			<div class="project-section__process-cell">
