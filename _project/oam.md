@@ -152,7 +152,7 @@ jsarr:
 			</div>
 			<div class="project-section__process-cell">
 				<span class="project-section__img">
-					<span markdown="1">![Angular Library Icons](/assets/img/angular-common/final/icons-svg.jpg)</span>
+					<span markdown="1">![Angular Library Icons](/assets/img/angular-common/icons-svg.jpg)</span>
 				</span>
 			</div>
 		</div>
