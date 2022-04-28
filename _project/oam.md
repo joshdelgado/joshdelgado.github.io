@@ -1,7 +1,7 @@
 ---
 title: Owner Management Portal
 alias: oam
-cardImage: /assets/img/oam/oam-init-step.png
+cardImage: ./assets/img/oam/oam-init-step.png
 layout: project
 display: true
 tools:
@@ -41,7 +41,7 @@ jsarr:
 			</li>
 		</ul>
 		<span class="project-section__img project-section__img--intro">
-			<span markdown="1">![Florida Beach Weddings - Shopify - 2022](/assets/img/oam/oam-dashboard--best.png)</span>
+			<span markdown="1">![Owner Account Management Dashboard](/assets/img/oam/oam-dashboard--best.png)</span>
 		</span>
 	</div>
 </section>

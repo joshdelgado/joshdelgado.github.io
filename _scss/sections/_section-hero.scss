@@ -7,7 +7,6 @@
 	justify-content: center;
 	min-height: calc(98vh - 76px);
 	margin-top: 76px;
-	border-bottom: none;
 
 	.section {
 		&__inner {
@@ -75,7 +74,6 @@
 		transform-origin: bottom;
 		@include ease-in-out-sine-gradient-hsl(190, 30%, 95% * 0.925, to top);
 		transition: opacity 0ms ease;
-		transition-delay: 0ms;
 	}
 
 	// dark
@@ -98,7 +96,6 @@
 			// light
 			opacity: 0;
 			transition: opacity 3000ms ease;
-			transition-delay: 500ms;
 		}
 
 		&:after {

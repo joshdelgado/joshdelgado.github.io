@@ -1,7 +1,7 @@
 ---
 title: Internal Angular Library
 alias: internal-angular-library
-cardImage: /assets/img/angular-common/colors.svg
+cardImage: ./assets/img/angular-common/colors.svg
 layout: project
 display: true
 tools:
