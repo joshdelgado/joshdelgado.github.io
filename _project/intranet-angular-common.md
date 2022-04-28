@@ -127,7 +127,7 @@ jsarr:
 			<div class="project-section__process-cell">
 				<span class="project-section__img">
 					<span>
-						<img src="/assets/img/angular-common/compodoc.png" alt="Compodoc">
+						<img src="/assets/img/angular-common/compodoc.PNG" alt="Compodoc">
 					</span>
 				</span>
 			</div>
