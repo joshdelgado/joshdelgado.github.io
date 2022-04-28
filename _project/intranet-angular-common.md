@@ -32,7 +32,7 @@ jsarr:
 			</li>
 		</ul>
 		<span class="project-section__img project-section__img--intro">
-			<span markdown="1">![Angular Library Navigations]({{site.url}}/assets/img/angular-common/final/navigations-svg.svg)</span>
+			<span markdown="1">![Angular Library Navigations]({{'/assets/img/angular-common/final/navigations-svg.svg' | relative_url}})</span>
 		</span>
 	</div>
 </section>
