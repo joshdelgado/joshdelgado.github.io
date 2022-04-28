@@ -15,7 +15,9 @@
 		font-size: 48px;
 		font-weight: 700;
 		letter-spacing: 1px;
+		text-align: center;
 		color: var(--text-color-hsl);
+		max-width: 95vw;
 		position: relative;
 		display: flex;
 		@include text-shadow();
@@ -83,7 +85,6 @@ $box-shadow-img: 0 0 16px 0 hsla(0, 0%, 0, .3);
 	&__inner {
 		padding-top: 6rem;
 		padding-bottom: 6rem;
-		overflow: hidden;
 		width: 100%;
 	}
 
@@ -407,7 +408,13 @@ $box-shadow-img: 0 0 16px 0 hsla(0, 0%, 0, .3);
 @media (max-width: $breakpoint) {
 	.project {
 		&__title {
-			font-size: 36px;
+			font-size: 42px;
+		}
+	}
+
+	.project-section {
+		&__title {
+			font-size: 42px;
 		}
 	}
 }
@@ -415,10 +422,11 @@ $box-shadow-img: 0 0 16px 0 hsla(0, 0%, 0, .3);
 @media (max-width: $breakpoint-mobile) {
 	.project {
 		&__title {
+			width: 100%;
 			font-size: 24px;
 
 			span {
-				padding: 1.5rem;
+				padding: 1.5rem 1rem;
 			}
 		}
 	}
@@ -429,7 +437,6 @@ $box-shadow-img: 0 0 16px 0 hsla(0, 0%, 0, .3);
 		}
 
 		&__title {
-			font-size: 36px;
 			padding-bottom: 5rem;
 		}
 
