@@ -32,7 +32,7 @@ jsarr:
 			</li>
 		</ul>
 		<span class="project-section__img project-section__img--intro">
-			<span markdown="1">![Angular Library Navigations](/portfolio-2022/assets/img/angular-common/final/navigations-svg.svg)</span>
+			<span markdown="1">![Angular Library Navigations]({{site.url}}/assets/img/angular-common/final/navigations-svg.svg)</span>
 		</span>
 	</div>
 </section>
@@ -83,7 +83,7 @@ jsarr:
 			</div>
 			<div class="project-section__process-cell">
 				<span class="project-section__img">
-					<span markdown="1">![Buttons](/assets/img/angular-common/final/fields-controls-svg.svg)</span>
+					<span markdown="1">![Angular Library Inputs](/assets/img/angular-common/final/fields-controls-svg.svg)</span>
 				</span>
 			</div>
 		</div>
