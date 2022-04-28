@@ -1,6 +1,7 @@
 .footer {
 	position: absolute;
 	bottom: 0;
+	z-index: 15;
     display: block;
     background-color: var(--bg-color-hsl);
 	padding-bottom: 1rem;

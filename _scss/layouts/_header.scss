@@ -89,6 +89,10 @@
 
 @media (max-width: $breakpoint) {
 	.header {
+		&__inner {
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+		}
 		&__nav {
 			display: none;
 		}

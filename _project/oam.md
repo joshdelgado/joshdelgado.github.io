@@ -125,7 +125,7 @@ jsarr:
 			<div class="project-section__process-cell">
 				<span class="project-section__img project-section__img--max-width">
 					<span>
-						<img src="/assets/img/oam/file-structure.png" alt="Owner Account Management File Structure">
+						<img src="/assets/img/oam/file-structure.PNG" alt="Owner Account Management File Structure">
 					</span>
 				</span>
 			</div>

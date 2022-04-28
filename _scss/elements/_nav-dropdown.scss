@@ -129,7 +129,7 @@
 
 			.social-links {
 				position: absolute;
-				bottom: 1rem;
+				bottom: calc(50px + 1rem);
 				left: 0;
 				right: 0;
 				justify-content: center;
@@ -137,13 +137,15 @@
 
 				&__icon {
 					margin: 0 0.75rem;
+					transition: all 500ms ease;
+					transition-delay: 1350ms;
 				}
 			}
 		}
 
 		&__site-nav-item {
 			opacity: 1;
-			transform: translateY(0) translateZ(0);
+			transform: translateY(0);
 			transition: all 750ms ease;
 			transition-delay: 450ms;
 
@@ -166,6 +168,13 @@
 					transform: translateY(-16px);
 					transition: 500ms !important;
 					transition-delay: 0 !important;
+				}
+				&__dropdown {
+					.social-links__icon {
+						opacity: 0;
+						transition: 500ms !important;
+						transition-delay: 0 !important;
+					}
 				}
 			}
 		}
