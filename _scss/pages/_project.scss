@@ -303,10 +303,13 @@ $box-shadow-img: 0 0 16px 0 hsla(0, 0%, 0, .3);
 }
 
 .project-section--intro {
+	overflow-y: hidden;
+
 	.project-section {
 		&__inner {
 			@include container(large);
 			padding-bottom: 0;
+			overflow-y: hidden;
 		}
 
 		&__intro-text {
@@ -326,6 +329,11 @@ $box-shadow-img: 0 0 16px 0 hsla(0, 0%, 0, .3);
 }
 
 @media (max-width: $breakpoint-tablet) {
+	.project {
+		&__hero {			
+			margin-top: 48px;
+		}
+	}
 	.project-section {
 		&__process-row {
 			padding: 4rem 0;
@@ -447,6 +455,8 @@ $box-shadow-img: 0 0 16px 0 hsla(0, 0%, 0, .3);
 
 		&__team-member {
 			margin: 0.25rem 0;
+			width: 100%;
+			text-align: center;
 
 			strong,
 			span {

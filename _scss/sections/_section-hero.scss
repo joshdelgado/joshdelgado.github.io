@@ -71,7 +71,6 @@
 		height: 200px;
 		z-index: 10;
 		opacity: 1;
-		transform-origin: bottom;
 		@include ease-in-out-sine-gradient-hsl(190, 30%, 95% * 0.925, to top);
 		transition: opacity 0ms ease;
 	}
