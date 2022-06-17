@@ -51,6 +51,8 @@
 		left: 0;
 		opacity: 0;
 		height: 400px;
+		position: relative;
+		z-index: 1;
 
 		.highlighter-rouge,
 		.highlight,
@@ -61,7 +63,7 @@
 		}
 
 		span {
-			font-size: 1rem;
+			font-size: 1rem !important;
 		}
 
 		.highlighter-rouge {
@@ -73,7 +75,6 @@
 		}
 
 		&--selected {
-			position: relative;
 			z-index: 9;
 			opacity: 1;
 		}
