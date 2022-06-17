@@ -12,11 +12,12 @@
 	
 	> .highlight {
 		overflow-x: auto;
+		font-size: 1rem;
 	}
 
 	pre {
 		margin: 0;
-		box-shadow: $box-shadow-img;
+		// box-shadow: $box-shadow-img;
 		pointer-events: none;
 		text-align: left;
 	}

@@ -99,7 +99,7 @@ jsarr:
 			<div class="project-section__process-cell">
 				<div class="desktop">
 					<div class="desktop__screen">
-						<video width="100%" autoplay muted loop playsinline>
+						<video width="100%" poster="/assets/img/oam/oam-dashbaord--best.png" autoplay muted loop playsinline>
 							<source src="/assets/video/oam/oam-guided-flow-from-dash-loop.webm" type="video/webm">
 							<source src="/assets/video/oam/oam-guided-flow-from-dash-loop.mp4" type="video/mp4">
 							Your browser does not support the video tag.
@@ -134,7 +134,7 @@ jsarr:
 			<div class="project-section__process-cell">
 				<div class="iphone iphone--large">
 					<div class="iphone__screen">
-						<video width="100%" autoplay muted loop playsinline>
+						<video width="100%" poster="/assets/img/oam/oam-mobile--best.png" autoplay muted loop playsinline>
 							<source src="/assets/video/oam/oam-mobile-guided-flow.webm" type="video/webm">
 							<source src="/assets/video/oam/oam-mobile-guided-flow.mp4" type="video/mp4">
 							Your browser does not support the video tag.
