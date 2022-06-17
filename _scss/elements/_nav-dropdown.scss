@@ -52,6 +52,7 @@
 		transform: translate(-50%, 0);
 		box-shadow: 0px 2px 8px hsla(0, 0%, 0%, .1);
 		transition: transform 500ms ease;
+		will-change: transform;
 
 		.social-links {
 			flex-direction: column;

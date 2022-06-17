@@ -63,6 +63,7 @@
 
 	// light
 	&:before {
+		display: inline-block;
 		content: '';
 		position: absolute;
 		bottom: 0;
@@ -77,6 +78,7 @@
 
 	// dark
 	&:after {
+		display: inline-block;
 		content: '';
 		position: absolute;
 		bottom: 0;
