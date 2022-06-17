@@ -65,6 +65,7 @@ $box-shadow-hover: 0px 10px 12px 0 hsla(0, 0%, 0%, .25);
 		max-height: 340px;
 		border-radius: 2px;
 		overflow: hidden;
+		transform: translate3d(0, 0, 0);
 	}
   
   &:after {
@@ -99,6 +100,7 @@ $phone-border-radius: $phone-width / 8;
     width: 100%;
     border-radius: calc(#{$phone-border-radius} * 0.6667);
 	overflow: hidden;
+	transform: translate3d(0, 0, 0);
   }
   
   &:after {

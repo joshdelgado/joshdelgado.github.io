@@ -72,7 +72,7 @@ jsarr:
 				<div class="tablet">
 					<div class="tablet__screen">
 						<img src="/assets/img/oam/oam-tablet--best2.png" />
-						</div>
+					</div>
 				</div>
 			</div>
 			<div class="js-mockup device-slider__slide" data-slide="3">
