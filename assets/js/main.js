@@ -74,13 +74,21 @@ jQuery(document).ready(function () {
 
 	$('a').on('click', function (event) {
 		if (this.hash !== '') {
-			var hash = this.hash;
+			var hash = this.hash,
+				timeout = 0;
+
+			if (!$('.js-nav-dropdown').hasClass('nav-dropdown--closed')) {
+				setTimeout(() => {
+					$('.js-nav-dropdown').addClass('nav-dropdown--closed');
+				}, 500);
+			}
 
 			$('html, body').animate({
 				scrollTop: $(hash).offset().top
 			}, 500, function () {
 				window.location.hash = hash;
 			});
+
 			return false;
 		}
 	});
