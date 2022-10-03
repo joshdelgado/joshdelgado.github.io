@@ -13,29 +13,6 @@ jsarr:
 - js/main.js
 ---
 
-<!-- 
-TODO
-Change sections to make sense as an exploratory project
-Highlight features
-- User can specify how random
-- Uses API data
-- Passes accesibility standards
-- Google analytic page speeds
-Write about the process
-- API usage
-- Learning React
-- UI/UX considerations
-- Netlify
-- Integrating GA and optimizing page speed
-Write a conclusion
-Write plans for the future
-
-NOTES
-Structure more like a blog post
-Make a new template for personal projects
-Write as if the reader doesn't know what D&D or an NPC is
- -->
-
 <section class="project-section project-section--intro">
 	<div class="project-section__inner">
 		<div class="project-section__intro-text">
