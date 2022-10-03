@@ -208,7 +208,8 @@ $box-shadow-img: 0 0 16px 0 hsla(0, 0%, 0, .3);
 		align-items: flex-end;
 		width: 100%;
 
-		&--oam {
+		&--oam,
+		&--roll4d6 {
 			.desktop {
 				flex: 0 1 auto;
 				right: -7.5rem;
@@ -406,7 +407,8 @@ $box-shadow-img: 0 0 16px 0 hsla(0, 0%, 0, .3);
 		}
 
 		&__mockups {
-			&--oam {
+			&--oam,
+			&--roll4d6 {
 				.desktop {
 					right: 0;
 					z-index: 1;

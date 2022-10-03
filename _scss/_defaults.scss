@@ -222,4 +222,10 @@ pre {
 	padding: 1rem;
 }
 
+sup {
+	position: relative;
+	top: -0.75rem;
+	font-size: smaller;
+}
+
 @media (prefers-color-scheme: light) {}
