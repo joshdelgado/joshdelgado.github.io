@@ -76,7 +76,7 @@ jsarr:
 			<div class="project-section__process-cell">
 				<span class="project-section__img">
 					<span>
-						<img src="https://www.fillmurray.com/600/450" />
+						<img src="/assets/img/roll4d6/roll4d6--form.jpg" />
 					</span>
 				</span>
 			</div>
@@ -85,36 +85,36 @@ jsarr:
 			<div class="project-section__process-cell">
 				<span class="project-section__img">
 					<span>
-						<img src="https://www.fillmurray.com/600/450" />
+						<img src="/assets/img/roll4d6/roll4d6--attributes.jpg" />
 					</span>
 				</span>
 			</div>
 			<div class="project-section__process-cell">
-				<p markdown="1">The app uses [D&D 5e API](https://www.dnd5eapi.co/) to gather info. Most attributes have a uniform distribution other than the height, weight, and age have a standard distribution.</p>
+				<p markdown="1">The app uses [D&D 5e API](https://www.dnd5eapi.co/) to gather info. Most attributes have a uniform distribution other than the height, weight, and age which have a standard distribution.</p>
 			</div>
 		</div>
 		<div class="project-section__process-row">
-			<div class="project-section__process-cell">
-				<p markdown="1">The NPC's stats start on a [positively skewed standard distribution](https://anydice.com/articles/4d6-drop-lowest/) and will stay that way unless the user selects "distribute points intelligently", in which case, it will apply points based on the class.</p>
-			</div>
-			<div class="project-section__process-cell">
-				<span class="project-section__img">
-					<span>
-						<img src="https://www.fillmurray.com/600/450" />
-					</span>
-				</span>
-			</div>
-		</div>
-		<div class="project-section__process-row">
-			<div class="project-section__process-cell">
-				<span class="project-section__img">
-					<span>
-						<img src="https://www.fillmurray.com/600/450" />
-					</span>
-				</span>
-			</div>
 			<div class="project-section__process-cell">
 				<p>The character biography is basically a MadLib. A series of random number generations are plugged into a skeleton paragraph to give us a unique biography.</p>
+			</div>
+			<div class="project-section__process-cell">
+				<span class="project-section__img">
+					<span>
+						<img src="/assets/img/roll4d6/roll4d6--bio.jpg" />
+					</span>
+				</span>
+			</div>
+		</div>
+		<div class="project-section__process-row">
+			<div class="project-section__process-cell">
+				<span class="project-section__img">
+					<span>
+						<img src="/assets/img/roll4d6/roll4d6--stats.jpg" />
+					</span>
+				</span>
+			</div>
+			<div class="project-section__process-cell">
+				<p markdown="1">The NPC's stats start on a [positively skewed standard distribution](https://anydice.com/articles/4d6-drop-lowest/) and will stay that way unless the user selects "distribute points intelligently", in which case, it will apply points based on the class.</p>
 			</div>
 		</div>
 		<div class="project-section__process-row">
