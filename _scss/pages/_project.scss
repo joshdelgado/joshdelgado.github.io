@@ -164,6 +164,14 @@ $box-shadow-img: 0 0 16px 0 hsla(0, 0%, 0, .3);
 		}
 	}
 
+	&__cta-list {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		gap: 2rem;
+		padding-bottom: 3rem;
+	}
+
 	&__img {
 		span {
 			display: inline-block;

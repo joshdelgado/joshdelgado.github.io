@@ -18,6 +18,14 @@ jsarr:
 		<div class="project-section__intro-text">
 			<p class="project-section__summary" markdown="1">A React application that uses the [D&D 5e API](https://www.dnd5eapi.co/) to generate an NPC (non-player character) for Dungeons & Dragons 5th Edition.</p>
 		</div>
+		<ul class="project-section__cta-list">
+			<li class="project-section__cta-socket">
+				<a class="button" href="https://www.roll4d6.com" target="_blank">See it live</a>
+			</li>
+			<li class="project-section__cta-socket">
+				<a class="button" href="https://github.com/joshdelgado/roll4d6" target="_blank">See the code</a>
+			</li>
+		</ul>
 		<span class="project-section__img project-section__img--intro">
 			<span markdown="1">![Roll 4d6](/assets/img/roll4d6/roll4d6--intro.PNG)</span>
 		</span>
