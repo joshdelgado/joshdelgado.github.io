@@ -5,8 +5,7 @@ $theme-text-timing: 500ms;
 	display: inline-block;
 	position: relative;
 	background-image: linear-gradient(to bottom, var(--glow-color1-hsl) 0%, var(--glow-color2-hsl) 100%);
-	flex: 1 1 466px;
-	max-width: 600px;
+	flex: 0 1 466px;
 	height: 19.5rem;
 	margin: 0.5rem;
 	border-radius: 8px;
@@ -121,6 +120,12 @@ $theme-text-timing: 500ms;
 		&__link {
 			opacity: 1;
 		}
+	}
+}
+
+@media (max-width: $breakpoint-tablet){
+	.project-card {
+		flex: 0 1 600px;
 	}
 }
 

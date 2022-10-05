@@ -129,7 +129,7 @@ jsarr:
 			<div class="project-section__process-cell">
 				<p>According to Google's PageSpeed Insights it's pretty speedy.</p>
 			</div>
-			<div class="project-section__process-cell" style="flex-direction: row; align-items: center; gap: 1rem;">
+			<div class="project-section__process-cell project-section__process-cell--two-images">
 				<span class="project-section__img" style="flex: 1 1 300px">
 					<span>
 						<img src="/assets/img/roll4d6/pagespeed-insights--mobile.jpg" />

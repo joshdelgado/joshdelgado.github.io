@@ -168,6 +168,7 @@ $box-shadow-img: 0 0 16px 0 hsla(0, 0%, 0, .3);
 		display: flex;
 		justify-content: center;
 		align-items: flex-start;
+		flex-wrap: wrap;
 		gap: 2rem;
 		padding-bottom: 3rem;
 	}
@@ -296,6 +297,12 @@ $box-shadow-img: 0 0 16px 0 hsla(0, 0%, 0, .3);
 		p {
 			font-size: 32px;
 			color: var(--text-color-hsl);
+		}
+
+		&--two-images {
+			flex-direction: row; 
+			flex-wrap: wrap;
+			gap: 1rem;
 		}
 	}
 
