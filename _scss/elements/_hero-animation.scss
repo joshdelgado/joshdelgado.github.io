@@ -11,8 +11,6 @@
 	width: 100%;
 	overflow: hidden;
 	background-color: hsl(var(--accent-color-h), var(--accent-color-s), calc(var(--accent-color-l) * var(--darken)));
-	// background-color: var(--bg-color2-hsl);
-	// background-color: var(--accent-color-hsl);
 
 	&__gradient {
 		display: block;
@@ -41,20 +39,5 @@
 			// @include ease-in-out-sine-gradient-hsl(var(--hero-color1-h), var(--hero-color1-s), var(--hero-color1-l), to top left);
 			@include ease-in-out-sine-gradient-hsl(var(--accent-color3-h), var(--accent-color3-s), calc(var(--accent-color3-l) * var(--darken)), to top left);
 		}
-	}
-
-	&__star {
-		position: absolute;
-		left: 10%;
-		top: 50%;
-		height: 15px;
-		width: 15px;
-		border-radius: 100%;
-		box-shadow: 0 0 5px rgba(255,255,255,1);
-		background-color: var(--text-color-hsl);
-		animation-name: shooting-star;
-		animation-duration: 6s;
-		animation-iteration-count: infinite;
-		animation-timing-function: cubic-bezier(.32,.81,.35,.87);
 	}
 }
