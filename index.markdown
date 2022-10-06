@@ -1,7 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 title: Josh Delgado
 description: Josh Delgado is a Front-End Developer and UX Enthusiast based in Denver, Colorado
 socialImage: /assets/img/portfolio-social-share.jpg
