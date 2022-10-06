@@ -49,7 +49,7 @@ jsarr:
 			<div class="js-mockup device-slider__slide device-slider__slide--visible" data-slide="1">
 				<div class="desktop" >
 					<div class="desktop__screen">
-						<img src="/assets/img/roll4d6/roll4d6--desktop.PNG" />
+						<img src="/assets/img/roll4d6/roll4d6--desktop.webp" />
 					</div>
 					<div class="desktop__stand"></div>
 					<div class="desktop__base"></div>
@@ -58,14 +58,14 @@ jsarr:
 			<div class="js-mockup device-slider__slide" data-slide="2">
 				<div class="tablet">
 					<div class="tablet__screen">
-						<img src="/assets/img/roll4d6/roll4d6--tablet.jpg" />
+						<img src="/assets/img/roll4d6/roll4d6--tablet.webp" />
 					</div>
 				</div>
 			</div>
 			<div class="js-mockup device-slider__slide" data-slide="3">
 				<div class="iphone">
 					<div class="iphone__screen">
-						<img src="/assets/img/roll4d6/roll4d6--phone.jpg" />
+						<img src="/assets/img/roll4d6/roll4d6--phone.webp" />
 					</div>
 				</div>
 			</div>
