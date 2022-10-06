@@ -1,7 +1,9 @@
 ---
 title: Non-Player Character Generator
+description: A React application that uses the D&D 5e API to generate an NPC (non-player character) for Dungeons & Dragons 5th Edition.
 alias: roll4d6
 cardImage: /assets/img/roll4d6/roll4d6--thumb.PNG
+socialImage: /assets/img/roll4d6/roll4d6--social-image.jpg
 layout: project
 display: true
 tools:

@@ -1,7 +1,9 @@
 ---
 title: Owner Management Portal
+description: An Angular 11 application living inside a legacy Java application to guide users through common functions of the Owner Account Management portal.
 alias: oam
 cardImage: /assets/img/oam/oam-init-step.PNG
+socialImage: /assets/img/oam/oam--social-image.jpg
 layout: project
 display: true
 tools:
@@ -41,7 +43,7 @@ jsarr:
 			</li>
 		</ul>
 		<span class="project-section__img project-section__img--intro">
-			<span markdown="1">![Owner Account Management Dashboard](/assets/img/oam/oam-dashboard--best.png)</span>
+			<span markdown="1">![Owner Account Management Dashboard](/assets/img/oam/oam-dashboard--best.webp)</span>
 		</span>
 	</div>
 </section>
@@ -99,7 +101,7 @@ jsarr:
 			<div class="project-section__process-cell">
 				<div class="desktop">
 					<div class="desktop__screen">
-						<video width="100%" poster="/assets/img/oam/oam-dashboard--best.png" autoplay muted loop playsinline>
+						<video width="100%" poster="/assets/img/oam/oam-dashboard--best.webp" autoplay muted loop playsinline>
 							<source src="/assets/video/oam/oam-guided-flow-from-dash-loop.webm" type="video/webm">
 							<source src="/assets/video/oam/oam-guided-flow-from-dash-loop.mp4" type="video/mp4">
 							Your browser does not support the video tag.
