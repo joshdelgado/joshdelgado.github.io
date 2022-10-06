@@ -44,6 +44,11 @@ sass:
 markdown:    kramdown
 highlighter: rouge
 
+# Calibre Image Compression
+- name: Image Actions
+  uses: calibreapp/image-actions@1.1.0
+
+
 # Markdown Processors
 kramdown:
   input: GFM
