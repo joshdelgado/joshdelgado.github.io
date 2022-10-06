@@ -29,7 +29,7 @@ jsarr:
 			</li>
 		</ul>
 		<span class="project-section__img project-section__img--intro">
-			<span markdown="1">![Roll 4d6](/assets/img/roll4d6/roll4d6--intro.PNG)</span>
+			<span markdown="1">![Roll 4d6](/assets/img/roll4d6/roll4d6--intro.webp)</span>
 		</span>
 	</div>
 </section>
