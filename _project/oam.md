@@ -2,7 +2,7 @@
 title: Owner Management Portal
 description: An Angular 11 application living inside a legacy Java application to guide users through common functions of the Owner Account Management portal.
 alias: oam
-cardImage: /assets/img/oam/oam-init-step.PNG
+cardImage: /assets/img/oam/oam-init-step.webp
 socialImage: /assets/img/oam/oam--social-image.jpg
 layout: project
 display: true
@@ -64,7 +64,7 @@ jsarr:
 			<div class="js-mockup device-slider__slide device-slider__slide--visible" data-slide="1">
 				<div class="desktop" >
 					<div class="desktop__screen">
-						<img src="/assets/img/oam/oam-desktop--best.png" />
+						<img src="/assets/img/oam/oam-desktop--best.webp" />
 					</div>
 					<div class="desktop__stand"></div>
 					<div class="desktop__base"></div>
