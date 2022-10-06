@@ -1,7 +1,9 @@
 ---
 title: Internal Angular Library
+description: A common-code library for all Angular projects made for Westgate. Originally written in AngularJS then upgraded to Angular 7, and later, Angular 11.
 alias: internal-angular-library
 cardImage: assets/img/angular-common/colors-svg.svg
+socialImage: assets/img/angular-common/angular-common--social-image.jpg
 layout: project
 display: true
 tools:
@@ -15,7 +17,7 @@ jsarr:
 <section class="project-section project-section--intro">
 	<div class="project-section__inner">
 		<div class="project-section__intro-text">
-			<p class="project-section__summary">A common-code library for all Angular projects made for Westgate. Originally written in AngularJS but upgraded to Angular 7, and later, Angular 11.</p>
+			<p class="project-section__summary">A common-code library for all Angular projects made for Westgate. Originally written in AngularJS then upgraded to Angular 7, and later, Angular 11.</p>
 		</div>
 		<ul class="project-section__team">
 			<li class="project-section__team-member">
