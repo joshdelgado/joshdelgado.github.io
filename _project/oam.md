@@ -73,14 +73,14 @@ jsarr:
 			<div class="js-mockup device-slider__slide" data-slide="2">
 				<div class="tablet">
 					<div class="tablet__screen">
-						<img src="/assets/img/oam/oam-tablet--best2.png" />
+						<img src="/assets/img/oam/oam-tablet--best.webp" />
 					</div>
 				</div>
 			</div>
 			<div class="js-mockup device-slider__slide" data-slide="3">
 				<div class="iphone">
 					<div class="iphone__screen">
-						<img src="/assets/img/oam/oam-mobile--best.png" />
+						<img src="/assets/img/oam/oam-mobile--best.webp" />
 					</div>
 				</div>
 			</div>
@@ -127,7 +127,7 @@ jsarr:
 			<div class="project-section__process-cell">
 				<span class="project-section__img project-section__img--max-width">
 					<span>
-						<img src="/assets/img/oam/file-structure.PNG" alt="Owner Account Management File Structure">
+						<img src="/assets/img/oam/file-structure.webp" alt="Owner Account Management File Structure">
 					</span>
 				</span>
 			</div>
@@ -136,7 +136,7 @@ jsarr:
 			<div class="project-section__process-cell">
 				<div class="iphone iphone--large">
 					<div class="iphone__screen">
-						<video width="100%" poster="/assets/img/oam/oam-mobile--best.png" autoplay muted loop playsinline>
+						<video width="100%" poster="/assets/img/oam/oam-mobile--best.webp" autoplay muted loop playsinline>
 							<source src="/assets/video/oam/oam-mobile-guided-flow.webm" type="video/webm">
 							<source src="/assets/video/oam/oam-mobile-guided-flow.mp4" type="video/mp4">
 							Your browser does not support the video tag.
@@ -154,7 +154,7 @@ jsarr:
 			</div>
 			<div class="project-section__process-cell">
 				<span class="project-section__img">
-					<span markdown="1">![Angular Library Icons](/assets/img/angular-common/icons-svg.jpg)</span>
+					<span markdown="1">![Angular Library Icons](/assets/img/angular-common/icons-svg.webp)</span>
 				</span>
 			</div>
 		</div>
