@@ -2,6 +2,7 @@
 	.device-slider {
 		&__slide {
 			display: none;
+			will-change: opacity;
 			
 			&.desktop {
 				display: none;
