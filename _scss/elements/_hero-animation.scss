@@ -19,9 +19,9 @@
 		position: absolute;
 		top: 0;
 		left: 0;
+		will-change: transform;
 		
 		&--to-right {
-			// @include ease-in-out-sine-gradient-hsl(var(--hero-color2-h), var(--hero-color2-s), var(--hero-color2-l), to right);
 			@include ease-in-out-sine-gradient-hsl(var(--accent-color2-h), var(--accent-color2-s), calc(var(--accent-color2-l) * var(--darken)), to right);
 			background-size: 400%;
 			background-position: center;
@@ -29,14 +29,11 @@
 		}
 		
 		&--to-bottom {
-			// @include ease-in-out-sine-gradient-hsl(var(--hero-color3-h), var(--hero-color3-s), var(--hero-color3-l), to bottom);
-			// @include ease-in-out-sine-gradient-hsl(var(--bg-color-h), var(--bg-color-s), var(--bg-color-l), to bottom);
 			@include ease-in-out-sine-gradient-hsl(var(--accent-color4-h), var(--accent-color4-s), calc(var(--accent-color4-l) * var(--darken)), to bottom);
 			animation: backgroundMoveY var(--hero-animation-duration) ease infinite;
 		}
 		
 		&--to-top-left {
-			// @include ease-in-out-sine-gradient-hsl(var(--hero-color1-h), var(--hero-color1-s), var(--hero-color1-l), to top left);
 			@include ease-in-out-sine-gradient-hsl(var(--accent-color3-h), var(--accent-color3-s), calc(var(--accent-color3-l) * var(--darken)), to top left);
 		}
 	}

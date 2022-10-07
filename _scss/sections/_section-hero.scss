@@ -75,6 +75,7 @@
 				@include text-shadow(true);
 				animation: float 1000ms ease-in-out infinite alternate both;
 				transition: opacity 350ms ease;
+				will-change: transform, opacity;
 			}
 
 			&:hover i{
