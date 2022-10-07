@@ -1,4 +1,4 @@
-jQuery(document).ready(function () {
+$(document).ready(function () {
 	localStorage.setItem('theme', localStorage['theme'] ? localStorage['theme'] : 'dark');
 	let theme = localStorage['theme'];
 
@@ -33,7 +33,7 @@ jQuery(document).ready(function () {
 		$(this).parent().find('.multi-code__option').removeClass('multi-code__option--selected');
 		$(this).addClass('multi-code__option--selected');
 		$(this).parent().parent().find('.multi-code__pane').removeClass('multi-code__pane--selected');
-		$(this).parent().parent().find('.multi-code__pane[data-pane=' + option + ']').addClass('multi-code__pane--selected');
+		$(this).parent().parent().find('.multi-code__pane[data-pane="' + option + '"]').addClass('multi-code__pane--selected');
 	});
 
 	$('.js-social-dropdown-trigger').on('click', function () {
@@ -52,7 +52,7 @@ jQuery(document).ready(function () {
 		$('.device-slider__slide--visible').addClass('device-slider__slide--transition');
 		setTimeout(function () {
 			$('.device-slider__slide--visible').removeClass('device-slider__slide--transition').removeClass('device-slider__slide--visible');
-			$('.js-mockup[data-slide=' + nextSlide + ']').addClass('device-slider__slide--visible');
+			$('.js-mockup[data-slide="' + nextSlide + '"]').addClass('device-slider__slide--visible');
 		}, 500);
 	});
 
@@ -68,28 +68,7 @@ jQuery(document).ready(function () {
 		$('.device-slider__slide--visible').addClass('device-slider__slide--transition');
 		setTimeout(function () {
 			$('.device-slider__slide--visible').removeClass('device-slider__slide--transition').removeClass('device-slider__slide--visible');
-			$('.js-mockup[data-slide=' + nextSlide + ']').addClass('device-slider__slide--visible');
+			$('.js-mockup[data-slide="' + nextSlide + '"]').addClass('device-slider__slide--visible');
 		}, 500);
-	});
-
-	$('a').on('click', function (event) {
-		if (this.hash !== '') {
-			var hash = this.hash,
-				timeout = 0;
-
-			if (!$('.js-nav-dropdown').hasClass('nav-dropdown--closed')) {
-				setTimeout(() => {
-					$('.js-nav-dropdown').addClass('nav-dropdown--closed');
-				}, 500);
-			}
-
-			$('html, body').animate({
-				scrollTop: $(hash).offset().top
-			}, 500, function () {
-				window.location.hash = hash;
-			});
-
-			return false;
-		}
 	});
 });
