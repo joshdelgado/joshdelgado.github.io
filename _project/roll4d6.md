@@ -86,7 +86,7 @@ jsarr:
 			<div class="project-section__process-cell">
 				<span class="project-section__img">
 					<span>
-						<img src="/assets/img/roll4d6/roll4d6--form.jpg" />
+						<img src="/assets/img/roll4d6/roll4d6--form.webp" />
 					</span>
 				</span>
 			</div>
@@ -95,7 +95,7 @@ jsarr:
 			<div class="project-section__process-cell">
 				<span class="project-section__img">
 					<span>
-						<img src="/assets/img/roll4d6/roll4d6--attributes.jpg" />
+						<img src="/assets/img/roll4d6/roll4d6--attributes.webp" />
 					</span>
 				</span>
 			</div>
@@ -110,7 +110,7 @@ jsarr:
 			<div class="project-section__process-cell">
 				<span class="project-section__img">
 					<span>
-						<img src="/assets/img/roll4d6/roll4d6--bio.jpg" />
+						<img src="/assets/img/roll4d6/roll4d6--bio.webp" />
 					</span>
 				</span>
 			</div>
@@ -119,7 +119,7 @@ jsarr:
 			<div class="project-section__process-cell">
 				<span class="project-section__img">
 					<span>
-						<img src="/assets/img/roll4d6/roll4d6--stats.jpg" />
+						<img src="/assets/img/roll4d6/roll4d6--stats.webp" />
 					</span>
 				</span>
 			</div>
@@ -134,12 +134,12 @@ jsarr:
 			<div class="project-section__process-cell project-section__process-cell--two-images">
 				<span class="project-section__img" style="flex: 1 1 300px">
 					<span>
-						<img src="/assets/img/roll4d6/pagespeed-insights--mobile.jpg" />
+						<img src="/assets/img/roll4d6/pagespeed-insights--mobile.webp" />
 					</span>
 				</span>
 				<span class="project-section__img" style="flex: 1 1 300px">
 					<span>
-						<img src="/assets/img/roll4d6/pagespeed-insights--desktop.jpg" />
+						<img src="/assets/img/roll4d6/pagespeed-insights--desktop.webp" />
 					</span>
 				</span>
 			</div>

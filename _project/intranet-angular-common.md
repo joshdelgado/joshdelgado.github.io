@@ -56,7 +56,7 @@ jsarr:
 			<div class="js-mockup device-slider__slide device-slider__slide--visible" data-slide="1">
 				<div class="desktop">
 					<div class="desktop__screen">
-						<img src="/assets/img/angular-common/greeter-desktop--best.png" />
+						<img src="/assets/img/angular-common/greeter-desktop--best.webp" />
 					</div>
 					<div class="desktop__stand"></div>
 					<div class="desktop__base"></div>
@@ -65,7 +65,7 @@ jsarr:
 			<div class="js-mockup device-slider__slide" data-slide="2">
 				<div class="tablet">
 					<div class="tablet__screen">
-						<img src="/assets/img/angular-common/greeter-tablet--best.png" />
+						<img src="/assets/img/angular-common/greeter-tablet--best.webp" />
 					</div>
 				</div>
 			</div>
@@ -129,7 +129,7 @@ jsarr:
 			<div class="project-section__process-cell">
 				<span class="project-section__img">
 					<span>
-						<img src="/assets/img/angular-common/compodoc.PNG" alt="Compodoc">
+						<img src="/assets/img/angular-common/compodoc.webp" alt="Compodoc">
 					</span>
 				</span>
 			</div>
