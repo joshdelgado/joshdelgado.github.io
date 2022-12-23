@@ -7,3 +7,4 @@ vendor
 tools
 assets/img/*/old
 assets/img/*/jpgs
+*.png
